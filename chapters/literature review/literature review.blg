@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: literature review.aux
+The style file: plain.bst
+Database file #1: database.bib
+Warning--empty publisher in Hilberg1989
+You've used 33 entries,
+            2118 wiz_defined-function locations,
+            747 strings with 11027 characters,
+and the built_in function-call counts, 12859 in all, are:
+= -- 1227
+> -- 736
+< -- 5
++ -- 290
+- -- 256
+* -- 1062
+:= -- 2182
+add.period$ -- 105
+call.type$ -- 33
+change.case$ -- 224
+chr.to.int$ -- 0
+cite$ -- 34
+duplicate$ -- 396
+empty$ -- 908
+format.name$ -- 256
+if$ -- 2625
+int.to.chr$ -- 0
+int.to.str$ -- 33
+missing$ -- 36
+newline$ -- 172
+num.names$ -- 66
+pop$ -- 186
+preamble$ -- 1
+purify$ -- 194
+quote$ -- 0
+skip$ -- 260
+stack$ -- 0
+substring$ -- 866
+swap$ -- 59
+text.length$ -- 5
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 126
+warning$ -- 1
+while$ -- 107
+width$ -- 35
+write$ -- 373
+(There was 1 warning)

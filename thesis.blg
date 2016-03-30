@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: thesis.aux
+The style file: plain.bst
+Database file #1: chapters/database.bib
+Warning--I didn't find a database entry for "Sulivan2013"
+Warning--empty publisher in Hilberg1989
+You've used 42 entries,
+            2118 wiz_defined-function locations,
+            808 strings with 12750 characters,
+and the built_in function-call counts, 16491 in all, are:
+= -- 1585
+> -- 948
+< -- 6
++ -- 375
+- -- 330
+* -- 1335
+:= -- 2780
+add.period$ -- 132
+call.type$ -- 42
+change.case$ -- 288
+chr.to.int$ -- 0
+cite$ -- 43
+duplicate$ -- 526
+empty$ -- 1140
+format.name$ -- 330
+if$ -- 3380
+int.to.chr$ -- 0
+int.to.str$ -- 42
+missing$ -- 45
+newline$ -- 217
+num.names$ -- 84
+pop$ -- 235
+preamble$ -- 1
+purify$ -- 249
+quote$ -- 0
+skip$ -- 373
+stack$ -- 0
+substring$ -- 1085
+swap$ -- 101
+text.length$ -- 6
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 162
+warning$ -- 1
+while$ -- 134
+width$ -- 44
+write$ -- 472
+(There were 2 warnings)

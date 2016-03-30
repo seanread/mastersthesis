@@ -1,0 +1,42 @@
+\contentsline {chapter}{\numberline {1}Introduction}{7}
+\contentsline {section}{\numberline {1.1}Background}{7}
+\contentsline {section}{\numberline {1.2}Research questions and objectives}{8}
+\contentsline {section}{\numberline {1.3}Research outline}{9}
+\contentsline {chapter}{\numberline {2}Literature review}{10}
+\contentsline {section}{\numberline {2.1}Geriatric rhinology}{10}
+\contentsline {section}{\numberline {2.2}Experimental}{10}
+\contentsline {subsubsection}{Image reconstruction}{11}
+\contentsline {section}{\numberline {2.3}Computational Fluid Dynamics}{11}
+\contentsline {section}{\numberline {2.4}Airflow structures}{12}
+\contentsline {section}{\numberline {2.5}Demographic studies}{13}
+\contentsline {section}{\numberline {2.6}Heat and vapour transfer}{13}
+\contentsline {section}{\numberline {2.7}Literature gap}{14}
+\contentsline {chapter}{\numberline {3}Model Reconstruction and Meshing}{15}
+\contentsline {section}{\numberline {3.1}geometry}{15}
+\contentsline {subsection}{\numberline {3.1.1}Introduction}{15}
+\contentsline {subsection}{\numberline {3.1.2}Non-invasive Medical Imaging}{15}
+\contentsline {subsection}{\numberline {3.1.3}Image Segmentation}{16}
+\contentsline {subsection}{\numberline {3.1.4}Preparation of Model for Meshing}{17}
+\contentsline {subsection}{\numberline {3.1.5}Summary}{18}
+\contentsline {section}{\numberline {3.2}Meshing}{18}
+\contentsline {subsection}{\numberline {3.2.1}Introduction}{18}
+\contentsline {subsection}{\numberline {3.2.2}Mesh Types}{18}
+\contentsline {subsection}{\numberline {3.2.3}Meshing algorithms}{19}
+\contentsline {subsection}{\numberline {3.2.4}Quality}{19}
+\contentsline {subsection}{\numberline {3.2.5}Mesh Independence}{21}
+\contentsline {subsection}{\numberline {3.2.6}Meshing of the Nasal Cavity}{21}
+\contentsline {chapter}{\numberline {4}CFD fundamentals}{22}
+\contentsline {section}{\numberline {4.1}Fluid dynamics}{22}
+\contentsline {subsection}{\numberline {4.1.1}Mass Conservation}{22}
+\contentsline {section}{\numberline {4.2}Governing Equations}{23}
+\contentsline {section}{\numberline {4.3}Time Dependant}{23}
+\contentsline {section}{\numberline {4.4}Heat Transfer}{23}
+\contentsline {section}{\numberline {4.5}Species Transport}{23}
+\contentsline {chapter}{\numberline {5}Results}{24}
+\contentsline {section}{\numberline {5.1}Geometry Variations}{24}
+\contentsline {section}{\numberline {5.2}Pressure Drop}{24}
+\contentsline {section}{\numberline {5.3}Wall Shear Stress}{24}
+\contentsline {section}{\numberline {5.4}Velocity Contours}{24}
+\contentsline {section}{\numberline {5.5}Heat and Vapour Transfer}{24}
+\contentsline {chapter}{\numberline {6}Discussion}{25}
+\contentsline {chapter}{\numberline {7}Conclusion}{26}

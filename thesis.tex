@@ -1,0 +1,89 @@
+\documentclass{report}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{siunitx}
+\graphicspath{ {images/} }
+\begin{document}
+\title{
+	{Geriatric Rhinology - a Computational Investigation}\\
+	{\large SAMME}\\
+	{\includegraphics{rmit.jpg}}
+}
+\author{Sean Read}
+\date{Day Month Year}
+\begin{titlepage}
+    \begin{center}
+        \vspace*{1cm}
+        
+        \Huge
+	\textbf{Geriatric Rhinology}
+        
+        \vspace{0.5cm}
+        \LARGE
+        a Computational Investigation
+        \vspace{1.5cm}
+        
+        \textbf{Sean Read}
+        
+        \vfill
+        
+        \vspace{0.8cm}
+        
+        \includegraphics[width=0.4\textwidth]{rmit}
+        
+        \Large
+        SAMME\\
+        RMIT\\
+        Australia\\
+        Date
+        
+    \end{center}
+\end{titlepage}
+
+\chapter*{Abstract}
+Abstract goes here
+
+\chapter*{Dedication}
+To Mum and Dad, Chris, Coka, Gary, Paper \& Leigh
+
+\chapter*{Declaration}
+I declare that..
+
+\chapter*{Acknowledgements}
+I want to thank my supervisors, Dr Kiao Inthavong and Professor Jiyuan Tu and my cat
+
+\tableofcontents
+
+\chapter{Introduction}
+
+\input{chapters/introduction}
+
+\chapter{Literature review}
+
+\input{chapters/chapter2}
+
+\chapter{Model Reconstruction and Meshing}
+
+\input{chapters/chapter3}
+
+\chapter{CFD fundamentals} \label{cfd}
+
+\input{chapters/chapter4}
+
+\chapter{Results}
+
+\input{chapters/chapter5}
+
+\chapter{Discussion}
+
+\input{chapters/discussion}
+
+\chapter{Conclusion}
+
+\input{chapters/conclusion}
+
+\bibliographystyle{plain}
+
+\bibliography{chapters/database}
+
+\end{document}
