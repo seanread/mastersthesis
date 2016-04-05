@@ -40,7 +40,7 @@ The aim of Computational fluid dynamics is to approximate numerically the physic
 
     Momentum conservation is based on the Newton's second law,
 
-    $ \sum F = ma $
+    \centerline{$\sum F = ma$}
 
     Here $m$ is the mass of the system, $a$ is its rate of acceleration, and  $\sum F$ is the sum of forces acting on the system. F can generally be divided in to body and surface forces. Rewriting the mass as the product of volume and the density, and acceleration as the first derivative of velocity:
 
@@ -53,12 +53,36 @@ The aim of Computational fluid dynamics is to approximate numerically the physic
 
     Surface forces are those that act directly on the surface of a fluid element. These fluid forces include normal stress, in the x direction $\sigma_{xx}$, which is made up of pressure forces $p$ exerted on the body and normal viscous stress components $tau_{xx}$; and tangential stresses, $\tau_{xy}$ and $\tau_{xz}$.
 
-    Summing these forces in the x direction:
+    Summing these forces in the x direction, for a 2D fluid element we get:
     
 
-    \begin{equation} \label{eq:4}
-      \sum F_{surface, x} = [\sigma_{xx} \Delta y \Delta z - (\frac{\delta \sigma_{xx}}{\delta x} \Delta x) \Delta y \Delta z] + [(\tau_{xy} + \frac{\delta \tau_{yx}}{\delta y} \Delta y) \Delta x \Delta z -
+    \begin{dmath} \label{eq:5}
+      \sum F_{surface, x} = [\sigma_{xx} \Delta y \Delta z - (\frac{\delta \sigma_{xx}}{\delta x} \Delta x) \Delta y \Delta z] 
+      + [(\tau_{xy} + \frac{\delta \tau_{yx}}{\delta y} \Delta y) \Delta x \Delta z - \tau_{yx} \Delta x \Delta z]  
+      = - \frac{\delta \sigma_{xx}}{\delta x} \Delta x \Delta y \Delta z + \frac{\delta \tau_{yx}}{\delta y} \Delta x \Delta y \Delta z
+    \end{dmath}
+
+
+    Assuming that the fluid is Newtonian and isotropic, $\sigma_{xx}$ can be related to pressure $p$ and viscous stresses $\tau_{xx}$ by
+
+    \centerline{$\sigma_{xx} = -p + \tau_{xx}$}
+
+    For a Newtonian fluid, stress-strain relations can be described as 
+
+    \begin{equation} \label{eq:6}
+      \tau_{xx} = 2 \mu \frac{\delta u}{\delta x} \quad \tau_{yx} = \mu \frac{\delta u}{\delta y}
     \end{equation}
+
+    Where $\mu$ is the viscocity of the fluid. Combining equations \ref{eq:4, eq:5, eq:6} in the x direction, and cancelling out the volume term:
+
+    \begin{equation} \label{eq:7}
+      \rho \frac{Du}{Dt} = - \frac{\delta p}{\delta x} + \mu (\frac{\delta^2 u}{\delta x^2} + \frac{\delta^2 u}{\delta y^2}) + \rho \sum F_{b}
+    \end{equation}
+
+
+
+
+
 
 \section{Governing Equations}
 
