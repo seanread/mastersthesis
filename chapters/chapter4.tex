@@ -16,23 +16,49 @@ The aim of Computational fluid dynamics is to approximate numerically the physic
     The principle of conservation of mass is that, in a closed system, the mass remains constant. This means that fluid will move through a set region in such a way the mass is conserved. For an incompressible flow, this means that the outflows and the inflows will be equal. This can be written as
     \begin{equation} \label{eq:1}
       0 = \sum_{in} \dot{m} - \sum_{out} \dot{m}
-    \end{equation}
+    \end{equation} 
 
-    The mass flow rate can be written as $ \rho u A $, where, for flow in the x direction, $ A = \Delta z \Delta x $. For a two dimensional flow, $ \Delta z = 1 $, giving:
+    Where $\dot{m}$ = mass flow rate.
+    
+    The mass flow rate can be written as $ \rho u A $,  for $\rho$ = density, $u$ = velocity and A is the scross sectional area of the flow. For flow in the x direction, $ A = \Delta z \Delta x $. For a two dimensional flow, $ \Delta z = 1 $, giving:
 
     \begin{equation} \label{eq:2}
       \dot{m}_{in} = \rho u \Delta y
     \end{equation}
 
-    For a compressible flow:
-
+    Extending this to equation \ref{eq:1}, in the x direction, for an incompressible flow we get
 
     \begin{equation} \label{eq:3}
-      \dot{m}_{out} = [\rho u + \Delta x] \Delta y
+      0 = \rho u_{in} \Delta y_{in} - \rho u_{out} \Delta y_{out}
     \end{equation}
 
+    This can easily be extrapolated to three dimensions.
+
+    In the case of the nasal cavity, this can be conceptualised in relation to the nasal cavity geometry
+
+    \subsection{Momentum Conservation}
+
+    Momentum conservation is based on the Newton's second law,
+
+    $ \sum F = ma $
+
+    Here $m$ is the mass of the system, $a$ is its rate of acceleration, and  $\sum F$ is the sum of forces acting on the system. F can generally be divided in to body and surface forces. Rewriting the mass as the product of volume and the density, and acceleration as the first derivative of velocity:
 
 
+    \begin{equation} \label{eq:4}
+      \sum F_{body} + \sum F_{surface} = (\rho \Delta x \Delta y \Delta Z) \frac{DU}{Dt}
+    \end{equation}
+
+    Body forces generally include gravity, centrifugal, Coriolis and electromagnetic forces; these all act on the volume from a distance.
+
+    Surface forces are those that act directly on the surface of a fluid element. These fluid forces include normal stress, in the x direction $\sigma_{xx}$, which is made up of pressure forces $p$ exerted on the body and normal viscous stress components $tau_{xx}$; and tangential stresses, $\tau_{xy}$ and $\tau_{xz}$.
+
+    Summing these forces in the x direction:
+    
+
+    \begin{equation} \label{eq:4}
+      \sum F_{surface, x} = [\sigma_{xx} \Delta y \Delta z - (\frac{\delta \sigma_{xx}}{\delta x} \Delta x) \Delta y \Delta z] + [(\tau_{xy} + \frac{\delta \tau_{yx}}{\delta y} \Delta y) \Delta x \Delta z -
+    \end{equation}
 
 \section{Governing Equations}
 

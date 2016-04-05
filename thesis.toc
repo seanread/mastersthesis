@@ -5,7 +5,6 @@
 \contentsline {chapter}{\numberline {2}Literature review}{10}
 \contentsline {section}{\numberline {2.1}Geriatric rhinology}{10}
 \contentsline {section}{\numberline {2.2}Experimental}{10}
-\contentsline {subsubsection}{Image reconstruction}{11}
 \contentsline {section}{\numberline {2.3}Computational Fluid Dynamics}{11}
 \contentsline {section}{\numberline {2.4}Airflow structures}{12}
 \contentsline {section}{\numberline {2.5}Demographic studies}{13}
@@ -28,6 +27,7 @@
 \contentsline {chapter}{\numberline {4}CFD fundamentals}{22}
 \contentsline {section}{\numberline {4.1}Fluid dynamics}{22}
 \contentsline {subsection}{\numberline {4.1.1}Mass Conservation}{22}
+\contentsline {subsection}{\numberline {4.1.2}Momentum Conservation}{23}
 \contentsline {section}{\numberline {4.2}Governing Equations}{23}
 \contentsline {section}{\numberline {4.3}Time Dependant}{23}
 \contentsline {section}{\numberline {4.4}Heat Transfer}{23}
