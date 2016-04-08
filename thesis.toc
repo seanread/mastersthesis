@@ -28,15 +28,15 @@
 \contentsline {section}{\numberline {4.1}Fluid dynamics}{22}
 \contentsline {subsection}{\numberline {4.1.1}Mass Conservation}{22}
 \contentsline {subsection}{\numberline {4.1.2}Momentum Conservation}{23}
-\contentsline {section}{\numberline {4.2}Governing Equations}{23}
-\contentsline {section}{\numberline {4.3}Time Dependant}{23}
-\contentsline {section}{\numberline {4.4}Heat Transfer}{23}
-\contentsline {section}{\numberline {4.5}Species Transport}{23}
-\contentsline {chapter}{\numberline {5}Results}{24}
-\contentsline {section}{\numberline {5.1}Geometry Variations}{24}
-\contentsline {section}{\numberline {5.2}Pressure Drop}{24}
-\contentsline {section}{\numberline {5.3}Wall Shear Stress}{24}
-\contentsline {section}{\numberline {5.4}Velocity Contours}{24}
-\contentsline {section}{\numberline {5.5}Heat and Vapour Transfer}{24}
-\contentsline {chapter}{\numberline {6}Discussion}{25}
-\contentsline {chapter}{\numberline {7}Conclusion}{26}
+\contentsline {section}{\numberline {4.2}Energy Conservation}{24}
+\contentsline {section}{\numberline {4.3}Governing Equations}{24}
+\contentsline {section}{\numberline {4.4}Heat Transfer}{24}
+\contentsline {section}{\numberline {4.5}Species Transport}{24}
+\contentsline {chapter}{\numberline {5}Results}{25}
+\contentsline {section}{\numberline {5.1}Geometry Variations}{25}
+\contentsline {section}{\numberline {5.2}Pressure Drop}{25}
+\contentsline {section}{\numberline {5.3}Wall Shear Stress}{25}
+\contentsline {section}{\numberline {5.4}Velocity}{25}
+\contentsline {section}{\numberline {5.5}Heat and Vapour Transfer}{25}
+\contentsline {chapter}{\numberline {6}Discussion}{35}
+\contentsline {chapter}{\numberline {7}Conclusion}{36}

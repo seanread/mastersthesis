@@ -73,21 +73,34 @@ The aim of Computational fluid dynamics is to approximate numerically the physic
       \tau_{xx} = 2 \mu \frac{\delta u}{\delta x} \quad \tau_{yx} = \mu \frac{\delta u}{\delta y}
     \end{equation}
 
-    Where $\mu$ is the viscocity of the fluid. Combining equations \ref{eq:4, eq:5, eq:6} in the x direction, and cancelling out the volume term:
+    Where $\mu$ is the viscocity of the fluid. Combining equations \ref{eq:4} , \ref{eq:5} and \ref{eq:6} in the x direction, and cancelling out the volume term:
 
     \begin{equation} \label{eq:7}
       \rho \frac{Du}{Dt} = - \frac{\delta p}{\delta x} + \mu (\frac{\delta^2 u}{\delta x^2} + \frac{\delta^2 u}{\delta y^2}) + \rho \sum F_{b}
     \end{equation}
+    
+    Here the acceleration term is the total derivative of u, defined as the combined local and advection inertial forces, which in two dimensions can be written as
 
+    \begin{equation} \label{eq:8}
+      \frac{Du}{Dt} = \frac{\delta u}{\delta t} + v \frac{\delta u}{\delta y} + u \frac{\delta u}{\delta x}
+    \end{equation}
 
+    combining equations \ref{eq:7} and \ref{eq:8} and dividing through by $\rho$:
 
+    \begin{equation} \label{eq:8}
+      \underbrace{\frac{\delta u}{\delta t}}_{local acceleration} + v \underbrace{\frac{\delta u}{\delta y} + u \frac{\delta u}{\delta x}}_{convection} = - \underbrace{\frac{1}{\rho} \frac{\delta p}{\delta x}}_{pressure gradient} + \underbrace{\nu (\frac{\delta^2 u}{\delta x^2} + \frac{\delta^2 u}{\delta y^2})}_{diffusion} + \underbrace{\sum F_{b}}_{body force}
+    \end{equation}
+
+    Where $\nu$ is kinematic viscocity, defined as $\frac{\mu}{\rho}$. 
+
+    \section{Energy Conservation}
+
+    Conservation of energy is derived from the first law of thermodynamics, that in a steady flow system the total energy of a control volume remains constant; that inflows and outflows must be equal. This can be expressed analogously to the mass conservation as 
 
 
 
 \section{Governing Equations}
 
-\section{Time Dependant}
-
 \section{Heat Transfer}
-
+	
 \section{Species Transport}
