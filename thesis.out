@@ -1,0 +1,42 @@
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Background}{chapter.1}% 2
+\BOOKMARK [1][-]{section.1.2}{Research questions and objectives}{chapter.1}% 3
+\BOOKMARK [1][-]{section.1.3}{Research outline}{chapter.1}% 4
+\BOOKMARK [0][-]{chapter.2}{Literature review}{}% 5
+\BOOKMARK [1][-]{section.2.1}{Geriatric rhinology}{chapter.2}% 6
+\BOOKMARK [1][-]{section.2.2}{Experimental}{chapter.2}% 7
+\BOOKMARK [1][-]{section.2.3}{Computational Fluid Dynamics}{chapter.2}% 8
+\BOOKMARK [1][-]{section.2.4}{Airflow structures}{chapter.2}% 9
+\BOOKMARK [1][-]{section.2.5}{Demographic studies}{chapter.2}% 10
+\BOOKMARK [1][-]{section.2.6}{Heat and vapour transfer}{chapter.2}% 11
+\BOOKMARK [1][-]{section.2.7}{Literature gap}{chapter.2}% 12
+\BOOKMARK [0][-]{chapter.3}{Model Reconstruction and Meshing}{}% 13
+\BOOKMARK [1][-]{section.3.1}{geometry}{chapter.3}% 14
+\BOOKMARK [2][-]{subsection.3.1.1}{Introduction}{section.3.1}% 15
+\BOOKMARK [2][-]{subsection.3.1.2}{Non-invasive Medical Imaging}{section.3.1}% 16
+\BOOKMARK [2][-]{subsection.3.1.3}{Image Segmentation}{section.3.1}% 17
+\BOOKMARK [2][-]{subsection.3.1.4}{Preparation of Model for Meshing}{section.3.1}% 18
+\BOOKMARK [2][-]{subsection.3.1.5}{Summary}{section.3.1}% 19
+\BOOKMARK [1][-]{section.3.2}{Meshing}{chapter.3}% 20
+\BOOKMARK [2][-]{subsection.3.2.1}{Introduction}{section.3.2}% 21
+\BOOKMARK [2][-]{subsection.3.2.2}{Mesh Types}{section.3.2}% 22
+\BOOKMARK [2][-]{subsection.3.2.3}{Meshing algorithms}{section.3.2}% 23
+\BOOKMARK [2][-]{subsection.3.2.4}{Quality}{section.3.2}% 24
+\BOOKMARK [2][-]{subsection.3.2.5}{Mesh Independence}{section.3.2}% 25
+\BOOKMARK [2][-]{subsection.3.2.6}{Meshing of the Nasal Cavity}{section.3.2}% 26
+\BOOKMARK [0][-]{chapter.4}{CFD fundamentals}{}% 27
+\BOOKMARK [1][-]{section.4.1}{Fluid dynamics}{chapter.4}% 28
+\BOOKMARK [2][-]{subsection.4.1.1}{Mass Conservation}{section.4.1}% 29
+\BOOKMARK [2][-]{subsection.4.1.2}{Momentum Conservation}{section.4.1}% 30
+\BOOKMARK [1][-]{section.4.2}{Energy Conservation}{chapter.4}% 31
+\BOOKMARK [1][-]{section.4.3}{Governing Equations}{chapter.4}% 32
+\BOOKMARK [1][-]{section.4.4}{Heat Transfer}{chapter.4}% 33
+\BOOKMARK [1][-]{section.4.5}{Species Transport}{chapter.4}% 34
+\BOOKMARK [0][-]{chapter.5}{Results}{}% 35
+\BOOKMARK [1][-]{section.5.1}{Geometry Variations}{chapter.5}% 36
+\BOOKMARK [1][-]{section.5.2}{Pressure Drop}{chapter.5}% 37
+\BOOKMARK [1][-]{section.5.3}{Wall Shear Stress}{chapter.5}% 38
+\BOOKMARK [1][-]{section.5.4}{Velocity}{chapter.5}% 39
+\BOOKMARK [1][-]{section.5.5}{Heat and Vapour Transfer}{chapter.5}% 40
+\BOOKMARK [0][-]{chapter.6}{Discussion}{}% 41
+\BOOKMARK [0][-]{chapter.7}{Conclusion}{}% 42

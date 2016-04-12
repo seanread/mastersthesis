@@ -87,8 +87,8 @@ The aim of Computational fluid dynamics is to approximate numerically the physic
 
     combining equations \ref{eq:7} and \ref{eq:8} and dividing through by $\rho$:
 
-    \begin{equation} \label{eq:8}
-      \underbrace{\frac{\delta u}{\delta t}}_{local acceleration} + v \underbrace{\frac{\delta u}{\delta y} + u \frac{\delta u}{\delta x}}_{convection} = - \underbrace{\frac{1}{\rho} \frac{\delta p}{\delta x}}_{pressure gradient} + \underbrace{\nu (\frac{\delta^2 u}{\delta x^2} + \frac{\delta^2 u}{\delta y^2})}_{diffusion} + \underbrace{\sum F_{b}}_{body force}
+    \begin{equation} \label{eq:9}
+      \underbrace{\frac{\delta u}{\delta t}}_{local\ acceleration} + v \underbrace{\frac{\delta u}{\delta y} + u \frac{\delta u}{\delta x}}_{convection} = - \underbrace{\frac{1}{\rho} \frac{\delta p}{\delta x}}_{pressure gradient} + \underbrace{\nu (\frac{\delta^2 u}{\delta x^2} + \frac{\delta^2 u}{\delta y^2})}_{diffusion} + \underbrace{\sum F_{b}}_{body force}
     \end{equation}
 
     Where $\nu$ is kinematic viscocity, defined as $\frac{\mu}{\rho}$. 
@@ -97,7 +97,49 @@ The aim of Computational fluid dynamics is to approximate numerically the physic
 
     Conservation of energy is derived from the first law of thermodynamics, that in a steady flow system the total energy of a control volume remains constant; that inflows and outflows must be equal. This can be expressed analogously to the mass conservation as 
 
+    \begin{equation} \label{eq:10}
+      \frac{DE}{Dt} = \sum{\dot{Q}} + \sum{\dot{W}}
+    \end{equation}
 
+    Where $\dot{Q}$ is heat transfer and $\dot{W}$ is the rate of work done. $E$ is energy per unit mass and is expressed as
+
+    \centerline{$E = C_{p} T$}
+
+    $\frac{DE}{Dt}$ can be expressed similarly to Equation \ref{eq:8}:
+
+    \begin{equation} \label{eq:11}
+      \frac{DE}{Dt} = \frac{\delta E}{\delta t} + v \frac{\delta E}{\delta y} + u \frac{\delta E}{\delta x} = C_{p} (\frac{\delta T}{\delta t} + v \frac{\delta T}{\delta y} + u \frac{\delta T}{\delta x})
+    \end{equation}
+
+    For a 2D element, the total energy can therefore be calculated from
+
+    \begin{equation} \label{eq:12}
+      \rho \frac{DE}{Dt} \Delta x \Delta y = \rho   C_{p} (\frac{\delta T}{\delta t} + v \frac{\delta T}{\delta y} + u \frac{\delta T}{\delta x}) \Delta x \Delta y
+    \end{equation}
+
+    From Fourier's law of heat conduction, for a 2D system we can write
+
+    \begin{equation} \label{eq:13}
+      \dot{Q}_{x} = k A_{x} \frac{\delta T}{\delta x} = \dot{q}_{x} A_{x} = \dot{q}_{x} \Delta y
+    \end{equation}
+
+    where $\dot{q}$ is heat flux = $\dot{Q}/A$
+
+    The heat transferred into the element can thus be expressed as
+
+    \begin{equation} \label{eq:14}
+      [q_{x} + \frac{\delta q_{x}}{\delta x}] \Delta y - q_{x} \Delta y = \frac{\delta q_{x}}{\delta x} = k \frac{\delta^2 T}{\delta x^2} \Delta x \Delta y
+    \end{equation}
+
+    \begin{figure} \label{fig:eneq}
+      \caption{Flow of heat energy through a 2D element}
+    \end{figure}
+
+    reconstructing equation \ref{eq:10} with the inclusion of \ref{eq:14}, considered also in the y direction, we can cancel out the volume term:
+
+    \begin{equation} \label{eq:15}
+      \underbrace{\frac{\delta T}{\delta t}}_{local\ acceleration} + \underbrace{u \frac{\delta T}{\delta x} + v \frac{\delta T}{\delta y}}_{convection} = \underbrace{\frac{k}{\rho C_{p}} (\frac{\delta^2 T}{\delta x^2} + \frac{\delta^2 T}{\delta y^2})}_{diffusion}
+    \end{equation}
 
 \section{Governing Equations}
 

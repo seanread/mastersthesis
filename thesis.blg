@@ -4,45 +4,45 @@ The top-level auxiliary file: thesis.aux
 The style file: plain.bst
 Database file #1: chapters/database.bib
 Warning--empty publisher in Hilberg1989
-You've used 42 entries,
+You've used 43 entries,
             2118 wiz_defined-function locations,
-            806 strings with 12728 characters,
-and the built_in function-call counts, 16491 in all, are:
-= -- 1585
-> -- 948
+            812 strings with 12967 characters,
+and the built_in function-call counts, 16894 in all, are:
+= -- 1623
+> -- 971
 < -- 6
-+ -- 375
-- -- 330
-* -- 1335
-:= -- 2780
-add.period$ -- 132
-call.type$ -- 42
-change.case$ -- 288
++ -- 384
+- -- 338
+* -- 1371
+:= -- 2848
+add.period$ -- 135
+call.type$ -- 43
+change.case$ -- 295
 chr.to.int$ -- 0
-cite$ -- 43
-duplicate$ -- 526
-empty$ -- 1140
-format.name$ -- 330
-if$ -- 3380
+cite$ -- 44
+duplicate$ -- 537
+empty$ -- 1169
+format.name$ -- 338
+if$ -- 3462
 int.to.chr$ -- 0
-int.to.str$ -- 42
-missing$ -- 45
-newline$ -- 217
-num.names$ -- 84
-pop$ -- 235
+int.to.str$ -- 43
+missing$ -- 46
+newline$ -- 222
+num.names$ -- 86
+pop$ -- 240
 preamble$ -- 1
-purify$ -- 249
+purify$ -- 255
 quote$ -- 0
-skip$ -- 373
+skip$ -- 380
 stack$ -- 0
-substring$ -- 1085
-swap$ -- 101
+substring$ -- 1117
+swap$ -- 102
 text.length$ -- 6
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 162
+type$ -- 166
 warning$ -- 1
-while$ -- 134
-width$ -- 44
-write$ -- 472
+while$ -- 137
+width$ -- 45
+write$ -- 483
 (There was 1 warning)
