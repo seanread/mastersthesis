@@ -24,19 +24,17 @@
 \contentsline {subsection}{\numberline {3.2.4}Quality}{19}{subsection.3.2.4}
 \contentsline {subsection}{\numberline {3.2.5}Mesh Independence}{20}{subsection.3.2.5}
 \contentsline {subsection}{\numberline {3.2.6}Meshing of the Nasal Cavity}{20}{subsection.3.2.6}
-\contentsline {chapter}{\numberline {4}CFD fundamentals}{21}{chapter.4}
-\contentsline {section}{\numberline {4.1}Fluid dynamics}{21}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Mass Conservation}{21}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Momentum Conservation}{22}{subsection.4.1.2}
-\contentsline {section}{\numberline {4.2}Energy Conservation}{23}{section.4.2}
-\contentsline {section}{\numberline {4.3}Governing Equations}{24}{section.4.3}
-\contentsline {section}{\numberline {4.4}Heat Transfer}{24}{section.4.4}
-\contentsline {section}{\numberline {4.5}Species Transport}{24}{section.4.5}
-\contentsline {chapter}{\numberline {5}Results}{25}{chapter.5}
-\contentsline {section}{\numberline {5.1}Geometry Variations}{25}{section.5.1}
-\contentsline {section}{\numberline {5.2}Pressure Drop}{26}{section.5.2}
-\contentsline {section}{\numberline {5.3}Wall Shear Stress}{32}{section.5.3}
-\contentsline {section}{\numberline {5.4}Velocity}{32}{section.5.4}
-\contentsline {section}{\numberline {5.5}Heat and Vapour Transfer}{39}{section.5.5}
-\contentsline {chapter}{\numberline {6}Discussion}{40}{chapter.6}
-\contentsline {chapter}{\numberline {7}Conclusion}{41}{chapter.7}
+\contentsline {chapter}{\numberline {4}CFD fundamentals}{22}{chapter.4}
+\contentsline {section}{\numberline {4.1}Fluid dynamics}{22}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Mass Conservation}{22}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Momentum Conservation}{23}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}Energy Conservation}{24}{subsection.4.1.3}
+\contentsline {section}{\numberline {4.2}Humidity}{25}{section.4.2}
+\contentsline {chapter}{\numberline {5}Results}{26}{chapter.5}
+\contentsline {section}{\numberline {5.1}Geometry Variations}{26}{section.5.1}
+\contentsline {section}{\numberline {5.2}Pressure Drop}{27}{section.5.2}
+\contentsline {section}{\numberline {5.3}Wall Shear Stress}{33}{section.5.3}
+\contentsline {section}{\numberline {5.4}Velocity}{33}{section.5.4}
+\contentsline {section}{\numberline {5.5}Heat and Vapour Transfer}{40}{section.5.5}
+\contentsline {chapter}{\numberline {6}Discussion}{41}{chapter.6}
+\contentsline {chapter}{\numberline {7}Conclusion}{42}{chapter.7}

@@ -38,7 +38,7 @@ These methods and many more exist and are in active development. In addition, ma
 
 \subsection{Preparation of Model for Meshing}
 
-Once the region in question has been extracted from the medical imaging output, it can be saved as some CAD format. There are certain criteria that need to be fulfilled by a CAD model before it can be read by 3d meshing software and used to create a mesh. It is often the case that when the data is exported from the medical imaging software is 'dirty'; that there are contradictory or arbitrary elements in the geometry. These elements need to be removed through the use of CAD software before the geometry is suitable for the creation of a useable 'clean' 3d mesh. Note that the geometry needs to contain also topological infortation in order to create a watertight mesh. The details of the process by which the geometry is prepared for meshing are described in Figure \ref{fig:segchart}.
+Once the region in question has been extracted from the medical imaging output, it can be saved as some CAD format. There are certain criteria that need to be fulfilled by a CAD model before it can be read by 3d meshing software and used to create a mesh. It is often the case that when the data is exported from the medical imaging software is 'dirty'; that there are contradictory or arbitrary elements in the geometry. These elements need to be removed through the use of CAD software before the geometry is suitable for the creation of a useable 'clean' 3d mesh. Note that the geometry needs to contain also topological information in order to create a watertight mesh. The details of the process by which the geometry is prepared for meshing are described in Figure \ref{fig:segchart}.
 
 
 \begin{figure}
@@ -47,13 +47,26 @@ Once the region in question has been extracted from the medical imaging output, 
 \centering
 \end{figure}
 
-\subsection{Summary}
+\subsection{Summary} 
 
 Anatomical geometry reconstruction - including that of respiratory systems - begins with medical imaging of the area in question. The geometry is then extracted from the medical imaging data using one (or several) of the available extraction algorithms outlined above. After extraction, cleaning of the geometry with CAD software is generally necessary. It is necessary to ensure that the geometry is water-tight before it can be meshed. This chapter has given an overview of some of the more pertinent methods in current use for the reconstruction of anatomical geometries from medical imaging data. Figure \ref{fig:cavzamp} shows an example of the construction process.
 
-\begin{figure}
+\begin{figure}[t!]
 
-  \caption{Example of nasal cavity geometry generation}\label{fig:cavzamp}
+  \begin{subfigure}[t]{0.5\textwidth} 
+    \includegraphics[width=\textwidth]{slicer}
+    \caption{An example of the extraction of a 3D model from CT scan data, using, in this case, an open source software package, slicer}
+    \label{fig:slicer}
+  \end{subfigure}%
+  ~ %
+  \begin{subfigure}[t]{0.5\textwidth} 
+    \includegraphics[width=\textwidth]{geomagic}
+    \caption{the refined geometry extracted from the CT slices seen in figure \ref{fig:cavzamp} (\subref{fig:slicer})}
+    \label{fig:geomag}
+  \end{subfigure}
+
+  \caption{Example of nasal cavity geometry generation}
+  \label{fig:cavzamp}
 \end{figure}
  
 \section{Meshing}
@@ -91,8 +104,6 @@ The quality of a generated mesh is dependant on its warp angle, skewness and asp
 
 Mesh skewness is defined as the extent to which it deviates in shape from the ideal. This is a squate for quadrilateral cells, or an equilateral triangle for triangle or tetrahedral cells. It is simple quantified for tiangles and tetrahedrals as $\frac{\theta ideal - \theta actual} {\theta ideal}$ (see figure \ref{fig:mqual} for theta).
 
-For unstructured mesh, the warp angle (shown in figure \ref{fig:unqual}) should be kept below \SI{75}{\degree}.
-
 Many grid generation packages contain specific algorithms and/or functions for improving mesh quality. The gradient of mesh size variation should not exceed 1.2, as higher variations can cause problems in convergance.
 
 \begin{figure}
@@ -111,8 +122,35 @@ A significant source of error in the solution of CFD problems is derived from th
 \end{figure}
 \subsection{Meshing of the Nasal Cavity}
 
-In this section the relevant aspects of the theory behind mesh generation have been introduced. Figure \ref{fig:cavme} shows the meshing process applied to one of the nasal cavities geometries presented in this thesis. Note the use of hybrid mesh, with internal tetrahedral elements and close to wall prism layers, shown clearly in the cross sections. Also, note that the geometry has been previously cut into sections relevant to the planned analysis in the CAD refinement stage.
+Here we overview the meshing process applied to the nasal cavity models presented in this thesis.
+
+The system is divided in to three parts. The first of these surounds the facial geometry directly adjacent to the nostrils; this is to allow the developement of a more realistic inlet profile. The second is the nasal cavity itself. The third section is an pipe-like extension from the exit of the nasopharynx; this allows for the developement of a more realistic outlet profile, in a similar manner to the section around the inlet. This system can be seen in figure \ref{fig:cavme} (\subref{fig:mesh1}).
+
+The three stages of mesh refinement can be seen in figure \ref{fig:cavme} (\subref{fig:mesh2}); The mesh resolution is much coarser in the external domain, refined closer to the inlet and then is most fine in the cavity itself, the area of interest. Note the use of hybrid mesh, with internal tetrahedral elements and close to wall prism layers, shown clearly in Figure \ref{fig:cavme} (\subref{fig:mesh4}).
 
 \begin{figure}
-  \caption{mesh generation process} \label{fig:cavme}
+  \begin{subfigure}[t]{0.5\textwidth}
+    \includegraphics[width=\textwidth]{mesh2}
+    \caption{whole system with face, extension from outlet and external zone}
+    \label{fig:mesh1}
+  \end{subfigure}%
+  ~%
+  \begin{subfigure}[t]{0.5\textwidth}
+    \includegraphics[width=\textwidth]{mesh1}
+    \caption{intersection of three mesh resolutions}
+    \label{fig:mesh2}
+  \end{subfigure}
+
+  \begin{subfigure}[t]{0.5\textwidth}
+    \includegraphics[width=\textwidth]{mesh3}
+    \caption{cross section of cavity mesh}
+    \label{fig:mesh3}
+  \end{subfigure}%
+  ~%
+  \begin{subfigure}[t]{0.5\textwidth}
+    \includegraphics[width=\textwidth]{mesh4}
+    \caption{prism layer of cavity mesh}
+    \label{fig:mesh4}
+  \end{subfigure}
+  \caption{mesh of NC06} \label{fig:cavme}
 \end{figure}

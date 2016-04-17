@@ -93,7 +93,7 @@ The aim of Computational fluid dynamics is to approximate numerically the physic
 
     Where $\nu$ is kinematic viscocity, defined as $\frac{\mu}{\rho}$. 
 
-    \section{Energy Conservation}
+    \subsection{Energy Conservation}
 
     Conservation of energy is derived from the first law of thermodynamics, that in a steady flow system the total energy of a control volume remains constant; that inflows and outflows must be equal. This can be expressed analogously to the mass conservation as 
 
@@ -138,11 +138,22 @@ The aim of Computational fluid dynamics is to approximate numerically the physic
     reconstructing equation \ref{eq:10} with the inclusion of \ref{eq:14}, considered also in the y direction, we can cancel out the volume term:
 
     \begin{equation} \label{eq:15}
-      \underbrace{\frac{\delta T}{\delta t}}_{local\ acceleration} + \underbrace{u \frac{\delta T}{\delta x} + v \frac{\delta T}{\delta y}}_{convection} = \underbrace{\frac{k}{\rho C_{p}} (\frac{\delta^2 T}{\delta x^2} + \frac{\delta^2 T}{\delta y^2})}_{diffusion}
+      \underbrace{\frac{\delta T}{\delta t}}_{local\ acceleration} + \underbrace{u \frac{\delta T}{\delta x} + v \frac{\delta T}{\delta y}}_{convection} = \underbrace{\frac{k}{\rho C_{p}} ( \frac{\delta^2 T}{\delta x^2} + \frac{\delta^2 T}{\delta y^2} )}_{diffusion}
     \end{equation}
 
-\section{Governing Equations}
+\section{Humidity}
 
-\section{Heat Transfer}
-	
-\section{Species Transport}
+One of the primary functions of the nasal cavity is the humidification of the incoming air in preparation for its interaction with the lungs. It therefore stands that any investigation into the fluid mechanisms of the nasal cavity would be incomplete without adressing the efficacy of this function. One simple but effective method for approximating humidification data in a computational domain is the use of the convection-diffusion equation.
+
+Analogously to equations \ref{eq:15} and \ref{eq:9}, for a 2D element we can write
+
+\begin{equation} \label{eq:16}
+  \underbrace{\frac{\delta C_{H_{2} O}}{\delta t}}_{local acceleration} + \underbrace{u \frac{\delta C_{H_{2} O}}{\delta x} + v \frac{\delta C_{H_{2} O}}{\delta y}}_{convection} = \underbrace{D_{H_{2} O} ( \frac{\delta^2 C_{H_{2} O}}{\delta x^2} + \frac{\delta^2 C_{H_{2} O}}{\delta y^2} )}_{diffusion}
+\end{equation} \nocite{Naftali1998}
+
+Where $C_{H_{2} O}$ is the concentration of water vapour and $D_{H_{2} O}$ is the diffusivity of water in air.
+
+\begin{figure} \label{fig:h2oel}
+  \caption{water vapour moving through a 2D element}
+\end{figure}
+

@@ -3,9 +3,9 @@ Figure \ref{fig:sil} shows 8 coronal slices taken at equidistant spacing across 
 
 Figure \ref{fig:area} shows the cross sectional area as a function of normalised distance along the sagittal axis. The distance has been normalised between the entrance to the nostrils and the end of the nasopharynx. A sample of cavities from the pre-existing literature has also been included for comparison. A significant variation can be seen in the average cross sectional area of the models presented in this paper; This variation is most pronounced towards the rear of the cavities. None of the models show quite the same volume as the atrophic rhinitis model, also shown here as Garcia prior to the nasopharynx ***NOT IN THE CURRENT FIGURE****, although NC07 is close. The general shape of the curve is reasonably similar for the various models in this paper, with notable exceptions in the Nasopharynx of the NC07 cavity and a larger spike in the vestibule region of NC05. Observations from Figure 3 can be compared with the cross sectional silhouettes from Figure 2, for a clearer understanding of the variations in geometry between the 4 models presented here. The range of cross-sectional areas allows us to observe the relationship between various fluid mechanical properties of the cavity and cavity volume/cross-sectional area.
 
-Table \ref{tab:secvol} - \ref{tab:deff} shows the variation of the volume, surface area and effective diameter respectively, in comparison with models from the literature. The volumes of the four models presented in this paper varied significantly. The largest discrepancies were noted in the pharynx and turbinate regions, with a less marked discrepancy in the vestibular region. The 48 – yo is showing greater volume than that seen in the atrophic rhinitis patient from \ref{Garcia2007}. The surface area of the atrophic rhinitis model is also significantly lower, to the extent that the effective diameter, shown in Table \ref{tab:deff}, is larger than the models presented in this paper.
+Table \ref{tab:secvol} - \ref{tab:deff} shows the variation of the volume, surface area and effective diameter respectively, in comparison with models from the literature. The volumes of the four models presented in this paper varied significantly. The largest discrepancies were noted in the pharynx and turbinate regions, with a less marked discrepancy in the vestibular region. The 48 – yo is showing greater volume than that seen in the atrophic rhinitis patient from \cite{Garcia2007}. The surface area of the atrophic rhinitis model is also significantly lower, to the extent that the effective diameter, shown in Table \ref{tab:deff}, is larger than the models presented in this paper.
 
-Minimal cross sectional area, shown in Table \ref{tab:mca}, is significant to flow across the cavity\ref{Lindemann2008}. Here the atrophic rhinitis model shows larger minimal cross sectional area than any of those found in the models presented here, although it is quite close to that of NC07.
+Minimal cross sectional area, shown in Table \ref{tab:mca}, is significant to flow across the cavity\cite{Lindemann2008}. Here the atrophic rhinitis model shows larger minimal cross sectional area than any of those found in the models presented here, although it is quite close to that of NC07.
 
 
 \begin{figure} \label{fig:geo}
@@ -13,14 +13,17 @@ Minimal cross sectional area, shown in Table \ref{tab:mca}, is significant to fl
   \caption{geometries of the five cavities}
 \end{figure}
 
-\begin{figure} \label{fig:sil}
+\begin{figure} 
   \includegraphics[width=\textwidth]{Silhouettes}
   \caption{silhouettes of the cavities}
+  \label{fig:sil}
+
 \end{figure}
 
-\begin{figure} \label{fig:area}
+\begin{figure}
   \includegraphics[width=\textwidth]{Areavsdistance}
   \caption{area versus distance across the four nasal cavities with a series of examples from the literature}
+  \label{fig:area}
 \end{figure}
 
 \begin{figure}
@@ -68,9 +71,10 @@ Minimal cross sectional area, shown in Table \ref{tab:mca}, is significant to fl
 \caption{Minimal axial cross sectional area $(cm^2)$}\label{tab:mca}
 \end{table}
 
-\begin{figure} \label{fig:arpar}
+\begin{figure} 
   \includegraphics[width=\textwidth]{areavsperimeter}
   \caption{area versus distance across the four nasal cavities with a series of examples from the literature}
+  \label{fig:arpar}
 \end{figure}
 \section{Pressure Drop}
 
@@ -78,7 +82,7 @@ The pressure drops across the nasal cavities can also be seen in Figure \ref{fig
 
 The pressure drops can be seen in Figure \ref{tab:pvv} to decrease in relation to the volume of the cavity. This fits well with the findings of previous experimental studies looking at pressure drops across nasal cavity models, as can be seen from the comparison with results from \cite{Garcia2007} and \cite{Kelly2004}, both displayed in figure \ref{tab:pvv}.
 
-  \begin{table} \label{tab:pvv}
+  \begin{table} 
     \centering
   \pgfplotstableset{
   every head row/.style={before row=\toprule,after row=\midrule},
@@ -90,11 +94,13 @@ The pressure drops can be seen in Figure \ref{tab:pvv} to decrease in relation t
       display columns/0/.style={string type},
       col sep=comma]{images/prvsflow.txt}
   \caption{Variation of pressure drop with flow rate (m/s)}
+  \label{tab:pvv}
 \end{table}
 
-\begin{figure} \label{fig:stpr}
+\begin{figure} 
   \includegraphics[width=\textwidth]{statpres}
   \caption{area versus distance across the four nasal cavities with a series of examples from the literature}
+  \label{fig:stpr}
 \end{figure}
 
 \section{Wall Shear Stress}
@@ -106,40 +112,46 @@ From Figure \ref{fig:wax}, Wall shear stress can be seen to be more pronounced i
 
 Figures \ref{fig:wcst} and \ref{fig:wcst} show the distribution of the wall shear stress around the valve and turbinate regions. The valve region - considered of particular sigtnificance to the development of flow features within the nasal cavity \cite{Lindemann2008} – shows significant variation in wall shear stress concentration, with NC07 and NC09 presenting a very even distribution of wall shear stress, in contrast to NC04 or NC05 which show wall shear more pronounced around the opening from the vestibule. Similar variations between models can also be seen in the distribution within the turbinal region. 
 
-\begin{figure} \label{fig:wcont}
+\begin{figure} 
   \includegraphics[width=\textwidth]{wsscont}
   \caption{isometric views of the five cavities colored by Wall shear stress}
+    \label{fig:wcont}
 \end{figure}
 
-\begin{figure} \label{fig:wax}
+\begin{figure} 
   \includegraphics[width=\textwidth]{axialwss}
   \caption{coronal area weighted average of wall shear stress plotted as a function of distance from the entrance to the cavity across the saggital axis}
+  \label{fig:wax}
 \end{figure}
 
-\begin{figure} \label{fig:wcs}
+\begin{figure} 
   \includegraphics[width=\textwidth]{wsscsvalve}
   \caption{wall shear stress around the perimeter of the nasal valve as a function of normalised distance. See the colour scale for precise matching of graph points to location on the cavity wall. Points A and B represent the highest WSS peaks within a given cross section}
+  \label{fig:wcs}
 \end{figure}
 
-\begin{figure} \label{fig:wcst}
+\begin{figure} 
   \includegraphics[width=\textwidth]{wsscsturbinal}
   \caption{wall shear stress around the perimeter of the turbinal region as a function of normalised distance. See the colour scale for precise matching of graph points to location on the cavity wall. Points A and B represent the highest WSS peaks within a given cross section}
+  \label{fig:wcst}
 \end{figure}
 
 \section{Velocity}
 
-Some discrepancies can be observed in the airflow contours between the models of different capacities in Figure \ref{fig:vcc}. Note the more even distribution of sagittal airflow in the more voluminous models, particularly notable in NC07 and NC09, when compared with the narrower cavities such as NC04 or NC05. This is particularly prominent in the valve and Turbinal regions. The increasing vorticity seen across the models of increasing volume – particularly in the valve region – is epitomised in the atrophic rhinitis model from Garcia et al\ref{Garcia2007}.
+Some discrepancies can be observed in the airflow contours between the models of different capacities in Figure \ref{fig:vcc}. Note the more even distribution of sagittal airflow in the more voluminous models, particularly notable in NC07 and NC09, when compared with the narrower cavities such as NC04 or NC05. This is particularly prominent in the valve and Turbinal regions. The increasing vorticity seen across the models of increasing volume – particularly in the valve region – is epitomised in the atrophic rhinitis model from Garcia et al\cite{Garcia2007}.
 
 The streamlines show a reduced linearity to the flow as the cavities increase in volume; this is particularly evident in the valve and nasopharynx reasons. This varies somewhat from the atrophic rhinitis model, where the most prominent turbulence is in the lower meatus. This is probably related to the significant degeneration seen in the turbinal region of the rhinitis model.
 
-\begin{figure} \label{fig:vsl}
+\begin{figure} 
   \includegraphics[width=\textwidth]{streamlines}
   \caption{streamlines seeded uniformly across the entrance to the nasal cavity, coloured by velocity magnitude, normalised across for the range of each cavity}
+  \label{fig:vsl}
 \end{figure}
 
-\begin{figure} \label{fig:vcc}
+\begin{figure} 
   \includegraphics[width=\textwidth]{coroconts}
   \caption{Coronal cross sections, taken at 8 equidistant locations across the sagittal axis, coloured by normalised velocity magnitude}
+  \label{fig:vcc}
 \end{figure}
 
 \section{Heat and Vapour Transfer}
