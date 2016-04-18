@@ -79,20 +79,38 @@ The navier stokes equations, upon which Computational Fluid Dynamics is based (s
 There are many types of mesh structure that can be employed; all of them have their own advantages and disadvantages. 
 
 \begin{itemize}
-  \item{Structured meshes} 
+  \item[Structured meshes]
     by definition, are divided into segments of uniform size and shape. It is characterised by cells posessing either four nodal corner points in two dimensions, or eight three. The points are mutually orthogonal and cartesionally defined. Being defined in this relatively simple way facilitates a higher level of computational efficiency. It is, however, limited in the level of structural complexity that it can accomodate.
 
-  \item{Unstructured Meshes}
+  \item[Unstructured Meshes]
     The geometries encountered in the respiratory system are generally too complex to be effectively discretised in a structured manner; in cases such as these unstructured meshes can be used to acommodate the complexities of the given geometry. Unstructured meshes - usually constructed from triangles or tetrahedra - do not fit a regular pattern, and they do not have coordinate lines corresponding to curvilinear directions. Because of this, the solving of compuations over unstructured domains is generally more computationally intensive, however with modern advances in computers this has become less significant an issue in many cases.
 
-  \item{Hybrid meshes}
+  \item[Hybrid meshes]
     One disadvantage to the use of unstructured meshes is that they tent to show less accuracy near the wall. One commonly applied solution is the use of hexahedral elements near the wall, with the rest of the volume filled with unstructured - usually tetrahedral - elements. This method tends to improve the accuracy of near wall computations. One draw back of this method is that the prism layers can break down in the vicinity of excessively contoured walls. In this study this is the mesh type that is employed.
 
 \end{itemize}
 
 \begin{figure}
+  \begin{subfigure}[t]{0.3\textwidth}
+    \includegraphics[width=\textwidth]{ogrid}
+      \caption{structured o-grid}
+    \label{strucmesh}
+  \end{subfigure}%
+  ~%
+  \begin{subfigure}[t]{0.3\textwidth}
+    \includegraphics[width=\textwidth]{unstructuredmesh}
+    \caption{unstructured}
+    \label{unstrucmesh}
+  \end{subfigure}%
+  ~%
+  \begin{subfigure}[t]{0.3\textwidth}
+    \includegraphics[width=\textwidth]{hybridmesh}
+    \caption{hybrid}
+    \label{unstrucmesh}
+  \end{subfigure}
 
-  \caption{Examples of the mesh types described in section \ref{mtypes}} \label{fig:struct}
+  \caption{Examples of the mesh types described in section \ref{mtypes}} 
+  \label{fig:struct}
 \end{figure}
 
 \subsection{Meshing algorithms}
@@ -102,7 +120,7 @@ There are various meshing algorithms available, each with their own strengths an
 
 The quality of a generated mesh is dependant on its warp angle, skewness and aspect ratio. For a quadrilateral cell, as shown in figure \ref{fig:mqual}, the aspect ratio of the cell is defined as $AR = \frac{\Delta y} {\Delta x}$. Within the interior region, the $AR$ should be maintained within the range $0.2 < AR < 5$. This can be somewhat relaxed, however, in the vicinity of the wall.
 
-Mesh skewness is defined as the extent to which it deviates in shape from the ideal. This is a squate for quadrilateral cells, or an equilateral triangle for triangle or tetrahedral cells. It is simple quantified for tiangles and tetrahedrals as $\frac{\theta ideal - \theta actual} {\theta ideal}$ (see figure \ref{fig:mqual} for theta).
+Mesh skewness is defined as the extent to which it deviates in shape from the ideal. This is a square for quadrilateral cells, or an equilateral triangle for triangle or tetrahedral cells. It is simple quantified for tiangles and tetrahedrals as $\frac{\theta ideal - \theta actual} {\theta ideal}$ (see figure \ref{fig:mqual} for theta).
 
 Many grid generation packages contain specific algorithms and/or functions for improving mesh quality. The gradient of mesh size variation should not exceed 1.2, as higher variations can cause problems in convergance.
 

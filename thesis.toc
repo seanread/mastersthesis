@@ -21,9 +21,9 @@
 \contentsline {subsection}{\numberline {3.2.1}Introduction}{18}{subsection.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}Mesh Types}{18}{subsection.3.2.2}
 \contentsline {subsection}{\numberline {3.2.3}Meshing algorithms}{19}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}Quality}{19}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.4}Quality}{20}{subsection.3.2.4}
 \contentsline {subsection}{\numberline {3.2.5}Mesh Independence}{20}{subsection.3.2.5}
-\contentsline {subsection}{\numberline {3.2.6}Meshing of the Nasal Cavity}{20}{subsection.3.2.6}
+\contentsline {subsection}{\numberline {3.2.6}Meshing of the Nasal Cavity}{21}{subsection.3.2.6}
 \contentsline {chapter}{\numberline {4}CFD fundamentals}{22}{chapter.4}
 \contentsline {section}{\numberline {4.1}Fluid dynamics}{22}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Mass Conservation}{22}{subsection.4.1.1}
