@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.4.5)  18 APR 2016 14:26
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.4.5)  19 APR 2016 19:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1187,7 +1187,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 20.
 \c__siunitx_mathtt_int=\count284
 
-<images/rmit.jpg, id=167, 387.6081pt x 173.6889pt>
+<images/rmit.jpg, id=183, 387.6081pt x 173.6889pt>
 File: images/rmit.jpg Graphic file (type jpg)
  <use images/rmit.jpg>
 Package pdftex.def Info: images/rmit.jpg used on input line 46.
@@ -1236,7 +1236,7 @@ Chapter 3.
 (./chapters/chapter3.tex [15
 
 ]
-<images/grayscale.png, id=437, 1018.80624pt x 427.5975pt>
+<images/grayscale.png, id=458, 1018.80624pt x 427.5975pt>
 File: images/grayscale.png Graphic file (type png)
 
 <use images/grayscale.png>
@@ -1249,20 +1249,20 @@ sep-a-rated ac-cord-ing their greyscale
  []
 
 [16 <./images/grayscale.png>]
-<images/flowchart.png, id=445, 987.69pt x 822.07124pt>
+<images/flowchart.png, id=465, 987.69pt x 822.07124pt>
 File: images/flowchart.png Graphic file (type png)
 
 <use images/flowchart.png>
 Package pdftex.def Info: images/flowchart.png used on input line 45.
 (pdftex.def)             Requested size: 345.0pt x 287.13968pt.
  [17 <./images/flowchart.png>]
-<images/slicer.png, id=452, 1927.2pt x 1084.05pt>
+<images/slicer.png, id=472, 1927.2pt x 1084.05pt>
 File: images/slicer.png Graphic file (type png)
  <use images/slicer.png>
 Package pdftex.def Info: images/slicer.png used on input line 57.
 (pdftex.def)             Requested size: 172.5pt x 97.03096pt.
 
-<images/geomagic.png, id=453, 1927.2pt x 1084.05pt>
+<images/geomagic.png, id=473, 1927.2pt x 1084.05pt>
 File: images/geomagic.png Graphic file (type png)
  <use images/geomagic.png>
 Package pdftex.def Info: images/geomagic.png used on input line 63.
@@ -1273,20 +1273,20 @@ Overfull \hbox (4.44443pt too wide) in paragraph at lines 56--67
  []
 
 [18 <./images/slicer.png> <./images/geomagic.png>]
-<images/ogrid.png, id=466, 301.125pt x 273.02pt>
+<images/ogrid.png, id=486, 301.125pt x 273.02pt>
 File: images/ogrid.png Graphic file (type png)
  <use images/ogrid.png>
 Package pdftex.def Info: images/ogrid.png used on input line 95.
 (pdftex.def)             Requested size: 103.50105pt x 93.84206pt.
 
-<images/unstructuredmesh.jpg, id=467, 177.7842pt x 158.0304pt>
+<images/unstructuredmesh.jpg, id=487, 177.7842pt x 158.0304pt>
 File: images/unstructuredmesh.jpg Graphic file (type jpg)
 
 <use images/unstructuredmesh.jpg>
 Package pdftex.def Info: images/unstructuredmesh.jpg used on input line 101.
 (pdftex.def)             Requested size: 103.50105pt x 92.00009pt.
 
-<images/hybridmesh.png, id=468, 764.8575pt x 757.83125pt>
+<images/hybridmesh.png, id=488, 764.8575pt x 757.83125pt>
 File: images/hybridmesh.png Graphic file (type png)
 
 <use images/hybridmesh.png>
@@ -1294,19 +1294,19 @@ Package pdftex.def Info: images/hybridmesh.png used on input line 107.
 (pdftex.def)             Requested size: 103.50105pt x 102.54564pt.
  [19 <./images/ogrid.png (PNG copy)> <./images/unstructuredmesh.jpg> <./images/
 hybridmesh.png (PNG copy)>]
-<images/mqual.png, id=478, 586.8324pt x 184.5294pt>
+<images/mqual.png, id=498, 586.8324pt x 184.5294pt>
 File: images/mqual.png Graphic file (type png)
  <use images/mqual.png>
 Package pdftex.def Info: images/mqual.png used on input line 128.
 (pdftex.def)             Requested size: 345.0pt x 108.48846pt.
 
-[20 <./images/mqual.png>] <images/mesh2.png, id=497, 1535.7375pt x 811.03pt>
+[20 <./images/mqual.png>] <images/mesh2.png, id=517, 1535.7375pt x 811.03pt>
 File: images/mesh2.png Graphic file (type png)
 
 <use images/mesh2.png>
 Package pdftex.def Info: images/mesh2.png used on input line 151.
 (pdftex.def)             Requested size: 172.5pt x 91.09462pt.
- <images/mesh1.png, id=499, 1535.7375pt x 811.03pt>
+ <images/mesh1.png, id=519, 1535.7375pt x 811.03pt>
 File: images/mesh1.png Graphic file (type png)
 
 <use images/mesh1.png>
@@ -1317,13 +1317,13 @@ Overfull \hbox (2.22221pt too wide) in paragraph at lines 150--161
 [][] [] 
  []
 
-<images/mesh3.png, id=500, 1535.7375pt x 811.03pt>
+<images/mesh3.png, id=520, 1535.7375pt x 811.03pt>
 File: images/mesh3.png Graphic file (type png)
  <use images/mesh3.png>
 Package pdftex.def Info: images/mesh3.png used on input line 163.
 (pdftex.def)             Requested size: 172.5pt x 91.09462pt.
 
-<images/mesh4.png, id=501, 1535.7375pt x 811.03pt>
+<images/mesh4.png, id=521, 1535.7375pt x 811.03pt>
 File: images/mesh4.png Graphic file (type png)
  <use images/mesh4.png>
 Package pdftex.def Info: images/mesh4.png used on input line 169.
@@ -1342,37 +1342,44 @@ Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
  [22
 
-] [23] [24]) [25]
+] [23] [24] [25]
+<images/unstrfv.png, id=579, 693.59125pt x 226.8475pt>
+File: images/unstrfv.png Graphic file (type png)
+
+<use images/unstrfv.png>
+Package pdftex.def Info: images/unstrfv.png used on input line 173.
+(pdftex.def)             Requested size: 345.0pt x 112.83849pt.
+) [26 <./images/unstrfv.png>]
 Chapter 5.
 (./chapters/chapter5.tex
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
- [26
+ [27
 
 ]
-<images/geometries.png, id=573, 3727.526pt x 1362.691pt>
+<images/geometries.png, id=601, 3727.526pt x 1362.691pt>
 File: images/geometries.png Graphic file (type png)
 
 <use images/geometries.png>
 Package pdftex.def Info: images/geometries.png used on input line 12.
 (pdftex.def)             Requested size: 345.0pt x 126.10931pt.
 
-<images/Silhouettes.png, id=574, 553.267pt x 585.387pt>
+<images/Silhouettes.png, id=602, 553.267pt x 585.387pt>
 File: images/Silhouettes.png Graphic file (type png)
 
 <use images/Silhouettes.png>
 Package pdftex.def Info: images/Silhouettes.png used on input line 17.
 (pdftex.def)             Requested size: 345.0pt x 365.03526pt.
 
-<images/Areavsdistance.png, id=575, 502.12593pt x 350.81062pt>
+<images/Areavsdistance.png, id=603, 502.12593pt x 350.81062pt>
 File: images/Areavsdistance.png Graphic file (type png)
 
 <use images/Areavsdistance.png>
 Package pdftex.def Info: images/Areavsdistance.png used on input line 24.
 (pdftex.def)             Requested size: 345.0pt x 241.04788pt.
 
-<images/regions.png, id=576, 734.94916pt x 403.97705pt>
+<images/regions.png, id=604, 734.94916pt x 403.97705pt>
 File: images/regions.png Graphic file (type png)
 
 <use images/regions.png>
@@ -1397,7 +1404,7 @@ Overfull \hbox (60.27612pt too wide) in paragraph at lines 56--65
 [][] 
  []
 
-<images/areavsperimeter.png, id=596, 693.59125pt x 589.20125pt>
+<images/areavsperimeter.png, id=624, 693.59125pt x 589.20125pt>
 File: images/areavsperimeter.png Graphic file (type png)
 
 <use images/areavsperimeter.png>
@@ -1408,15 +1415,15 @@ Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
 PGFPlots: reading {images/prvsflow.txt}
 
-<images/statpres.png, id=605, 956.57375pt x 760.8425pt>
+<images/statpres.png, id=633, 956.57375pt x 760.8425pt>
 File: images/statpres.png Graphic file (type png)
 
 <use images/statpres.png>
 Package pdftex.def Info: images/statpres.png used on input line 101.
 (pdftex.def)             Requested size: 345.0pt x 274.4023pt.
- [27 <./images/geometries.png>] [28 <./images/Silhouettes.png>] [29 <./images/A
-reavsdistance.png> <./images/regions.png>] [30]
-[31 <./images/areavsperimeter.png>] [32 <./images/statpres.png>]
+ [28 <./images/geometries.png>] [29 <./images/Silhouettes.png>] [30 <./images/A
+reavsdistance.png> <./images/regions.png>] [31]
+[32 <./images/areavsperimeter.png>] [33 <./images/statpres.png>]
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
@@ -1424,27 +1431,27 @@ Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
 
-<images/wsscont.png, id=651, 634.37pt x 778.107pt>
+<images/wsscont.png, id=679, 634.37pt x 778.107pt>
 File: images/wsscont.png Graphic file (type png)
  <use images/wsscont.png>
 Package pdftex.def Info: images/wsscont.png used on input line 116.
 (pdftex.def)             Requested size: 345.0pt x 423.18724pt.
 
-<images/axialwss.png, id=652, 1037.8775pt x 819.06pt>
+<images/axialwss.png, id=680, 1037.8775pt x 819.06pt>
 File: images/axialwss.png Graphic file (type png)
 
 <use images/axialwss.png>
 Package pdftex.def Info: images/axialwss.png used on input line 122.
 (pdftex.def)             Requested size: 345.0pt x 272.26529pt.
 
-<images/wsscsvalve.png, id=653, 598.09656pt x 598.09656pt>
+<images/wsscsvalve.png, id=681, 598.09656pt x 598.09656pt>
 File: images/wsscsvalve.png Graphic file (type png)
 
 <use images/wsscsvalve.png>
 Package pdftex.def Info: images/wsscsvalve.png used on input line 128.
 (pdftex.def)             Requested size: 345.0pt x 344.99799pt.
 
-<images/wsscsturbinal.png, id=654, 598.09656pt x 541.09047pt>
+<images/wsscsturbinal.png, id=682, 598.09656pt x 541.09047pt>
 File: images/wsscsturbinal.png Graphic file (type png)
 
 <use images/wsscsturbinal.png>
@@ -1457,28 +1464,28 @@ Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
 
-<images/streamlines.png, id=657, 661.672pt x 695.398pt>
+<images/streamlines.png, id=685, 661.672pt x 695.398pt>
 File: images/streamlines.png Graphic file (type png)
 
 <use images/streamlines.png>
 Package pdftex.def Info: images/streamlines.png used on input line 146.
 (pdftex.def)             Requested size: 345.0pt x 362.58525pt.
 
-<images/coroconts.png, id=658, 635.976pt x 729.927pt>
+<images/coroconts.png, id=686, 635.976pt x 729.927pt>
 File: images/coroconts.png Graphic file (type png)
 
 <use images/coroconts.png>
 Package pdftex.def Info: images/coroconts.png used on input line 152.
 (pdftex.def)             Requested size: 345.0pt x 395.95903pt.
-) [33] [34 <./images/wsscont.png>] [35 <./images/axialwss.png>] [36 <./images/w
-sscsvalve.png>] [37 <./images/wsscsturbinal.png>]
-[38 <./images/streamlines.png>] [39 <./images/coroconts.png>] [40]
+) [34] [35 <./images/wsscont.png>] [36 <./images/axialwss.png>] [37 <./images/w
+sscsvalve.png>] [38 <./images/wsscsturbinal.png>]
+[39 <./images/streamlines.png>] [40 <./images/coroconts.png>] [41]
 Chapter 6.
-(./chapters/discussion.tex) [41
+(./chapters/discussion.tex [42
 
-]
+]) [43]
 Chapter 7.
-(./chapters/conclusion.tex) (./thesis.bbl [42
+(./chapters/conclusion.tex) (./thesis.bbl [44
 
 ]
 Missing character: There is no Ã in font cmr10!
@@ -1487,7 +1494,7 @@ Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¡ in font cmr10!
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ­ in font cmr10!
- [43
+ [45
 
 ]
 Underfull \hbox (badness 1184) in paragraph at lines 118--124
@@ -1495,18 +1502,24 @@ Underfull \hbox (badness 1184) in paragraph at lines 118--124
  M.
  []
 
-[44]
+
+Underfull \hbox (badness 2027) in paragraph at lines 131--138
+[]\OT1/cmr/m/n/10 Joerg Lin-de-mann, Evan-gelia Tsakiropoulou, Tilman Keck, Ric
+hard
+ []
+
+[46]
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¶ in font cmr10!
- [45])
+ [47] [48])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 103.
- [46]
+ [49]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 103.
  (./thesis.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 103.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 103.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 76470B0CD9DC10E384F339AED308ADB8;2552.
+(rerunfilecheck)             Checksum: 1474AD6230BB1D1C26393B0BEF136C2B;2827.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -1514,10 +1527,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 103.
  ) 
 Here is how much of TeX's memory you used:
- 31608 strings out of 493304
- 721174 string characters out of 6139872
- 811176 words of memory out of 5000000
- 34316 multiletter control sequences out of 15000+600000
+ 31629 strings out of 493304
+ 721480 string characters out of 6139872
+ 811343 words of memory out of 5000000
+ 34327 multiletter control sequences out of 15000+600000
  11789 words of font info for 43 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  70i,16n,76p,10404b,824s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1537,10 +1550,10 @@ m/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on thesis.pdf (47 pages, 9693222 bytes).
+Output written on thesis.pdf (50 pages, 9744488 bytes).
 PDF statistics:
- 818 PDF objects out of 1000 (max. 8388607)
- 699 compressed objects within 7 object streams
- 175 named destinations out of 1000 (max. 500000)
- 458 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 870 PDF objects out of 1000 (max. 8388607)
+ 745 compressed objects within 8 object streams
+ 184 named destinations out of 1000 (max. 500000)
+ 495 words of extra memory for PDF output out of 10000 (max. 10000000)
 

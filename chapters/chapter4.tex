@@ -157,3 +157,26 @@ Where $C_{H_{2} O}$ is the concentration of water vapour and $D_{H_{2} O}$ is th
   \caption{water vapour moving through a 2D element}
 \end{figure}
 
+\section{Turbulence}
+Do we want to include a brief section on turbulence? since all of the simulations we are analysing are laminar I thought probably not worth it, what do you think?
+\section{Solving the governing equations}
+
+The conservation equations outlined earlier in this chapter are nonlinear partial differential equations which, for complex domains such as the nasal cavity geometry, have no analytical solution; they must therefore be approximated algebraically and solved numerically.
+
+\subsection{Discretisation}
+
+Approximating, or discretising a system to make it numerically solvable can be done in many ways. One of the more common methods in modern solvers is the finite volume method, which can be applied to unstructured as well as structured meshes, making it particularly suited to complex geometries such as that of the nasal cavity.
+
+The Finite Volume Method discretises the system into a series of volumes. The fluxes of relevant variables through the different faces of each element are then treated as a discrete system, which is able to be solved numerically.
+
+\begin{figure}
+  \includegraphics[width=\textwidth]{unstrfv}
+  \caption{representation of mesh discretised with finite volume method}
+  \label{usfv}
+\end{figure}
+
+Finite volume methods can tend to cause artificial, or numerical, diffusion if the mesh is of low quality. It is thus necessary to follow proper meshing practices, similar to those outlined in section \ref{Meshing}.
+
+\subsection{Numerical Solution}
+
+Once the system has been discretised, a system of linear equations can be developed to describe the system. These equations can be solved in one of several methods. These methods can generally be divided into two categories: either direct or iterative. In general, for large complex domains such as the nasal cavity models presented in this paper, iterative methods are the only way to derive a solution.

@@ -30,11 +30,15 @@
 \contentsline {subsection}{\numberline {4.1.2}Momentum Conservation}{23}{subsection.4.1.2}
 \contentsline {subsection}{\numberline {4.1.3}Energy Conservation}{24}{subsection.4.1.3}
 \contentsline {section}{\numberline {4.2}Humidity}{25}{section.4.2}
-\contentsline {chapter}{\numberline {5}Results}{26}{chapter.5}
-\contentsline {section}{\numberline {5.1}Geometry Variations}{26}{section.5.1}
-\contentsline {section}{\numberline {5.2}Pressure Drop}{27}{section.5.2}
-\contentsline {section}{\numberline {5.3}Wall Shear Stress}{33}{section.5.3}
-\contentsline {section}{\numberline {5.4}Velocity}{33}{section.5.4}
-\contentsline {section}{\numberline {5.5}Heat and Vapour Transfer}{40}{section.5.5}
-\contentsline {chapter}{\numberline {6}Discussion}{41}{chapter.6}
-\contentsline {chapter}{\numberline {7}Conclusion}{42}{chapter.7}
+\contentsline {section}{\numberline {4.3}Turbulence}{25}{section.4.3}
+\contentsline {section}{\numberline {4.4}Solving the governing equations}{25}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Discretisation}{26}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Numerical Solution}{26}{subsection.4.4.2}
+\contentsline {chapter}{\numberline {5}Results}{27}{chapter.5}
+\contentsline {section}{\numberline {5.1}Geometry Variations}{27}{section.5.1}
+\contentsline {section}{\numberline {5.2}Pressure Drop}{28}{section.5.2}
+\contentsline {section}{\numberline {5.3}Wall Shear Stress}{34}{section.5.3}
+\contentsline {section}{\numberline {5.4}Velocity}{34}{section.5.4}
+\contentsline {section}{\numberline {5.5}Heat and Vapour Transfer}{41}{section.5.5}
+\contentsline {chapter}{\numberline {6}Discussion}{42}{chapter.6}
+\contentsline {chapter}{\numberline {7}Conclusion}{44}{chapter.7}
