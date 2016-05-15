@@ -1,7 +1,6 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.4.25)  26 APR 2016 00:45
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.4.25)  15 MAY 2016 20:28
 entering extended mode
  restricted \write18 enabled.
- file:line:error style messages enabled.
  %&-line parsing enabled.
 **thesis
 (./thesis.tex
@@ -1396,31 +1395,32 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 50.
 
-Overfull \hbox (64.99855pt too wide) in paragraph at lines 47--56
+Overfull \hbox (80.77637pt too wide) in paragraph at lines 47--56
 [][] 
  []
 
 
-Overfull \hbox (60.27612pt too wide) in paragraph at lines 57--66
+Overfull \hbox (30.2485pt too wide) in paragraph at lines 57--66
 [][] 
  []
 
-<images/areavsperimeter.png, id=624, 1169.36874pt x 614.295pt>
+PGFPlots: reading {tables/MCA.txt}
+<images/areavsperimeter.png, id=618, 1169.36874pt x 614.295pt>
 File: images/areavsperimeter.png Graphic file (type png)
 
 <use images/areavsperimeter.png>
-Package pdftex.def Info: images/areavsperimeter.png used on input line 76.
+Package pdftex.def Info: images/areavsperimeter.png used on input line 85.
 (pdftex.def)             Requested size: 345.0pt x 181.23419pt.
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
-PGFPlots: reading {images/prvsflow.txt}
+PGFPlots: reading {tables/prvsflow.txt}
 
-<images/statpres.png, id=633, 1336.995pt x 758.835pt>
+<images/statpres.png, id=627, 1336.995pt x 758.835pt>
 File: images/statpres.png Graphic file (type png)
 
 <use images/statpres.png>
-Package pdftex.def Info: images/statpres.png used on input line 102.
+Package pdftex.def Info: images/statpres.png used on input line 111.
 (pdftex.def)             Requested size: 345.0pt x 195.81035pt.
  [28 <./images/geometries.png>] [29 <./images/Silhouettes.png>] [30 <./images/A
 reavsdistance.png> <./images/regions.png>] [31 <./images/areavsperimeter.png>] 
@@ -1432,31 +1432,31 @@ Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
 
-<images/wsscont.png, id=676, 634.37pt x 778.107pt>
+<images/wsscont.png, id=670, 634.37pt x 778.107pt>
 File: images/wsscont.png Graphic file (type png)
  <use images/wsscont.png>
-Package pdftex.def Info: images/wsscont.png used on input line 117.
+Package pdftex.def Info: images/wsscont.png used on input line 126.
 (pdftex.def)             Requested size: 345.0pt x 423.18724pt.
 
-<images/axialwss.png, id=677, 1336.995pt x 758.835pt>
+<images/axialwss.png, id=671, 1336.995pt x 758.835pt>
 File: images/axialwss.png Graphic file (type png)
 
 <use images/axialwss.png>
-Package pdftex.def Info: images/axialwss.png used on input line 123.
+Package pdftex.def Info: images/axialwss.png used on input line 132.
 (pdftex.def)             Requested size: 345.0pt x 195.81035pt.
 
-<images/wsscsvalve.png, id=678, 598.09656pt x 598.09656pt>
+<images/wsscsvalve.png, id=672, 598.09656pt x 598.09656pt>
 File: images/wsscsvalve.png Graphic file (type png)
 
 <use images/wsscsvalve.png>
-Package pdftex.def Info: images/wsscsvalve.png used on input line 129.
+Package pdftex.def Info: images/wsscsvalve.png used on input line 138.
 (pdftex.def)             Requested size: 345.0pt x 344.99799pt.
 
-<images/wsscsturbinal.png, id=679, 598.09656pt x 541.09047pt>
+<images/wsscsturbinal.png, id=673, 598.09656pt x 541.09047pt>
 File: images/wsscsturbinal.png Graphic file (type png)
 
 <use images/wsscsturbinal.png>
-Package pdftex.def Info: images/wsscsturbinal.png used on input line 135.
+Package pdftex.def Info: images/wsscsturbinal.png used on input line 144.
 (pdftex.def)             Requested size: 345.0pt x 312.11536pt.
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
@@ -1465,31 +1465,31 @@ Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
 
-<images/streamlines.png, id=682, 661.672pt x 695.398pt>
+<images/streamlines.png, id=676, 661.672pt x 695.398pt>
 File: images/streamlines.png Graphic file (type png)
 
 <use images/streamlines.png>
-Package pdftex.def Info: images/streamlines.png used on input line 147.
+Package pdftex.def Info: images/streamlines.png used on input line 156.
 (pdftex.def)             Requested size: 345.0pt x 362.58525pt.
 
-<images/coroconts.png, id=683, 635.976pt x 729.927pt>
+<images/coroconts.png, id=677, 635.976pt x 729.927pt>
 File: images/coroconts.png Graphic file (type png)
 
 <use images/coroconts.png>
-Package pdftex.def Info: images/coroconts.png used on input line 153.
+Package pdftex.def Info: images/coroconts.png used on input line 162.
 (pdftex.def)             Requested size: 345.0pt x 395.95903pt.
  [33] [34 <./images/wsscont.png>]
-<images/h2o.png, id=701, 1336.995pt x 758.835pt>
+<images/h2o.png, id=695, 1336.995pt x 758.835pt>
 File: images/h2o.png Graphic file (type png)
  <use images/h2o.png>
-Package pdftex.def Info: images/h2o.png used on input line 163.
+Package pdftex.def Info: images/h2o.png used on input line 172.
 (pdftex.def)             Requested size: 345.0pt x 195.81035pt.
 
-<images/Temperature.png, id=702, 1336.995pt x 758.835pt>
+<images/Temperature.png, id=696, 1336.995pt x 758.835pt>
 File: images/Temperature.png Graphic file (type png)
 
 <use images/Temperature.png>
-Package pdftex.def Info: images/Temperature.png used on input line 170.
+Package pdftex.def Info: images/Temperature.png used on input line 179.
 (pdftex.def)             Requested size: 345.0pt x 195.81035pt.
 ) [35 <./images/axialwss.png>] [36 <./images/wsscsvalve.png>] [37 <./images/wss
 csturbinal.png>] [38 <./images/streamlines.png>]
@@ -1542,10 +1542,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 103.
  ) 
 Here is how much of TeX's memory you used:
- 31642 strings out of 493304
- 721730 string characters out of 6139871
- 811560 words of memory out of 5000000
- 34337 multiletter control sequences out of 15000+600000
+ 31656 strings out of 493304
+ 722146 string characters out of 6139871
+ 811562 words of memory out of 5000000
+ 34348 multiletter control sequences out of 15000+600000
  11789 words of font info for 43 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  70i,16n,76p,10404b,824s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1565,10 +1565,10 @@ m/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on thesis.pdf (49 pages, 10267039 bytes).
+Output written on thesis.pdf (49 pages, 10280287 bytes).
 PDF statistics:
- 882 PDF objects out of 1000 (max. 8388607)
- 753 compressed objects within 8 object streams
+ 876 PDF objects out of 1000 (max. 8388607)
+ 747 compressed objects within 8 object streams
  185 named destinations out of 1000 (max. 500000)
  505 words of extra memory for PDF output out of 10000 (max. 10000000)
 

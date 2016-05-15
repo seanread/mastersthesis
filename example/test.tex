@@ -1,0 +1,12 @@
+\documentclass{article} 
+\usepackage{pgfplotstable,filecontents} 
+\begin{document} 
+\pgfplotstabletypeset[
+   col sep=comma,
+   display columns/2/.style={string type} % column count starts at 0, col 2 is third column
+]{example.txt}
+
+\bibliographystyle{plain}
+
+\bibliography{database}
+\end{document}

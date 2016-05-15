@@ -44,18 +44,18 @@ Minimal cross sectional area, shown in Table \ref{tab:mca}, is significant to fl
 \hline
 \end{tabular}
 \caption{ sectional volume, according to sections as seen in Figure \ref{fig:regions} ($ cm^3 $)}\label{tab:secvol}
-\begin{tabular}{lllllll}
- & \textbf{NC04} & \textbf{NC05} & \textbf{NC06} & \textbf{NC7} & \textbf{Xi et al.\cite{Xi2012}} & \textbf{Garcia et al.\cite{Garcia2007}}\\
+\begin{tabular}{llllllll}
+ & \textbf{NC04} & \textbf{NC05} & \textbf{NC06} & \textbf{NC07} &\textbf{NC09}& \textbf{Xi et al.} & \textbf{Garcia et al.}\\
  \cline{2-7}
-\textbf{Turbinal region} & 170.92 & 174.07& 190.44 & 163.44 & 112.59 & 133.50\footnote{includes vestibule} \\
-\textbf{Nasopharynx} & 12.20 & 12.80 & 25.23 & 40.42 & 40.93 & 31.46\\
-\textbf{vestibule} & 15.71 & 17.37 & 12.45 & 17.92 & 35.58 &  -\\
-\textbf{total} & 198.82 & 204.25 & 228.11 & 221.79 & 189.10 & 164.96\\
+\textbf{Turbinal region} & 170.92 & 174.07& 190.44 & 163.44 & 138.80 & 112.59 & 133.50\footnote{includes vestibule} \\
+\textbf{Nasopharynx} & 12.20 & 12.80 & 25.23 & 40.42 & 11.37 & 40.93 & 31.46\\
+\textbf{vestibule} & 15.71 & 17.37 & 12.45 & 17.92 & 46.96 & 35.58 &  -\\
+\textbf{total} & 198.82 & 204.25 & 228.11 & 221.79 & 197.192 & 189.10 & 164.96\\
 \hline
 \end{tabular}
 \caption{sectional surface area, according to sections shown in Figure \ref{fig:regions}($ cm^2 $)}\label{tab:secsa}
 \begin{tabular}{lllllll}
-& \textbf{NC04}  & \textbf{NC05} & \textbf{NC06} & \textbf{NC7} & \textbf{Xi et al.\cite{Xi2012}} & \textbf{Garcia et al.\cite{Garcia2007}}\\
+& \textbf{NC04}  & \textbf{NC05} & \textbf{NC06} & \textbf{NC7} & \textbf{Xi et al.} & \textbf{Garcia et al.}\\
  \cline{2-7}
 \textbf{Turbinal region} & 0.434 & 0.52 & 0.52 & 0.75 & 0.45 & 1.11\\
 \textbf{Nasopharynx} & 1.26 & 1.69 & 2.03 & 1.99 & 1.60 & 1.35\\
@@ -64,11 +64,20 @@ Minimal cross sectional area, shown in Table \ref{tab:mca}, is significant to fl
 \hline
 \end{tabular}
 \caption{Effective diameter $d_{eff} = \frac{4v}{a} (cm) $}\label{tab:deff}
-\begin{tabular}{lllllll}
-\textbf{NC04}& \textbf{NC05}& \textbf{NC06}&\textbf{ NC07}& \textbf{Xi et al.\cite{Xi2012}}& \textbf{Garcia et al.\cite{Garcia2007}}\\
-\hline
-0.83& 1.09& 1.80& 2.29& 1.17& 2.54
-\end{tabular}
+\centering
+
+  \pgfplotstableset{
+    every head row/.style={after row=\midrule},
+  column type={>{\fontseries{bx}\selectfont}c},
+  postproc cell content/.append style={
+  /pgfplots/table/@cell content/.add={\fontseries{\seriesdefault}\selectfont}{}}
+}
+  \pgfplotstabletypeset[
+      fixed zerofill,
+      precision=2,
+      col sep=comma,
+      display columns/0/.style={string type}
+      ]{tables/MCA.txt}
 \caption{Minimal axial cross sectional area $(cm^2)$}\label{tab:mca}
 \end{table}
 
@@ -93,7 +102,7 @@ The pressure drops can be seen in Figure \ref{tab:pvv} to decrease in relation t
       fixed zerofill,
       precision=2,
       display columns/0/.style={string type},
-      col sep=comma]{images/prvsflow.txt}
+      col sep=comma]{tables/prvsflow.txt}
   \caption{Variation of pressure drop with flow rate (m/s)}
   \label{tab:pvv}
 \end{table}
