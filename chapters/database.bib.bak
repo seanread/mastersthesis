@@ -21006,6 +21006,16 @@
   Url                      = {http://www.scopus.com/inward/record.url?eid=2-s2.0-0032005964&partnerID=40&md5=0c51bc8210afdbc80a55b953ce0dfd7d}
 }
 
+@Article{Yu2014,
+  Title                    = {Numerical analysis of the relationship between nasal structure and its function},
+  Author                   = {Yu, Shen and Sun, Xiu-zhen and Liu, Ying-xi},
+  Journal                  = {The Scientific World Journal},
+  Year                     = {2014},
+  Volume                   = {2014},
+
+  Publisher                = {Hindawi Publishing Corporation}
+}
+
 @InBook{Yule1978,
   Title                    = {Measurement of Particle Size in Sprays by the Automated Analysis of Spark Photographs},
   Author                   = {Yule, A.J. and Cox, N.W. and Chigier, N.A.},

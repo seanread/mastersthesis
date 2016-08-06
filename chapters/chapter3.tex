@@ -7,11 +7,11 @@ The reconstruction of the nasal cavity geometries can be very time consuming and
 
 \subsection{Non-invasive Medical Imaging}
 
-There are various forms of medical imaging that can be used for the identification of the nasal cavity geometry. Here a brief overview of Computed Tomography (CT), the form of medical imaging used for the nasal cavity geometries presented in this thesis.
+There are various forms of medical imaging that can be used for the identification of the nasal cavity geometry. Here we briefly overview of Computed Tomography (CT), the form of medical imaging used for the nasal cavity geometries presented in this thesis.
 
-CT scans use a series of x-rays taken at regular intervals within the required region. x-ray scans use photons sent in beams through the region of interest. These photons interact differently with the material that they encounter depending on its density. Electronic detectors feed the photon pattern emitted from the body in question to a computer, which uses this information to create images. These images are made up of pixels which are each assigned a grey scale value based on their x-ray attenuation coefficient. In medical imaging the Hounsfield scale is used, whereas in image processing the greyscale is numbered from black to white between 0 to 255. Figure \ref{fig:greyscale} shows an  
+CT scans use a series of x-rays taken at regular intervals within the required region. x-ray scans use photons sent in beams through the region of interest. These photons interact differently with the material that they encounter depending on its density. Electronic detectors feed the photon pattern emitted from the body in question to a computer, which uses this information to create images. These images are made up of pixels which are each assigned a grey scale value based on their x-ray attenuation coefficient. In medical imaging the Hounsfield scale is used, whereas in image processing the greyscale is numbered from black to white between 0 to 255. Figure \ref{fig:greyscale} shows an  example of how greyscale values are assigned to pixels in a ct image.
 
-\begin{figure}
+\begin{figure} 
   \includegraphics[width=1\textwidth]{grayscale.png}
 \caption{example of how greyscale values are assigned to pixels in a ct image} \label{fig:greyscale}
 \centering
@@ -19,8 +19,9 @@ CT scans use a series of x-rays taken at regular intervals within the required r
  
 \subsection{Image Segmentation} 
 
-On ce the CT scan has been outputted as a series of voxels, the anatomical geometries relevant to the project at hand can be extracted. To achieve this goal, the voxels that make up the relevant chapter of the data need to be identified somehow. This can be done manually - by going through the many slices that make up the ct scan and identifying the relevant areas - however this process is extremely time consuming.
-\ subsection{Segmentation Methods}
+Once the CT scan has been outputted as a series of voxels, the anatomical geometries relevant to the project at hand can be extracted. To achieve this goal, the voxels that make up the relevant chapter of the data need to be identified somehow. This can be done manually - by going through the many slices that make up the ct scan and identifying the relevant areas - however this process is extremely time consuming.
+
+\subsection{Segmentation Methods}
 
 Numerous algorithms have been developed for the purpose of automating the process; all of which have certain advantages and disadvantages. For the most part these algorithms can be subsumed in to three categories, presented below (in order of increasing complexity):
 
@@ -35,21 +36,21 @@ Numerous algorithms have been developed for the purpose of automating the proces
 \end{itemize}
 
 These methods and many more exist and are in active development. In addition, many of them are available for free online. The implementation of such algorithms and applying from first principles, however is quite a complex procedure. Fortunately many of these algorithms have already been implemented in software packages - of which commercial and open source variations are available - which are specifically compiled for working with medical imaging outputs. 
-
+ 
 \subsection{Preparation of Model for Meshing}
 
-Once the region in question has been extracted from the medical imaging output, it can be saved as some CAD format. There are certain criteria that need to be fulfilled by a CAD model before it can be read by 3d meshing software and used to create a mesh. It is often the case that when the data is exported from the medical imaging software is 'dirty'; that there are contradictory or arbitrary elements in the geometry. These elements need to be removed through the use of CAD software before the geometry is suitable for the creation of a useable 'clean' 3d mesh. Note that the geometry needs to contain also topological information in order to create a watertight mesh. The details of the process by which the geometry is prepared for meshing are described in Figure \ref{fig:segchart}.
+Once the region in question has been extracted from the medical imaging output, it can be saved as some CAD format. There are certain criteria that need to be fulfilled by a CAD model before it can be read by 3D meshing software and used to create a mesh. It is often the case when the data is exported from the medical imaging software that it is 'dirty'; that there are contradictory or arbitrary elements in the geometry. These elements need to be removed through the use of CAD software before the geometry is suitable for the creation of a useable 'clean' 3D mesh. Note that the geometry needs to contain also topological information in order to create a watertight mesh. The details of the process by which the geometry is prepared for meshing are described in Figure \ref{fig:segchart}.
 
 
 \begin{figure}
   \includegraphics[width=1\textwidth]{flowchart.png}
-\caption{Flow chart showing the process by which an anatomical geometry is prepared - with the help of medical imaging - for modeling with CFDs} \label{fig:segchart}
+\caption{Flow chart showing the process by which an anatomical geometry is prepared - with the help of medical imaging software - for solution via CFD codes} \label{fig:segchart}
 \centering
 \end{figure}
-
+ 
 \subsection{Summary} 
 
-Anatomical geometry reconstruction - including that of respiratory systems - begins with medical imaging of the area in question. The geometry is then extracted from the medical imaging data using one (or several) of the available extraction algorithms outlined above. After extraction, cleaning of the geometry with CAD software is generally necessary. It is necessary to ensure that the geometry is water-tight before it can be meshed. This chapter has given an overview of some of the more pertinent methods in current use for the reconstruction of anatomical geometries from medical imaging data. Figure \ref{fig:cavzamp} shows an example of the construction process.
+Anatomical geometry reconstruction - including that of the nasal cavity - begins with medical imaging of the area in question. The geometry is then extracted from the medical imaging data using one (or several) of the available extraction algorithms outlined above. After extraction, cleaning of the geometry with CAD software is generally necessary to ensure that the geometry is water-tight and 'clean' before it can be meshed. This chapter has given an overview of some of the more pertinent methods in current use for the reconstruction of anatomical geometries from medical imaging data. Figure \ref{fig:cavzamp} shows an example of the construction process.
 
 \begin{figure}[t!]
 
@@ -72,15 +73,15 @@ Anatomical geometry reconstruction - including that of respiratory systems - beg
 \section{Meshing} \label{Meshing}
 \subsection{Introduction}
 
-The navier stokes equations, upon which Computational Fluid Dynamics is based (see chapter \ref{cfd}), is unsolvable (in most instances), except by approximation. A given geometry is approximated, or discretised, as a series of points. The process by which these points are defined and related to one another is known as meshing; this in itself is a complex discipline under active research. In this chapter current methods are reviewed, and guidelines are given for developing quality meshes.
-
+The navier stokes equations, upon which Computational Fluid Dynamics is based (see chapter \ref{cfd}), is unsolvable (in most instances), except by approximation. In order to approximate a solution to a given system, its geometry mus be approximated, or discretised, as a series of points. The process by which these points are defined and related to one another is known as meshing; this in itself is a complex discipline under active research. In this chapter current methods are reviewed, and guidelines are given for developing quality meshes.
+%  到这儿了
 \subsection{Mesh Types} \label{mtypes}
 
-There are many types of mesh structure that can be employed; all of them have their own advantages and disadvantages. 
+There are many types of mesh that can be employed; all of them have their own advantages and disadvantages. 
 
 \begin{itemize}
   \item[Structured meshes]
-    by definition, are divided into segments of uniform size and shape. It is characterised by cells posessing either four nodal corner points in two dimensions, or eight three. The points are mutually orthogonal and cartesionally defined. Being defined in this relatively simple way facilitates a higher level of computational efficiency. It is, however, limited in the level of structural complexity that it can accomodate.
+    are divided into segments of uniform size and shape. It is characterised by cells posessing either four nodal corner points in two dimensions, or eight three. The points are mutually orthogonal and cartesionally defined. Being defined in this relatively simple way facilitates a higher level of computational efficiency. It is, however, limited in the level of structural complexity that it can accomodate.
 
   \item[Unstructured Meshes]
     The geometries encountered in the respiratory system are generally too complex to be effectively discretised in a structured manner; in cases such as these unstructured meshes can be used to acommodate the complexities of the given geometry. Unstructured meshes - usually constructed from triangles or tetrahedra - do not fit a regular pattern, and they do not have coordinate lines corresponding to curvilinear directions. Because of this, the solving of compuations over unstructured domains is generally more computationally intensive, however with modern advances in computers this has become less significant an issue in many cases.
@@ -131,10 +132,21 @@ Many grid generation packages contain specific algorithms and/or functions for i
 
 \subsection{Mesh Independence}
 
-A significant source of error in the solution of CFD problems is derived from the discretisation process; when a system is separated into a number of finite elements, for the purpose of Numerical solution, the solution that is obtained from its solution is an approximation. It is necessary, then, to ascertain the required resolution, or mesh size, required to calculate a result that approximates the exact solution to a satisfactory degree of accuracy. This is done by means of a mesh independence test. This entails the monitoring of one - or several - fluid flow parameters of interest to the study over a series of mesh sizes. Independence is said to have been achieved when the effect of mesh size on the selected flow variable(s) has become insignificant. Figure \ref{fig:mind} shows the results from the mesh independence test conducted for two of the five models presented in this thesis.
+A significant source of error in the solution of CFD problems is derived from the discretisation process; when a system is separated into a number of finite elements, for the purpose of Numerical solution, the solution that is obtained from its solution is an approximation. It is necessary, then, to ascertain the required resolution, or mesh size, required to calculate a result that approximates the exact solution to a satisfactory degree of accuracy. This is done by means of a mesh independence test. This entails the monitoring of one - or several - fluid flow parameters of interest to the study over a series of mesh sizes. Independence is said to have been achieved when the effect of mesh size on the selected flow variable(s) has become insignificant. Figure \ref{fig:mind} shows the results from the mesh independence test conducted for smallest and the largest of the five models presented in this thesis.
 
 \begin{figure}
 
+  \begin{subfigure}[t]{0.5\textwidth}
+    \includegraphics[width=\textwidth]{NC05mi}
+    \caption{NC05}
+    \label{fig:mi5}
+  \end{subfigure}%
+  ~%
+  \begin{subfigure}[t]{0.5\textwidth}
+    \includegraphics[width=\textwidth]{NC07mi}
+    \caption{NC07}
+    \label{fig:mi7}
+  \end{subfigure}
   \caption{mesh independence} \label{fig:mind}
 
 \end{figure}
