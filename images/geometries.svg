@@ -15,7 +15,7 @@
    viewBox="0 0 4960.6299 1771.6535"
    id="svg2"
    version="1.1"
-   inkscape:version="0.91 r"
+   inkscape:version="0.91 r13725"
    sodipodi:docname="geometries.svg">
   <defs
      id="defs4" />
@@ -27,13 +27,13 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.24748737"
-     inkscape:cx="2351.8892"
-     inkscape:cy="843.88008"
+     inkscape:cx="1667.0058"
+     inkscape:cy="835.79886"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1920"
-     inkscape:window-height="1028"
+     inkscape:window-width="2560"
+     inkscape:window-height="1389"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1" />
@@ -45,7 +45,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -145,7 +145,7 @@
            height="217.75517"
            x="1120"
            y="137.36783" /></flowRegion><flowPara
-         id="flowPara3349"></flowPara></flowRoot>    <text
+         id="flowPara3349" /></flowRoot>    <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:100px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="640.1167"
@@ -206,10 +206,10 @@
          sodipodi:role="line"
          id="tspan3353-8-0"
          x="3236.7866"
-         y="-598.0744">d) 74-yo</tspan><tspan
+         y="-598.0744">d) 64-yo</tspan><tspan
          sodipodi:role="line"
          x="3236.7866"
-         y="-473.07437"
+         y="-473.0744"
          id="tspan3355-5-7">    NC07</tspan></text>
     <text
        xml:space="preserve"

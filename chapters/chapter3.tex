@@ -1,25 +1,25 @@
-\section{geometry}
+\section{Geometry}
 \subsection{Introduction}
 
-The reconstruction of nasal cavity model computer images - including discretisation for modeling with CFD - can be divided into 5 stages: image aquisition, data conversion, segmentation, refinement and meshing. Firstly medical imaging technologies are used to extract a series of pixelated slices, in which the various materials which make up the human body can be identified by variation in greyscale measurements. These slices are then interpolated to create a 3D structure of voxels (the 3D equivalent of a pixel).
+The reconstruction of nasal cavity model computer images - including discretisation - can be divided into 5 stages: image aquisition, data conversion, segmentation, refinement and meshing. Firstly medical imaging technologies are used to extract a series of pixelated slices, in which the various materials which make up the human body can be identified by variation in greyscale measurements. These slices are then interpolated to create a 3D structure of voxels (the 3D equivalent of a pixel).
 
-The reconstruction of the nasal cavity geometries can be very time consuming and prone to human error. The improvement on and automation of the reconstruction process are areas of active research. This chapter presents an overview of the methods in current use for the various phases (mentioned above) by which a nasal cavity geometry is prepared for CFD analysis.
+The reconstruction of the nasal cavity geometries can be very time consuming and prone to human error. The improvement on and automation of the reconstruction process are areas of active research. This chapter presents an overview of the methods in current use for the various phases (mentioned above) by which a nasal cavity geometry is prepared for computational solution.
 
 \subsection{Non-invasive Medical Imaging}
 
-There are various forms of medical imaging that can be used for the identification of the nasal cavity geometry. Here we briefly overview of Computed Tomography (CT), the form of medical imaging used for the nasal cavity geometries presented in this thesis.
+There are various forms of medical imaging that can be used for the identification of the nasal cavity geometry. Here we briefly overview Computed Tomography (CT), the form of medical imaging used for the nasal cavity geometries presented in this thesis.
 
-CT scans use a series of x-rays taken at regular intervals within the required region. x-ray scans use photons sent in beams through the region of interest. These photons interact differently with the material that they encounter depending on its density. Electronic detectors feed the photon pattern emitted from the body in question to a computer, which uses this information to create images. These images are made up of pixels which are each assigned a grey scale value based on their x-ray attenuation coefficient. In medical imaging the Hounsfield scale is used, whereas in image processing the greyscale is numbered from black to white between 0 to 255. Figure \ref{fig:greyscale} shows an  example of how greyscale values are assigned to pixels in a ct image.
+CT scans use a series of x-rays taken at regular intervals within the region of interest. x-ray scans use photons sent in beams through the region of interest; these photons interact differently with the material that they encounter depending on its density. Electronic detectors feed the photon pattern emitted from the body in question to a computer, which uses this information to create images. These images are made up of pixels which are each assigned a grey scale value based on their x-ray attenuation coefficient. In medical imaging the Hounsfield scale is used, whereas in image processing the greyscale is numbered from black to white between 0 to 255. Figure \ref{fig:greyscale} shows an  example of how greyscale values are assigned to pixels in a CT image.
 
 \begin{figure} 
   \includegraphics[width=1\textwidth]{grayscale.png}
-\caption{example of how greyscale values are assigned to pixels in a ct image} \label{fig:greyscale}
+\caption{example of how greyscale values are assigned to pixels in a CT image} \label{fig:greyscale}
 \centering
 \end{figure}
  
 \subsection{Image Segmentation} 
 
-Once the CT scan has been outputted as a series of voxels, the anatomical geometries relevant to the project at hand can be extracted. To achieve this goal, the voxels that make up the relevant chapter of the data need to be identified somehow. This can be done manually - by going through the many slices that make up the ct scan and identifying the relevant areas - however this process is extremely time consuming.
+Once the CT scan has been outputted as a series of voxels, the anatomical geometries relevant to the project at hand need to be extracted. To achieve this goal, the voxels that make up the relevant section of the data need to be identified somehow. This can be done manually - by going through the many slices that make up the CT scan and identifying the relevant areas - however this process is extremely time consuming.
 
 \subsection{Segmentation Methods}
 
@@ -35,7 +35,7 @@ Numerous algorithms have been developed for the purpose of automating the proces
 
 \end{itemize}
 
-These methods and many more exist and are in active development. In addition, many of them are available for free online. The implementation of such algorithms and applying from first principles, however is quite a complex procedure. Fortunately many of these algorithms have already been implemented in software packages - of which commercial and open source variations are available - which are specifically compiled for working with medical imaging outputs. 
+These methods and many more exist and are in active development; many of them are available for free online. The implementation of such algorithms from first principles, however is quite a complex procedure. Fortunately many of these algorithms have already been implemented in software packages - of which commercial and open source variations are available - which are specifically compiled for working with medical imaging outputs. 
  
 \subsection{Preparation of Model for Meshing}
 
@@ -73,18 +73,17 @@ Anatomical geometry reconstruction - including that of the nasal cavity - begins
 \section{Meshing} \label{Meshing}
 \subsection{Introduction}
 
-The navier stokes equations, upon which Computational Fluid Dynamics is based (see chapter \ref{cfd}), is unsolvable (in most instances), except by approximation. In order to approximate a solution to a given system, its geometry mus be approximated, or discretised, as a series of points. The process by which these points are defined and related to one another is known as meshing; this in itself is a complex discipline under active research. In this chapter current methods are reviewed, and guidelines are given for developing quality meshes.
-%  到这儿了
+The navier stokes equations, upon which CFD is based (see chapter \ref{cfd}), is unsolvable (in most instances), except by approximation. In order to approximate a solution to a given system, its geometry must be approximated, or discretised, as a series of points. The process by which these points are defined and related to one another is known as meshing; this in itself is a complex discipline under active research. In this chapter current methods are reviewed, and guidelines are given for developing quality meshes.
 \subsection{Mesh Types} \label{mtypes}
 
 There are many types of mesh that can be employed; all of them have their own advantages and disadvantages. 
 
 \begin{itemize}
   \item[Structured meshes]
-    are divided into segments of uniform size and shape. It is characterised by cells posessing either four nodal corner points in two dimensions, or eight three. The points are mutually orthogonal and cartesionally defined. Being defined in this relatively simple way facilitates a higher level of computational efficiency. It is, however, limited in the level of structural complexity that it can accomodate.
+    are divided into segments of uniform size and shape. They are characterised by cells posessing either four nodal corner points in two dimensions, or eight in three dimensions. The points are mutually orthogonal and cartesionally defined. Being defined in this relatively simple way facilitates a higher level of computational efficiency. They are, however, limited in the level of structural complexity that they can accomodate.
 
   \item[Unstructured Meshes]
-    The geometries encountered in the respiratory system are generally too complex to be effectively discretised in a structured manner; in cases such as these unstructured meshes can be used to acommodate the complexities of the given geometry. Unstructured meshes - usually constructed from triangles or tetrahedra - do not fit a regular pattern, and they do not have coordinate lines corresponding to curvilinear directions. Because of this, the solving of compuations over unstructured domains is generally more computationally intensive, however with modern advances in computers this has become less significant an issue in many cases.
+    The geometries encountered in the respiratory system are generally too complex to be effectively discretised in a structured manner; in cases such as these unstructured meshes can be used to acommodate the complexities of the given geometry. Unstructured meshes - usually constructed from triangles or tetrahedra - do not fit a regular pattern, and they do not have coordinate lines corresponding to curvilinear directions. Because of this, the solving of computations over unstructured domains is generally more computationally intensive; however with modern advances in computers this has become less significant an issue in many cases.
 
   \item[Hybrid meshes]
     One disadvantage to the use of unstructured meshes is that they tent to show less accuracy near the wall. One commonly applied solution is the use of hexahedral elements near the wall, with the rest of the volume filled with unstructured - usually tetrahedral - elements. This method tends to improve the accuracy of near wall computations. One draw back of this method is that the prism layers can break down in the vicinity of excessively contoured walls. In this study this is the mesh type that is employed.
@@ -115,13 +114,13 @@ There are many types of mesh that can be employed; all of them have their own ad
 \end{figure}
 
 \subsection{Meshing algorithms}
-There are various meshing algorithms available, each with their own strengths and weaknesses. For the purpose of this study, an octree algorith was selected. Octree algorithms work by repeatedly dividing The volume in to smaller sections, until the given criteria, for example mesh size, is fulfilled. This method is generally considered to be a relatively simple but robust approach to mesh generation. One drawback, however is that it can cause irregular element distributions near the boundary.
+There are various meshing algorithms available, each with its own strengths and weaknesses. For the purpose of this study, an octree algorithm was selected. Octree algorithms work by repeatedly dividing The volume in to smaller sections, until the given criteria, for example mesh size, is fulfilled. This method is generally considered to be a relatively simple but robust approach to mesh generation. One drawback, however is that it can cause irregular element distributions near the boundary.
 
 \subsection{Quality}
 
 The quality of a generated mesh is dependant on its warp angle, skewness and aspect ratio. For a quadrilateral cell, as shown in figure \ref{fig:mqual}, the aspect ratio of the cell is defined as $AR = \frac{\Delta y} {\Delta x}$. Within the interior region, the $AR$ should be maintained within the range $0.2 < AR < 5$. This can be somewhat relaxed, however, in the vicinity of the wall.
 
-Mesh skewness is defined as the extent to which it deviates in shape from the ideal. This is a square for quadrilateral cells, or an equilateral triangle for triangle or tetrahedral cells. It is simple quantified for tiangles and tetrahedrals as $\frac{\theta ideal - \theta actual} {\theta ideal}$ (see figure \ref{fig:mqual} for theta).
+Mesh skewness is defined as the extent to which it deviates in shape from the ideal. This is a square for quadrilateral cells, or an equilateral triangle for triangle or tetrahedral cells. It is defined for triangles and tetrahedrals as $\frac{\theta ideal - \theta actual} {\theta ideal}$ (see figure \ref{fig:mqual} for theta).
 
 Many grid generation packages contain specific algorithms and/or functions for improving mesh quality. The gradient of mesh size variation should not exceed 1.2, as higher variations can cause problems in convergance.
 
@@ -129,10 +128,10 @@ Many grid generation packages contain specific algorithms and/or functions for i
   \includegraphics[width=1\textwidth]{mqual}
   \caption{Example of mesh cell with spacing $\Delta x$ , $\Delta y$ and angle $ \theta $ between the grid lines along with high $AR$ triangular and quadrilateral elements } \label{fig:mqual}
 \end{figure}
-
+ 
 \subsection{Mesh Independence}
 
-A significant source of error in the solution of CFD problems is derived from the discretisation process; when a system is separated into a number of finite elements, for the purpose of Numerical solution, the solution that is obtained from its solution is an approximation. It is necessary, then, to ascertain the required resolution, or mesh size, required to calculate a result that approximates the exact solution to a satisfactory degree of accuracy. This is done by means of a mesh independence test. This entails the monitoring of one - or several - fluid flow parameters of interest to the study over a series of mesh sizes. Independence is said to have been achieved when the effect of mesh size on the selected flow variable(s) has become insignificant. Figure \ref{fig:mind} shows the results from the mesh independence test conducted for smallest and the largest of the five models presented in this thesis.
+A significant source of error in the solution of CFD problems is derived from the discretisation process; when a system is separated into a number of finite elements, for the purpose of Numerical solution, the solution that is obtained from its solution is an approximation. It is necessary, then, to ascertain the required resolution, or mesh size, required to calculate a result that approximates the exact solution to a satisfactory degree of accuracy. This is done by means of a mesh independence test. This entails the monitoring of one - or several - fluid flow parameters of interest to the study over a series of mesh resolutions for the relevant system. Independence is said to have been achieved when the effect of mesh size on the selected flow variable(s) has become sufficiently insignificant. Figure \ref{fig:mind} shows the results from the mesh independence test conducted for smallest and the largest of the five models presented in this thesis.
 
 \begin{figure}
 
@@ -149,12 +148,13 @@ A significant source of error in the solution of CFD problems is derived from th
   \end{subfigure}
   \caption{mesh independence} \label{fig:mind}
 
-\end{figure}
-\subsection{Meshing of the Nasal Cavity}
+\end{figure} 
 
-Here we overview the meshing process applied to the nasal cavity models presented in this thesis.
+\subsection{Meshing of the Nasal Cavity} 
 
-The system is divided in to three parts. The first of these surounds the facial geometry directly adjacent to the nostrils; this is to allow the developement of a more realistic inlet profile. The second is the nasal cavity itself. The third section is an pipe-like extension from the exit of the nasopharynx; this allows for the developement of a more realistic outlet profile, in a similar manner to the section around the inlet. This system can be seen in figure \ref{fig:cavme} (\subref{fig:mesh1}).
+Here we provide an overview of the meshing process applied to one of the nasal cavity models presented in this thesis. The process was the same for the other four models.
+
+The system is divided in to three parts. The first of these surrounds the facial geometry directly adjacent to the nostrils; this is to allow for the developement of a more realistic inlet profile. The second is the nasal cavity itself. The third section is an pipe-like extension from the exit of the nasopharynx; this allows for the developement of a more realistic outlet profile, in a similar manner to the section around the inlet. This system can be seen in figure \ref{fig:cavme} (\subref{fig:mesh1}).
 
 The three stages of mesh refinement can be seen in figure \ref{fig:cavme} (\subref{fig:mesh2}); The mesh resolution is much coarser in the external domain, refined closer to the inlet and then is most fine in the cavity itself, the area of interest. Note the use of hybrid mesh, with internal tetrahedral elements and close to wall prism layers, shown clearly in Figure \ref{fig:cavme} (\subref{fig:mesh4}).
 

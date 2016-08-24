@@ -32,12 +32,19 @@ The aim of Computational fluid dynamics is to approximate numerically the physic
     \end{equation}
 
     This can easily be extrapolated to three dimensions.
+\begin{figure}   
+  \centering
+  \includegraphics[width=0.5\textwidth]{CompDom}
+  \caption{Fluid moving through the computational domain, the inflow of ambient air must be equal to the air entering the lungs}
+  \label{fig:CompDom}
+\end{figure}
+    In the case of the nasal cavity, this can be conceptualised in relation to the nasal cavity geometry, where the air flow rate going in to the nostrils must be equal to that leaving through the extension from the nasopharynx, as seen in figure \ref{fig:CompDom}.
 
-    In the case of the nasal cavity, this can be conceptualised in relation to the nasal cavity geometry
+
 
     \subsection{Momentum Conservation}
 
-    Momentum conservation is based on the Newton's second law,
+    Momentum conservation is based on the Newton's second law:
 
     \centerline{$\sum F = ma$}
 
@@ -156,8 +163,6 @@ Where $C_{H_{2} O}$ is the concentration of water vapour and $D_{H_{2} O}$ is th
   \caption{water vapour moving through a 2D element}
 \end{figure}
 
-\section{Turbulence}
-Do we want to include a brief section on turbulence? since all of the simulations we are analysing are laminar I thought probably not worth it, what do you think?
 \section{Solving the governing equations}
 
 The conservation equations outlined earlier in this chapter are nonlinear partial differential equations which, for complex domains such as the nasal cavity geometry, have no analytical solution; they must therefore be approximated algebraically and solved numerically.
@@ -178,4 +183,4 @@ Finite volume methods can tend to cause artificial, or numerical, diffusion if t
 
 \subsection{Numerical Solution}
 
-Once the system has been discretised, a system of linear equations can be developed to describe the system. These equations can be solved in one of several methods. These methods can generally be divided into two categories: either direct or iterative. In general, for large complex domains such as the nasal cavity models presented in this paper, iterative methods are the only way to derive a solution.
+Once the system has been discretised, a system of linear equations can be developed to describe the system. These equations can be solved with one of several methods. These methods can generally be divided into two categories: either direct or iterative. In general, for large complex domains such as the nasal cavity models presented in this paper, iterative methods are the only way to derive a solution.

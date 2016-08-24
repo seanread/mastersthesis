@@ -1,3 +1,43 @@
-Add NC09 data to Table 5.4 (this includes extracting sed data) as well as 5.5
 
-Make mesh independence test figure
+
+
+
+Fix throughout "associated with ageing process
+
+Add ger rhi inf to background
+
+Link sections in Literature review
+
+Elaborate on vorticity measures (Delta criterion)
+
+Demographic section (I think the location is correct - perhaps it should be a sub section of cfd?)
+
+Literature gap (see comments)
+
+Introduce models and methodology (Meshing/geometry)
+
+Add discussion of boundary conditions (CFD)
+
+
+Results:
+
+Link results to literature review
+
+
+
+
+
+
+Table format needs improvement, change names for ages (Look at this throughout) - done
+
+Kiao's figures - revisit formatting, text too large - discuss with Kiao
+
+Correct reference style - references should be numbered in order of appearance - done
+
+First paragraph; ideas need to flow and connect better. Importance of research needs to be connected. (see comments) - done?
+
+Reword research questions - done?
+
+Research vs thesis outline ?
+
+introduce rationale for demographic in background - done ?
