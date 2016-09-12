@@ -1,4 +1,4 @@
-\section{Fluid dynamics}
+\section{Fluid Dynamics}
 The aim of Computational fluid dynamics is to approximate numerically the physical conservation laws of newtonian physics:
 
 \begin{itemize}
@@ -163,7 +163,7 @@ Where $C_{H_{2} O}$ is the concentration of water vapour and $D_{H_{2} O}$ is th
   \caption{water vapour moving through a 2D element}
 \end{figure}
 
-\section{Solving the governing equations}
+\section{Solving the Governing Equations}
 
 The conservation equations outlined earlier in this chapter are nonlinear partial differential equations which, for complex domains such as the nasal cavity geometry, have no analytical solution; they must therefore be approximated algebraically and solved numerically.
 
@@ -184,3 +184,12 @@ Finite volume methods can tend to cause artificial, or numerical, diffusion if t
 \subsection{Numerical Solution}
 
 Once the system has been discretised, a system of linear equations can be developed to describe the system. These equations can be solved with one of several methods. These methods can generally be divided into two categories: either direct or iterative. In general, for large complex domains such as the nasal cavity models presented in this paper, iterative methods are the only way to derive a solution.
+
+\section{Setup and Solution of Nasal Cavity Models Used in This Thesis}
+Here an overview will be given of the way that the solution of the nasal cavity systems presented in this thesis will be given. Firstly the models are prepared and meshed as discussed in the chapter \ref{MRM}. Once this is done the boundary conditions for the system must be defined. 
+
+The face and internal wall of the nasal cavity and pipe extension are set to no slip condition. This means that velocity is assumed to be zero on the surface of these zones. The exit of the pipe extension is given a constant velocity value calculated for each model as to give an inspiritory flow rate of 10 lpm, which has been suggested by the literature to be a realistic value for a resting flow rate. For these simulations this flow rate is treated as cunstant and the flow treated as steady, an assumption which greatly simplifies the solution process and one which is commonly used when comparing fluid flow characteristicsbetween nasal cavity models (transient, or time dependant solutions are computationally much more costly). 
+
+The border of the hemispheric region around the face is set to atmospheric pressure. For resting inspiratory flow rates flows have been shown to be modeled most accurately as laminar; as such no turbulence model is used.
+
+The numerical solution of the systems - described by the aforementioned boundary conitions and meshes - is approximated, for the models of this thesis, by the use of a commercial CFD code, in this case ANSYS FLUENT. The following chapter details the analysis of the solutions obtained for the five cavities.

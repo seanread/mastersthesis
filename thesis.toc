@@ -1,43 +1,49 @@
-\contentsline {chapter}{\numberline {1}Introduction}{7}{chapter.1}
-\contentsline {section}{\numberline {1.1}Background}{7}{section.1.1}
-\contentsline {section}{\numberline {1.2}Research questions and objectives}{8}{section.1.2}
-\contentsline {section}{\numberline {1.3}Research outline}{8}{section.1.3}
-\contentsline {chapter}{\numberline {2}Literature review}{10}{chapter.2}
-\contentsline {section}{\numberline {2.1}Geriatric rhinology}{10}{section.2.1}
-\contentsline {section}{\numberline {2.2}Experimental Methods in Rhinology}{11}{section.2.2}
-\contentsline {section}{\numberline {2.3}Computational Methods}{11}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Airflow structures}{12}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Demographic studies}{14}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {2.3.3}Heat and vapour transfer}{14}{subsection.2.3.3}
-\contentsline {section}{\numberline {2.4}Literature gap}{15}{section.2.4}
-\contentsline {chapter}{\numberline {3}Model Reconstruction and Meshing}{16}{chapter.3}
-\contentsline {section}{\numberline {3.1}Geometry}{16}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Introduction}{16}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Non-invasive Medical Imaging}{16}{subsection.3.1.2}
-\contentsline {subsection}{\numberline {3.1.3}Image Segmentation}{17}{subsection.3.1.3}
-\contentsline {subsection}{\numberline {3.1.4}Segmentation Methods}{17}{subsection.3.1.4}
-\contentsline {subsection}{\numberline {3.1.5}Preparation of Model for Meshing}{18}{subsection.3.1.5}
-\contentsline {subsection}{\numberline {3.1.6}Summary}{18}{subsection.3.1.6}
-\contentsline {section}{\numberline {3.2}Meshing}{18}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Introduction}{18}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Mesh Types}{20}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Meshing algorithms}{21}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}Quality}{21}{subsection.3.2.4}
-\contentsline {subsection}{\numberline {3.2.5}Mesh Independence}{21}{subsection.3.2.5}
-\contentsline {subsection}{\numberline {3.2.6}Meshing of the Nasal Cavity}{22}{subsection.3.2.6}
-\contentsline {chapter}{\numberline {4}CFD fundamentals}{24}{chapter.4}
-\contentsline {section}{\numberline {4.1}Fluid dynamics}{24}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Mass Conservation}{24}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Momentum Conservation}{25}{subsection.4.1.2}
-\contentsline {subsection}{\numberline {4.1.3}Energy Conservation}{26}{subsection.4.1.3}
-\contentsline {section}{\numberline {4.2}Humidity}{27}{section.4.2}
-\contentsline {section}{\numberline {4.3}Solving the governing equations}{28}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Discretisation}{28}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Numerical Solution}{28}{subsection.4.3.2}
-\contentsline {chapter}{\numberline {5}Results}{29}{chapter.5}
-\contentsline {section}{\numberline {5.1}Geometry Variations}{29}{section.5.1}
-\contentsline {section}{\numberline {5.2}Pressure Drop}{30}{section.5.2}
-\contentsline {section}{\numberline {5.3}Wall Shear Stress and velocity}{34}{section.5.3}
-\contentsline {section}{\numberline {5.4}Heat and Vapour Transfer}{37}{section.5.4}
-\contentsline {chapter}{\numberline {6}Discussion}{44}{chapter.6}
-\contentsline {chapter}{\numberline {7}Conclusion}{48}{chapter.7}
+\contentsline {chapter}{\numberline {1}Introduction}{10}{chapter.1}
+\contentsline {section}{\numberline {1.1}Background}{10}{section.1.1}
+\contentsline {section}{\numberline {1.2}Research questions and objectives}{11}{section.1.2}
+\contentsline {section}{\numberline {1.3}Research overview}{11}{section.1.3}
+\contentsline {section}{\numberline {1.4}Thesis outline}{12}{section.1.4}
+\contentsline {chapter}{\numberline {2}Literature review}{13}{chapter.2}
+\contentsline {section}{\numberline {2.1}Nasal Cavity Anatomy}{13}{section.2.1}
+\contentsline {section}{\numberline {2.2}Geriatric rhinology}{13}{section.2.2}
+\contentsline {section}{\numberline {2.3}Experimental Methods in Rhinology}{14}{section.2.3}
+\contentsline {section}{\numberline {2.4}Computational Methods}{14}{section.2.4}
+\contentsline {section}{\numberline {2.5}Geometric Variations}{15}{section.2.5}
+\contentsline {section}{\numberline {2.6}Fluid dynamics}{15}{section.2.6}
+\contentsline {subsection}{\numberline {2.6.1}Pressure Drop}{15}{subsection.2.6.1}
+\contentsline {subsection}{\numberline {2.6.2}Wall Shear Stress and Velocity}{16}{subsection.2.6.2}
+\contentsline {subsection}{\numberline {2.6.3}Heat and vapour transfer}{17}{subsection.2.6.3}
+\contentsline {section}{\numberline {2.7}Demographic studies}{17}{section.2.7}
+\contentsline {section}{\numberline {2.8}Literature gap}{18}{section.2.8}
+\contentsline {chapter}{\numberline {3}Model Reconstruction and Meshing}{19}{chapter.3}
+\contentsline {section}{\numberline {3.1}Geometry}{19}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Introduction}{19}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Non-invasive Medical Imaging}{19}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}Image Segmentation}{20}{subsection.3.1.3}
+\contentsline {subsection}{\numberline {3.1.4}Segmentation Methods}{20}{subsection.3.1.4}
+\contentsline {subsection}{\numberline {3.1.5}Preparation of Model for Meshing}{21}{subsection.3.1.5}
+\contentsline {subsection}{\numberline {3.1.6}Summary}{21}{subsection.3.1.6}
+\contentsline {section}{\numberline {3.2}Meshing}{21}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Introduction}{21}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Mesh Types}{23}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Meshing algorithms}{24}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Quality}{24}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.5}Mesh Independence}{25}{subsection.3.2.5}
+\contentsline {subsection}{\numberline {3.2.6}Meshing of the Nasal Cavity}{26}{subsection.3.2.6}
+\contentsline {chapter}{\numberline {4}CFD fundamentals}{27}{chapter.4}
+\contentsline {section}{\numberline {4.1}Fluid Dynamics}{27}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Mass Conservation}{27}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Momentum Conservation}{28}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}Energy Conservation}{29}{subsection.4.1.3}
+\contentsline {section}{\numberline {4.2}Humidity}{30}{section.4.2}
+\contentsline {section}{\numberline {4.3}Solving the Governing Equations}{31}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Discretisation}{31}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Numerical Solution}{31}{subsection.4.3.2}
+\contentsline {section}{\numberline {4.4}Setup and Solution of Nasal Cavity Models Used in This Thesis}{32}{section.4.4}
+\contentsline {chapter}{\numberline {5}Results}{33}{chapter.5}
+\contentsline {section}{\numberline {5.1}Geometry Variations}{33}{section.5.1}
+\contentsline {section}{\numberline {5.2}Pressure Drop}{34}{section.5.2}
+\contentsline {section}{\numberline {5.3}Wall Shear Stress and velocity}{40}{section.5.3}
+\contentsline {section}{\numberline {5.4}Heat and Vapour Transfer}{41}{section.5.4}
+\contentsline {chapter}{\numberline {6}Discussion}{48}{chapter.6}
+\contentsline {chapter}{\numberline {7}Conclusion}{52}{chapter.7}

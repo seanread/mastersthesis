@@ -1,5 +1,19 @@
 \begin{thebibliography}{10}
 
+\bibitem{Tan2012}
+Jie Tan, Demin Han, Jie Wang, Ting Liu, Tong Wang, Hongrui Zang, Yunchuan Li,
+  and Xiangdong Wang.
+\newblock Numerical simulation of normal nasal cavity airflow in chinese adult:
+  a computational flow dynamics model.
+\newblock {\em European Archives of Oto-Rhino-Laryngology}, 269(3):881--889,
+  2012.
+
+\bibitem{Wen2008}
+Jian Wen, Kiao Inthavong, Jiyuan Tu, and Simin Wang.
+\newblock Numerical simulations for detailed airflow dynamics in a human nasal
+  cavity.
+\newblock {\em Respiratory Physiology \& Neurobiology}, 161(2):125--135, 2008.
+
 \bibitem{Edelstein1996}
 David~R. Edelstein.
 \newblock Aging of the normal nose in adults.
@@ -10,14 +24,6 @@ Joerg Lindemann, Diana Sannwald, and Kerstin Wiesmiller.
 \newblock Age related changes in intranasal air conditioning in the elderly.
 \newblock {\em Laryngoscope}, 118:1472--1475, 2008.
 
-\bibitem{Kalmovich2005}
-L.~M. Kalmovich, D.~Elad, U.~Zaretsky, A.~Adunsky, A.~Chetrit, S.~Sadetzki,
-  S.~Segal, and M.~Wolf.
-\newblock Endonasal geometry changes in elderly people: Acoustic rhinometry
-  measurements.
-\newblock {\em Journals of Gerontology Series a-Biological Sciences and Medical
-  Sciences}, 60:396--398, 2005.
-
 \bibitem{HO2001}
 James Ho, Kwok Chan, Wayne Hu, Wah Lam, Ling Zheng, George Tipoe, June Sun,
   Raymond Leung, and Kenneth Tsang.
@@ -26,11 +32,38 @@ James Ho, Kwok Chan, Wayne Hu, Wah Lam, Ling Zheng, George Tipoe, June Sun,
 \newblock {\em American Journal of Respiratory and Critical Care Medicine},
   163(4):983--988, Mar 2001.
 
+\bibitem{Kalmovich2005}
+L.~M. Kalmovich, D.~Elad, U.~Zaretsky, A.~Adunsky, A.~Chetrit, S.~Sadetzki,
+  S.~Segal, and M.~Wolf.
+\newblock Endonasal geometry changes in elderly people: Acoustic rhinometry
+  measurements.
+\newblock {\em Journals of Gerontology Series a-Biological Sciences and Medical
+  Sciences}, 60:396--398, 2005.
+
 \bibitem{Varga-Huettner2013}
 Victoria~E Varga-Huettner and Jayant~M Pinto.
 \newblock Physiology of the aging nose and geriatric rhinitis.
 \newblock In {\em Nasal Physiology and Pathophysiology of Nasal Disorders},
   pages 165--181. Springer, 2013.
+
+\bibitem{Xi2012}
+Jinxiang Xi, Ariel Berlinski, Yue Zhou, Bruce Greenberg, and Xiawei Ou.
+\newblock Breathing resistance and ultrafine particle deposition in
+  nasal-laryngeal airways of a newborn, an infant, a child, and an adult.
+\newblock {\em Annals of Biomedical Engineering}, 40:2579--2595, 2012.
+
+\bibitem{Garcia2007}
+Guilherme J.~M. Garcia, Neil Bailie, Dario~A. Martins, and Julia~S. Kimbell.
+\newblock Atrophic rhinitis: a cfd study of air conditioning in the nasal
+  cavity.
+\newblock {\em Journal of Applied Physiology}, 103(3):1082--1092, 2007.
+
+\bibitem{Zhu2011}
+Jian~Hua Zhu, Heow~Pueh Lee, Kian~Meng Lim, Shu~Jin Lee, and De~Yun Wang.
+\newblock Evaluation and comparison of nasal airway flow patterns among three
+  subjects from caucasian, chinese and indian ethnic groups using computational
+  fluid dynamics simulation.
+\newblock {\em Respiratory Physiology \& Neurobiology}, 175(1):62--69, 2011.
 
 \bibitem{WhanKim2007}
 Si~Whan~Kim, Ji-Hun Mo, Jeong-Whun Kim, Dong-Young Kim, Chae-Seo Rhee, Chul
@@ -64,9 +97,9 @@ R.~Eccles.
 
 \bibitem{Hilberg1989}
 O.~Hilberg, A.~C. Jackson, D.~L. Swift, and O.~F. Pedersen.
-\newblock {\em Acoustic rhinometry: evaluation of nasal cavity geometry by
-  acoustic reflection}, volume~66.
-\newblock 1989.
+\newblock Acoustic rhinometry: evaluation of nasal cavity geometry by acoustic
+  reflection.
+\newblock {\em JOURNAL OF APPLIED PHYSIOLOGY}, 66:295--303, 1989.
 
 \bibitem{Doorly2008c}
 D.~J. Doorly, D.~J. Taylor, and R.~C. Schroter.
@@ -113,31 +146,6 @@ H.~Shi, C.~Kleinstreuer, and Z.~Zhang.
   cavity model.
 \newblock {\em Journal Biomech. Eng.}, 128(5):697--706, 2006.
 
-\bibitem{Wen2008}
-Jian Wen, Kiao Inthavong, Jiyuan Tu, and Simin Wang.
-\newblock Numerical simulations for detailed airflow dynamics in a human nasal
-  cavity.
-\newblock {\em Respiratory Physiology \& Neurobiology}, 161(2):125--135, 2008.
-
-\bibitem{Xi2012}
-Jinxiang Xi, Ariel Berlinski, Yue Zhou, Bruce Greenberg, and Xiawei Ou.
-\newblock Breathing resistance and ultrafine particle deposition in
-  nasal-laryngeal airways of a newborn, an infant, a child, and an adult.
-\newblock {\em Annals of Biomedical Engineering}, 40:2579--2595, 2012.
-
-\bibitem{Zhu2011}
-Jian~Hua Zhu, Heow~Pueh Lee, Kian~Meng Lim, Shu~Jin Lee, and De~Yun Wang.
-\newblock Evaluation and comparison of nasal airway flow patterns among three
-  subjects from caucasian, chinese and indian ethnic groups using computational
-  fluid dynamics simulation.
-\newblock {\em Respiratory Physiology \& Neurobiology}, 175(1):62--69, 2011.
-
-\bibitem{Garcia2007}
-Guilherme J.~M. Garcia, Neil Bailie, Dario~A. Martins, and Julia~S. Kimbell.
-\newblock Atrophic rhinitis: a cfd study of air conditioning in the nasal
-  cavity.
-\newblock {\em Journal of Applied Physiology}, 103(3):1082--1092, 2007.
-
 \bibitem{Xiong2008a}
 G.~Xiong, J.~Zhan, K.~Zuo, J.~Li, L.~Rong, and G.~Xu.
 \newblock Numerical flow simulation in the post-endoscopic sinus surgery nasal
@@ -159,14 +167,6 @@ Qin~Jiang Ge, Kiao Inthavong, and Ji~Yuan Tu.
   nasal-sinus cavity cfd model.
 \newblock {\em Inhalation Toxicology}, 24(8):492--505, 2012.
 
-\bibitem{Tan2012}
-Jie Tan, Demin Han, Jie Wang, Ting Liu, Tong Wang, Hongrui Zang, Yunchuan Li,
-  and Xiangdong Wang.
-\newblock Numerical simulation of normal nasal cavity airflow in chinese adult:
-  a computational flow dynamics model.
-\newblock {\em European Archives of Oto-Rhino-Laryngology}, 269(3):881--889,
-  2012.
-
 \bibitem{Martin1981}
 R~Martin, PS~Vig, and DW~Warren.
 \newblock Nasal resistance and vertical dento-facial features.
@@ -177,12 +177,6 @@ Andreas Lintermann, Matthias Meinke, and Wolfgang Schröder.
 \newblock Fluid mechanics based classification of the respiratory efficiency of
   several nasal cavities.
 \newblock {\em Computers in Biology and Medicine}, 43(11):1833 -- 1852, 2013.
-
-\bibitem{Xi2014}
-Jinxiang Xi, JongWon Kim, Xiuhua~A. Si, Wei~Chung Su, and Yue Zhou.
-\newblock Effects of the facial interface on inhalation and deposition of
-  micrometer particles in calm air in a child airway model.
-\newblock {\em Inhalation Toxicology}, 26:492--505, 2014.
 
 \bibitem{Inthavong2014}
 Kiao Inthavong, Man~Chiu Fung, Xuwen Tong, William Yang, and Jiyuan Tu.
@@ -204,10 +198,11 @@ M.A. Burgos, E.~Sanmiguel-Rojas, A.~Martín-Alcántara, and M.L
 \newblock {\em International Journal for Numerical Methods in Biomedical
   Engineering}, 30(3):430--445, 2014.
 
-\bibitem{Weinhold2004}
-I.~Weinhold and G.~Mlynski.
-\newblock Numerical simulation of airflow in the human nose.
-\newblock {\em European Archive Otorhinolaryngology}, 261:452--455, 2004.
+\bibitem{Xi2014}
+Jinxiang Xi, JongWon Kim, Xiuhua~A. Si, Wei~Chung Su, and Yue Zhou.
+\newblock Effects of the facial interface on inhalation and deposition of
+  micrometer particles in calm air in a child airway model.
+\newblock {\em Inhalation Toxicology}, 26:492--505, 2014.
 
 \bibitem{Ingelstedt1961}
 Sven Ingelstedt and Nils~Gunnar Toremalm.
@@ -269,6 +264,11 @@ Shen Yu, Xiu-zhen Sun, and Ying-xi Liu.
   its function.
 \newblock {\em The Scientific World Journal}, 2014.
 
+\bibitem{Weinhold2004}
+I.~Weinhold and G.~Mlynski.
+\newblock Numerical simulation of airflow in the human nose.
+\newblock {\em European Archive Otorhinolaryngology}, 261:452--455, 2004.
+
 \bibitem{Kelly2004}
 J.T. Kelly, B.~Asgharian, J.S. Kimbell, and Wong. B.A.
 \newblock Particle deposition in human nasal airway replicas manufactured by
@@ -288,7 +288,7 @@ J.~Huang, H.~Shen, M.~Takahashi, T.~Fukunaga, H.~Toga, K.~Takahashi, and
 Lee~J Brooks and Kingman~P Strohl.
 \newblock Size and mechanical properties of the pharynx in healthy men and
   women.
-\newblock 1992.
+\newblock {\em The American Review of Respiratory Disease}, 1992.
 
 \bibitem{Lindemann2009a}
 Joerg Lindemann, Evangelia Tsakiropoulou, Tilman Keck, Richard Leiacker, and

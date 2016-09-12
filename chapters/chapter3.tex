@@ -25,15 +25,15 @@ Once the CT scan has been outputted as a series of voxels, the anatomical geomet
 
 Numerous algorithms have been developed for the purpose of automating the process; all of which have certain advantages and disadvantages. For the most part these algorithms can be subsumed in to three categories, presented below (in order of increasing complexity):
 
-\begin{itemize}
+\begin{description}
 
-  \item \textbf{Thresholding:} regions are identified and separated according their  greyscale value. This is the simplest algorithm for defining regions.
+  \item[\textbf{Thresholding}] regions are identified and separated according their  greyscale value. This is the simplest algorithm for defining regions.
+ 
+  \item[\textbf{Edge detection}] either local maxima of the first derivite of intensity or zero values of the second derivative are used to identify region edges. Edge detection tends to reduce the noise when compared with thresholding
+ 
+  \item[\textbf{Region based}] regions are grown from the inside out. This produces more coherent regions, but is unable to detect regions that are segregated.
 
-  \item \textbf{Edge detection:} either local maxima of the first derivite of intensity or zero values of the second derivative are used to identify region edges. Edge detection tends to reduce the noise when compared with thresholding
-
-  \item	\textbf{Region based:} regions are grown from the inside out. This produces more coherent regions, but is unable to detect regions that are segregated.
-
-\end{itemize}
+\end{description}
 
 These methods and many more exist and are in active development; many of them are available for free online. The implementation of such algorithms from first principles, however is quite a complex procedure. Fortunately many of these algorithms have already been implemented in software packages - of which commercial and open source variations are available - which are specifically compiled for working with medical imaging outputs. 
  
@@ -50,23 +50,31 @@ Once the region in question has been extracted from the medical imaging output, 
  
 \subsection{Summary} 
 
-Anatomical geometry reconstruction - including that of the nasal cavity - begins with medical imaging of the area in question. The geometry is then extracted from the medical imaging data using one (or several) of the available extraction algorithms outlined above. After extraction, cleaning of the geometry with CAD software is generally necessary to ensure that the geometry is water-tight and 'clean' before it can be meshed. This chapter has given an overview of some of the more pertinent methods in current use for the reconstruction of anatomical geometries from medical imaging data. Figure \ref{fig:cavzamp} shows an example of the construction process.
+Anatomical geometry reconstruction - including that of the nasal cavity - begins with medical imaging of the area in question. The geometry is then extracted from the medical imaging data using one (or several) of the available extraction algorithms outlined above. After extraction, cleaning of the geometry with CAD software is generally necessary to ensure that the geometry is water-tight and 'clean' before it can be meshed. This chapter has given an overview of some of the more pertinent methods in current use for the reconstruction of anatomical geometries from medical imaging data. Figure \ref{fig:cavzamp} shows an example of the construction process. 
 
+Figure \ref{fig:geo} shows the models reconstructed for and used in this thesis. They have been labeled NC for nasal cavity plus a number. The first cavity, NC04, is 48 years old and was reconstructed by a colleague earlier and used in this thesis as a comparison point for the older models. The other models are aged between 60 and 78. All of the models are of healthy Asian males. In this case we chose only healthy Asian males as to minimise the impact of demographic variations other than age on the presented geometries.
+
+\begin{figure} 
+  \includegraphics[width=\textwidth]{geometries}
+  \caption{geometries of the five cavities used for analysis in this thesis}
+  \label{fig:geo}
+
+\end{figure}
 \begin{figure}[t!]
 
   \begin{subfigure}[t]{0.5\textwidth} 
     \includegraphics[width=\textwidth]{slicer}
-    \caption{An example of the extraction of a 3D model from CT scan data, using, in this case, an open source software package, slicer}
+    \caption{}
     \label{fig:slicer}
   \end{subfigure}%
   ~ %
   \begin{subfigure}[t]{0.5\textwidth} 
     \includegraphics[width=\textwidth]{geomagic}
-    \caption{the refined geometry extracted from the CT slices seen in figure \ref{fig:cavzamp} (\subref{fig:slicer})}
+    \caption{}
     \label{fig:geomag}
   \end{subfigure}
 
-  \caption{Example of nasal cavity geometry generation}
+  \caption{Example of nasal cavity geometry generation: \ref{fig:slicer} shows an example of the extraction of a 3D model from CT scan data, using, in this case, an open source software package, slicer. Figure \ref{fig:geomag} shows the refined geometry extracted from the CT slices seen in figure \ref{fig:cavzamp} (\subref{fig:slicer})}
   \label{fig:cavzamp}
 \end{figure}
  
@@ -78,17 +86,17 @@ The navier stokes equations, upon which CFD is based (see chapter \ref{cfd}), is
 
 There are many types of mesh that can be employed; all of them have their own advantages and disadvantages. 
 
-\begin{itemize}
-  \item[Structured meshes]
+\begin{description}
+  \item[\textbf{Structured meshes}]
     are divided into segments of uniform size and shape. They are characterised by cells posessing either four nodal corner points in two dimensions, or eight in three dimensions. The points are mutually orthogonal and cartesionally defined. Being defined in this relatively simple way facilitates a higher level of computational efficiency. They are, however, limited in the level of structural complexity that they can accomodate.
 
-  \item[Unstructured Meshes]
+  \item[\textbf{Unstructured Meshes}] 
     The geometries encountered in the respiratory system are generally too complex to be effectively discretised in a structured manner; in cases such as these unstructured meshes can be used to acommodate the complexities of the given geometry. Unstructured meshes - usually constructed from triangles or tetrahedra - do not fit a regular pattern, and they do not have coordinate lines corresponding to curvilinear directions. Because of this, the solving of computations over unstructured domains is generally more computationally intensive; however with modern advances in computers this has become less significant an issue in many cases.
 
-  \item[Hybrid meshes]
+  \item[\textbf{Hybrid meshes}] 
     One disadvantage to the use of unstructured meshes is that they tent to show less accuracy near the wall. One commonly applied solution is the use of hexahedral elements near the wall, with the rest of the volume filled with unstructured - usually tetrahedral - elements. This method tends to improve the accuracy of near wall computations. One draw back of this method is that the prism layers can break down in the vicinity of excessively contoured walls. In this study this is the mesh type that is employed.
 
-\end{itemize}
+\end{description}
 
 \begin{figure}
   \begin{subfigure}[t]{0.3\textwidth}
@@ -137,16 +145,16 @@ A significant source of error in the solution of CFD problems is derived from th
 
   \begin{subfigure}[t]{0.5\textwidth}
     \includegraphics[width=\textwidth]{NC05mi}
-    \caption{NC05}
+    \caption{NC05 (78yo)}
     \label{fig:mi5}
   \end{subfigure}%
   ~%
   \begin{subfigure}[t]{0.5\textwidth}
     \includegraphics[width=\textwidth]{NC07mi}
-    \caption{NC07}
+    \caption{NC07 (64yo)}
     \label{fig:mi7}
   \end{subfigure}
-  \caption{mesh independence} \label{fig:mind}
+  \caption{mesh independence test carried out for the largest and smallest of the new models presented in this thesis} \label{fig:mind}
 
 \end{figure} 
 
@@ -154,9 +162,9 @@ A significant source of error in the solution of CFD problems is derived from th
 
 Here we provide an overview of the meshing process applied to one of the nasal cavity models presented in this thesis. The process was the same for the other four models.
 
-The system is divided in to three parts. The first of these surrounds the facial geometry directly adjacent to the nostrils; this is to allow for the developement of a more realistic inlet profile. The second is the nasal cavity itself. The third section is an pipe-like extension from the exit of the nasopharynx; this allows for the developement of a more realistic outlet profile, in a similar manner to the section around the inlet. This system can be seen in figure \ref{fig:cavme} (\subref{fig:mesh1}).
+The system is divided in to three parts. The first of these surrounds the facial geometry directly adjacent to the nostrils; this is to allow for the developement of a more realistic inlet profile. The second is the nasal cavity itself. The third section is an pipe-like extension from the exit of the nasopharynx; this allows for the developement of a more realistic outlet profile, in a similar manner to the section around the inlet. This system can be seen in Figure \ref{fig:cavme} (\subref{fig:mesh1}).
 
-The three stages of mesh refinement can be seen in figure \ref{fig:cavme} (\subref{fig:mesh2}); The mesh resolution is much coarser in the external domain, refined closer to the inlet and then is most fine in the cavity itself, the area of interest. Note the use of hybrid mesh, with internal tetrahedral elements and close to wall prism layers, shown clearly in Figure \ref{fig:cavme} (\subref{fig:mesh4}).
+The three stages of mesh refinement can be seen in Figure \ref{fig:cavme} (\subref{fig:mesh2}); The mesh resolution is much coarser in the external domain, refined closer to the inlet and then is most fine in the cavity itself, the area of interest. Note the use of hybrid mesh, with internal tetrahedral elements and close to wall prism layers, shown clearly in Figure \ref{fig:cavme} (\subref{fig:mesh4}).
 
 \begin{figure}
   \begin{subfigure}[t]{0.5\textwidth}
@@ -182,5 +190,5 @@ The three stages of mesh refinement can be seen in figure \ref{fig:cavme} (\subr
     \caption{prism layer of cavity mesh}
     \label{fig:mesh4}
   \end{subfigure}
-  \caption{mesh of NC06} \label{fig:cavme}
+  \caption{mesh of NC06 (68yo)} \label{fig:cavme}
 \end{figure}

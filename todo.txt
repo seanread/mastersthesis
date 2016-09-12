@@ -1,27 +1,26 @@
-
-
+Discuss lit rev structure with Kiao
 
 
 Fix throughout "associated with ageing process
 
-Add ger rhi inf to background
+Add ger rhi inf to background done?
 
-Link sections in Literature review
+Link sections in Literature review - done
 
-Elaborate on vorticity measures (Delta criterion)
+Elaborate on vorticity measures (Delta criterion) - done (removed mention of delta criterion as it seems irrelevant)
 
-Demographic section (I think the location is correct - perhaps it should be a sub section of cfd?)
+Demographic section (I think the location is correct - perhaps it should be a sub section of cfd?) - done
 
 Literature gap (see comments)
 
-Introduce models and methodology (Meshing/geometry)
+Introduce models and methodology (Meshing/geometry)i - added (methodology introduction insufficient?)
 
 Add discussion of boundary conditions (CFD)
 
 
 Results:
 
-Link results to literature review
+Link results to literature review - done?
 
 
 

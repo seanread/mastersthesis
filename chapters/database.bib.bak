@@ -1635,6 +1635,7 @@
 @Article{BROOKS1992,
   Title                    = {Size and Mechanical Properties of the Pharynx in Healthy men and women},
   Author                   = {Brooks, Lee J and Strohl, Kingman P},
+  Journal                  = {The American Review of Respiratory Disease},
   Year                     = {1992},
 
   Publisher                = {Am Thoracic Soc}
@@ -7813,14 +7814,14 @@
   Type                     = {Book}
 }
 
-@Book{Hilberg1989,
+@Article{Hilberg1989,
   Title                    = {Acoustic rhinometry: evaluation of nasal cavity geometry by acoustic reflection},
   Author                   = {Hilberg, O. and Jackson, A. C. and Swift, D. L. and Pedersen, O. F.},
+  Journal                  = {JOURNAL OF APPLIED PHYSIOLOGY},
   Year                     = {1989},
+  Pages                    = {295-303},
   Volume                   = {66},
 
-  Abstract                 = {O. Hilberg, A. C. Jackson, D. L. Swift, and O. F. PedersenInstitute of Environmental and Occupational Medicine, University of Aarhus, Denmark.AbstractTo study the geometry of the nasal cavity we applied an acoustic method (J. Appl. Physiol. 43: 523â€“536, 1977) providing an estimate of cross-sectional area as a function of distance. Acoustic areas in a model constructed from a human nasal cast, in the nasal cavity of a cadaver and in 10 normal subjects and two patients with well-defined afflictions of the nasal cavity, were compared with similar areas obtained by computerized tomography (CT) scans, a specially developed water displacement method, and anterior rhinomanometry. We found a coefficient of variation of the areas of less than 2% by the acoustic method compared with 15% for the rhinomanometric measurements. Acoustic areas correlated highly to similar areas obtained by CT scanning (r = 0.94) and by water displacement (r = 0.96). In two patients the acoustic method accurately outlined, respectively, a tumor in the nose and a septum deviation. It is concluded that this method provides an accurate method for measuring the geometry of the nasal cavity. It is easy to perform and is potentially useful for investigation of physiological and pathological changes in the nose. Copyright Â© 1989 the American Physiological Society},
-  Pages                    = {295-303},
   Type                     = {Book},
   Url                      = {http://jap.physiology.org/jap/66/1/295.full.pdf}
 }

@@ -1,3 +1,4 @@
+\section{Nasal Cavity Anatomy}
 
 \section{Geriatric rhinology}
 The common rhinological complaints of the elderly include dryness, runny noses, crusting and epistaxis\cite{Varga-Huettner2013}. Epidemiological studies have been carried out to examine the consistency of the manifestation of various symptoms throughout elderly patients with mixed results. 
@@ -9,23 +10,39 @@ Increases in postnasal drip, nasal drainage, sneezing, coughing, olfactory dysfu
 Functional variations in air conditioning capabilities have been shown in vivo\cite{Lindemann2008}, with statistically significant reductions in relative humidity and heat transfer observed in elder nasal cavities. The level to which this is attributable to change in histological function as opposed to variations in the fluid mechanisms as a result of the expansion of the cavity remains to be investigated.
 
  \section{Experimental Methods in Rhinology}
+ 
+To understand more precisely the air flow mechanisms in older nasal cavities, an experimental technique for the investigation mus first be chosen. In this section the methods available for investigating nasal patency are presented.
+
 The anatomy of the nasal cavity was first classified in detail by Emil Zuckerlandl in the 19th century\cite{Stammberger1989}. Anatomically, his records were more or less up to the standard of what can be assessed from modern scanning techniques\cite{Stammberger1989}, however the investigation of airflow characteristics was still severely limited by technological capacity\cite{Eccles2000}. It was not until the turn of the 19th century that experimentation in to nasal airflow began in proper\cite{Eccles2000}. 
 
 Some of the more common in vivo techniques used include rhinomanometry, which allows measurement of the pressure drop across the nasal cavity\cite{Hilberg1989} and acoustic rhinometry, which allows measurement of the cross sectional area of the nasal cavity as a function of depth\cite{Hilberg1989}. 
 
 Ultimately, however, direct detailed measurements of flow mechanics within the human nasal cavity taken in vivo are not practically viable with current technology as a result of the complexity and small scale of the nasal geometry\cite{Doorly2008c}. Thus the preferred media for the testing in modern times has tended to be either physical or computational models reconstructed from CT scan data\cite{Doorly2008c}. The physical models that have been constructed from CT scan data are able to provide detailed geometric reproductions. These allow for much more detailed flow analysis when compared with older techniques such as rhinomanometry\cite{Ma2009}. Such experimental set ups are, however, costly to run in terms of time and resources, in particular when compared with the high level of detail that can be achieved from a well done CFD simulation\cite{Ma2009}.
 
-\section{Computational Methods}
+\section{Computational Methods} 
 Computational fluid dynamics(CFD) is a discipline which is concerned with the computational approximation of solutions to the navier stokes equations for closed fluid systems\cite{Tu2008}. In many fields - inlcuding rhinology - CFD has facilitated economical and detailed investigations in to cases in which experimental investigation would otherwise be costly or impossible\cite{Keyhani1995}.
 
 CFDs were the primary driving force behind the development of larger and faster computers until the 80's\cite{Wendt2009}. In more recent times, the continuing advancement of computational technologies has facilitated considerable growth in the scope and accuracy of CFDs for predicting the behaviour of increasingly complex systems\cite{Tu2008}. 
 
 One of the areas of investigation that has been facilitated by these advances is that of nasal airflow. Initially, simplified nasal cavity geometry models were used to create computational meshes and solve numerically for the fluid flow characteristics under steady state state conditions\cite{Keyhani1995, Hahn1993}. Later 3D models extracted from CT scans were used to achieve more accurate results\cite{Martonen2002}. In addition to this, various inlet and outlet conditions have been considered, including the difference between unsteady state  (flowrate as a function of time throughout the nasal cycle)\cite{Shi2006} and steady state (constant velocity, time independent) assumption based models\cite{Wen2008}. This discrepancy has been a point of much contention, and it seems that the current position is that the correct choice depends on the application at hand\cite{Doorly2008c}. Certainly to date it seems that the vast bulk of the case studies comparing different geometries have used the steady state state assumption\cite{Xi2012, Zhu2011, Garcia2007}
 
-Another issue which has been of some debate in the literature is the relevance of the inclusion of sinuses in the modelled flow domain. It has been reasonably commonplace to include the sinuses in studies that are examining the effects of sinus surgery\cite{Xiong2008a, Lindemann2005}. Also it has been shown that, while the impact on airflow is relatively minimal, the sinuses can be subject to significant levels of particle deposition for particles in the range of 1 nanometre in diameter, and particularly for low flow rates\cite{Ge2012}. The added requirements in time and computational complexity necessitated by the inclusion of the sinuses, however, seems to warrant their exclusion from models in situations where they are not specifically relevant\cite{Doorly2008c}
+Another issue which has been of some debate in the literature is the relevance of the inclusion of sinuses in the modelled flow domain. It has been reasonably commonplace to include the sinuses in studies that are examining the effects of sinus surgery\cite{Xiong2008a, Lindemann2005}. Also it has been shown that, while the impact on airflow is relatively minimal, the sinuses can be subject to significant levels of particle deposition for particles in the range of 1 nanometre in diameter, and particularly for low flow rates\cite{Ge2012}. The added requirements in time and computational complexity necessitated by the inclusion of the sinuses, however, seems to warrant their exclusion from models in situations where they are not specifically relevant\cite{Doorly2008c}.
 
 
-\subsection{Airflow structures}
+
+\section{Geometric Variations}
+The basis of any in depth investigation into the relationship between geometric variations and airflow structures is a clear analysis of the geometric variations. Cross sectional areas have been graphed as a function of radial position to compare the geometries of different models in many studies\cite{Xi2012, Zhu2011, Lindemann2008, Garcia2007}. Surface area has also been suggested to be significant metric in predicting flow behaviour (as surface area to volume ratios are expected to impact on the flow behaviour\cite{Xi2012, Garcia2007}). The minimum coronal cross-sectional area is a figure that has been suggested to be of particular sinificance to flow development\cite{Lindemann2008}. The ratio of area to volume (or perimeter length to cross sectional area) has been used by several researchers to predict flow characteristics\cite{Xi2012, Garcia2007}.
+
+\section{Fluid dynamics}
+\subsection{Pressure Drop}
+
+The earliest papers investigating nasal patency focused primarily on the pressure drop over the nostrils, as measured with rhinomanometry\cite{Martin1981}. 
+Resistance across the nasal cavity, measured as pressure drop, is still often used as a predictor of flow behaviour within the nasal cavity\cite{Edelstein1996, Lindemann2008, WhanKim2007}. Pressure drop has also been suggested to provide an insight in to the inspirational efficiency of the cavities\cite{Lintermann2013}. It is often plotted as a function of flow rate in order to provide a point for validation by comparison with experimental set ups\cite{Wen2008, Inthavong2014}. In addition, it can be treated as a function of longitudinal position in order to gain an insight in to the relationship between the geometric variations and pressure drop\cite{Lintermann2013}.
+
+\subsection{Wall Shear Stress and Velocity}
+
+Another important variable is velocity distribution\cite{Keyhani1995, Zhu2011, Lintermann2013}. This can include cross sectional zone by zone analysis\cite{Keyhani1995, Zhu2011}, which has been suggested to be useful for the measurement of the efficacy of olfaction\cite{Zhu2011}, or by longitudinal sections\cite{Lintermann2013,Taylor2010} . Another commonly used quantitative measure is wall shear stress. Distributions are analysed longitudinally\cite{Wen2008} or around the cross sectional parameter of the relevant section of the nasal cavity\cite{Burgos2014}. These measurements have been shown to be significant for predicting heat and mass transfer characteristics\cite{Taylor2010}, and as such their longitudinal and parametric distributions are significant for understanding the distribution of such mechanisms.
+
 
 \begin{figure}
   \centering
@@ -36,20 +53,12 @@ Another issue which has been of some debate in the literature is the relevance o
 
 \begin{figure}
   \centering
-  \includegraphics[width=0.5\textwidth]{wencont.png}
+  \includegraphics[width=0.3\textwidth]{wencont.png}
   \caption{Velocity contours at the nasal valve from \cite{Wen2008}} \label{fig:wencont}
 \centering
 \end{figure}
-Airflow structures have been investigated and portrayed through a variety of both qualitative and quantitative methods. The earliest papers focused primarily on the pressure drop over the nostrils as measured with rhinomanometry\cite{Martin1981}. Modern technological innovation has facilitated the development of a range of techniques for both visualisation of airflows and the quantification of their various characteristics. In particular the range of data that can be obtained from numerical simulations is vast and detailed, and so the question of how to interpret it becomes particularly important.
 
-One more commonly used visualisation method is the use of streamlines (shown in figure \ref{fig:chinstreams}). Streamlines, often coloured by velocity\cite{Wen2008, Zhu2011, Garcia2007}. These are useful for showing flow distribution as well as significant recirculation zones\cite{Lintermann2013, Xi2014}. Another commonly used method, shown in figure \ref{fig:wencont} is coronal cross sectional contours portraying velocity. These contours may or not include streamlines to help highlight the presence of vortices in the flow\cite{Wen2008}. Another method, presented in \cite{Lintermann2013} uses a $\Delta$ criterion to trace the vortices present in the flow structure. In \cite{Lintermann2013}, these are then coloured by variables related to turbulence and vorticity in order to provide a deeper insight in to the vortex structure and behaviour.
-
-Quantitative methods for analysing and comparing air flow structures seem to be less standardised. Prior to the invention of modern imaging techniques, rhinologists relied on readings of cross sectional area and pressure from techniques such as rhinomanometry and acoustic rhinometry\cite{Doorly2008c}. The detailed flow information that can be extracted from CT scan models either experimentally or computationally opens up a much wider range of options in terms of quantitative analysis. Pressure is still often included as it is said to provide an insight in to the inspirational efficiency of the cavities\cite{Lintermann2013}. Pressure is often plotted as a function of flow rate in order to provide a point for validation by comparison with experimental set ups\cite{Wen2008, Inthavong2014}. In addition, it can be treated as a function of longitudinal position in order to gain an insight in to the relationship between the geometric variations and pressure drop\cite{Lintermann2013}. Another commonly measured variable is velocity distribution\cite{Keyhani1995, Zhu2011, Lintermann2013}. This can include cross sectional zone by zone analysis\cite{Keyhani1995, Zhu2011}, which has been suggested to be useful for the measurement of the efficacy of olfaction\cite{Zhu2011}, or by longitudinal sections\cite{Lintermann2013,Taylor2010} . Another commonly used quantitative measure is wall shear stress. Distributions are analysed longitudinally\cite{Wen2008} or around the cross sectional parameter of the relevant section of the nasal cavity\cite{Burgos2014}. These measurements have been shown to be significant for predicting heat and mass transfer characteristics\cite{Taylor2010}, and as such their longitudinal and parametric distributions are significant for understanding the distribution of such mechanisms.
- 
-\subsection{Demographic studies}
-The previously investigated demographics include ethnicity\cite{Zhu2011}; disease\cite{Garcia2007}; and  age\cite{Xi2012}, which can then be subclassified into children\cite{Xi2012} and the elderly\cite{Lindemann2008}. Both of these have been investigated through both in vitro\cite{Weinhold2004} and in vivo\cite{Kalmovich2005, Edelstein1996, WhanKim2007, Lindemann2008} techniques. Child models have also been investigated computationally\cite{Xi2012}. The variations that have been observed in children's nasal airway functionality has been suggested to be linked to particle filtration ability \cite{Xi2012}. It seems plausible that this effect could be significant also in the case of elderly models. Cross sectional areas have been graphed as a function of radial position to compare the geometries of different models in many studies\cite{Xi2012, Zhu2011, Lindemann2008, Garcia2007}. Surface area has also been suggested to be significant metric in predicting flow behaviour (as surface area to volume ratios are expected to impact on the flow behaviour\cite{Xi2012, Garcia2007}). Resistance across the nasal cavity, measured as pressure drop, is also often used as a predictor of flow behaviour within the nasal cavity\cite{Edelstein1996, Lindemann2008, WhanKim2007}. As previously stated, streamlines are a commonly used method for visualising flow structures in nasal cavity models. They have as such been used in several instances to compare interdemographic variations in flow structure\cite{Xi2012, Garcia2007, Zhu2011}. Flow flux by saggital section across the turbinal region has also been used to identify variations in nasal functionality\cite{Zhu2011}. 
-
-
+One commonly used visualisation method is the use of streamlines (shown in figure \ref{fig:chinstreams}). Streamlines, often coloured by velocity\cite{Wen2008, Zhu2011, Garcia2007}. These are useful for showing flow distribution as well as significant recirculation zones\cite{Lintermann2013, Xi2014}. Another commonly used method, shown in figure \ref{fig:wencont} is coronal cross sectional contours portraying velocity. These contours may or not include streamlines to help highlight the presence of vortices in the flow\cite{Wen2008}. Another method, presented in \cite{Lintermann2013} uses a vortex detection algorithm to trace the vortices present in the flow structure. In \cite{Lintermann2013}, these are then coloured by variables related to turbulence and vorticity in order to provide a deeper insight in to the vortex structure and behaviour.
 \subsection{Heat and vapour transfer}
 
 Earlier investigations in to the heat and vapour transport characteristics of the nasal cavity used a straight pipe model as a simplification of the nasal cavity geometry\cite{Ingelstedt1961}. The first experiments involving real nasal cavity geometries were carried out in the 80s, using cast models taken from cadavers\cite{Nuckols1983}.
@@ -102,11 +111,11 @@ Cross sectional temperature contours have been used to visualise the distributio
 %pressure drop
 
 
+
+\section{Demographic studies}
+One of the significant benefits of CFDs in rhinology is the ability to investigate the effects of interdemographic variations in nasal geometry on flow features. The previously investigated demographics include ethnicity\cite{Zhu2011}; disease\cite{Garcia2007}; and  age\cite{Xi2012}. Age can be subclassified into children\cite{Xi2012} and the elderly\cite{Lindemann2008}. Both child and older nasal cavities have been investigated through in vitro\cite{Weinhold2004} and in vivo\cite{Kalmovich2005, Edelstein1996, WhanKim2007, Lindemann2008} experimental techniques. Child models have also been investigated computationally\cite{Xi2012}. The variations that have been observed in children's nasal airway functionality has been suggested to be linked to particle filtration ability \cite{Xi2012}. It seems plausible that this effect could be significant also in the case of elderly models. It is to date, however, unknown as in depth computational studies investigating flow field variations in older models are yet be undertaken.
+
+
 \section{Literature gap}
 
-To date, to the best of our knowledge, although some research has been carried out on the effects of aging on nasal airflow, CFDs have not been used to examine in depth the influence of age related variations in nasal cavity geometry on flow structure or heat and vapour transfer characteristics in older nasal caities. 
-
-%\section{Particle filtration}
-%
-%
-
+Geriatric rhinology is an area which is growing in significance as the global population ages. Although various experimental techniques have been used historically in rhinology, non of them provide the same cost effectiveness and level of detail which can be obtained through computational analysis of 3D models obtained from medical imaging. This method has been used extensively in recent years to examine interdemographic variations in nasal cavity functionality. To date, to the best of our knowledge, the investigated demographics have not included older patients.
