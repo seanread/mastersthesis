@@ -65,6 +65,31 @@ Jian~Hua Zhu, Heow~Pueh Lee, Kian~Meng Lim, Shu~Jin Lee, and De~Yun Wang.
   fluid dynamics simulation.
 \newblock {\em Respiratory Physiology \& Neurobiology}, 175(1):62--69, 2011.
 
+\bibitem{Elad2008}
+David Elad, Michael Wolf, and Tilman Keck.
+\newblock Air-conditioning in the human nasal cavity.
+\newblock {\em Respiratory Physiology \& Neurobiology}, 163(1-3):121 -- 127,
+  2008.
+\newblock Respiratory Biomechanics.
+
+\bibitem{Mygind1998}
+Niels Mygind and Ronald Dahl.
+\newblock Anatomy, physiology and function of the nasal cavities in health and
+  disease.
+\newblock {\em Advanced Drug Delivery Reviews}, 29(1�2):3 -- 12, 1998.
+\newblock Nasal Drug Delivery.
+
+\bibitem{Doorly2008}
+D.~Doorly, D.J. Taylor, P.~Franke, and R.C. Schroter.
+\newblock Experimental investigation of nasal flow.
+\newblock {\em Proc. of the Institution of Mechanical Engineers Part H - J
+  Engineering in Medicine}, 222(H4):439--453, 2008.
+
+\bibitem{Berglund1982}
+B.~Berglund and T.~Lindvall.
+\newblock {\em Olfaction}, pages 279--306.
+\newblock Elsevier Biomedical Press, New York, 1982.
+
 \bibitem{WhanKim2007}
 Si~Whan~Kim, Ji-Hun Mo, Jeong-Whun Kim, Dong-Young Kim, Chae-Seo Rhee, Chul
   Hee~Lee, and Yang-Gi Min.
@@ -167,6 +192,46 @@ Qin~Jiang Ge, Kiao Inthavong, and Ji~Yuan Tu.
   nasal-sinus cavity cfd model.
 \newblock {\em Inhalation Toxicology}, 24(8):492--505, 2012.
 
+\bibitem{Subramaniam1998}
+R.P. Subramaniam, R.B. Richardson, K.T. Morgan, J.~S. Kimbell, and R.A.
+  Guilmette.
+\newblock Computational fluid dynamics simulations of inspiratory airflow in
+  the human nose and nasopharynx.
+\newblock {\em Inhalation Toxicology}, 10(91-120), 1998.
+
+\bibitem{Chaya2006}
+MS~Chaya, AV~Kurpad, HR~Nagendra, and R~Nagarathna.
+\newblock The effect of long term combined yoga practice on the basal metabolic
+  rate of healthy adults.
+\newblock {\em BMC complementary and alternative medicine}, 6(1):1, 2006.
+
+\bibitem{Tobin1983}
+M~J Tobin, T~S Chadha, G~Jenouri, S~J Birch, H~B Gazeroglu, and M~A Sackner.
+\newblock Breathing patterns. 1. normal subjects.
+\newblock {\em Chest}, 84(2):202--205, 1983.
+
+\bibitem{Anthony2005}
+T.R. Anthony, M.R. Flynn, and A.~Eisner.
+\newblock Evaluation of facial features on particle inhalation.
+\newblock {\em Annals of Occupational Hygiene}, 49(2):179--193, 2005.
+
+\bibitem{Li2012}
+Xiangdong Li, Kiao Inthavong, and Jiyuan Tu.
+\newblock Particle inhalation and deposition in a human nasal cavity from the
+  external surrounding environment.
+\newblock {\em Building and Environment}, 47(0):32--39, 2012.
+
+\bibitem{Lee2010}
+Jong-Hoon Lee, Yang Na, Sung-Kyun Kim, and Seung-Kyu Chung.
+\newblock Unsteady flow characteristics through a human nasal airway.
+\newblock {\em Respiratory Physiology \& Neurobiology}, 172(3):136--146, 2010.
+
+\bibitem{Ottaviano2016}
+Giancarlo Ottaviano and WJ~Fokkens.
+\newblock Measurements of nasal airflow and patency: a critical review with
+  emphasis on the use of peak nasal inspiratory flow in daily practice.
+\newblock {\em Allergy}, 71(2):162--174, 2016.
+
 \bibitem{Martin1981}
 R~Martin, PS~Vig, and DW~Warren.
 \newblock Nasal resistance and vertical dento-facial features.
@@ -184,11 +249,36 @@ Kiao Inthavong, Man~Chiu Fung, Xuwen Tong, William Yang, and Jiyuan Tu.
   delivery.
 \newblock {\em Pharmaceutical research}, pages 1--8, 2014.
 
+\bibitem{Ishikawa2009}
+Shigeru Ishikawa, Toshio Nakayama, Masahiro Watanabe, and Teruo Matsuzawa.
+\newblock Flow mechanisms in the human olfactory groove: Numerical simulation
+  of nasal physiological respiration during inspiration, expiration, and
+  sniffing.
+\newblock {\em Arch Otolaryngol Head Neck Surg}, 135(2):156--162, 2009.
+
+\bibitem{Inthavong2006}
+K.~Inthavong, Z.~F. Tian, H.~F. Li, J.~Y. Tu, W.~Yang, C.~L. Xue, and C.~G. Li.
+\newblock A numerical study of spray particle deposition in a human nasal
+  cavity.
+\newblock {\em Aerosol Science and Technology}, 40(11):1034--1045, 2006.
+
+\bibitem{Wang2009a}
+S.~M. Wang, K.~Inthavong, J.~Wen, J.~Y. Tu, and C.~L. Xue.
+\newblock Comparison of micron- and nanoparticle deposition patterns in a
+  realistic human nasal cavity.
+\newblock {\em Respiratory Physiology and Neurobiology}, 166(3):142--151, 2009.
+
 \bibitem{Taylor2010}
 D.~J. Taylor, D.~J. Doorly, and R.~C. Schroter.
 \newblock Inflow boundary profile prescription for numerical simulation of
   nasal airflow.
 \newblock {\em Journal of The Royal Society Interface}, 7:515--527, 2010.
+
+\bibitem{Elad2006}
+David Elad, Sara Naftali, Moshe Rosenfeld, and Michael Wolf.
+\newblock Physical stresses at the air-wall interface of the human nasal cavity
+  during breathing.
+\newblock {\em Journal of Applied Physiology}, 100(3):1003--1010, 2006.
 
 \bibitem{Burgos2014}
 M.A. Burgos, E.~Sanmiguel-Rojas, A.~Martín-Alcántara, and M.L
@@ -204,6 +294,22 @@ Jinxiang Xi, JongWon Kim, Xiuhua~A. Si, Wei~Chung Su, and Yue Zhou.
   micrometer particles in calm air in a child airway model.
 \newblock {\em Inhalation Toxicology}, 26:492--505, 2014.
 
+\bibitem{Keck2000}
+T.~Keck, R.~Leiacker, A.~Heinrich, S.~Kuhneman, and G.~Rettinger.
+\newblock Humidity and temperature profiles in the nasal cavity.
+\newblock {\em Rhinology}, 38(167-171), 2000.
+
+\bibitem{Noback2011}
+Marlijn~L. Noback, Katerina Harvati, and Fred Spoor.
+\newblock Climate-related variation of the human nasal cavity.
+\newblock {\em American Journal of Physical Anthropology}, 145(4):599--614,
+  2011.
+
+\bibitem{Yokley2009}
+Todd~R Yokley.
+\newblock Ecogeographic variation in human nasal passages.
+\newblock {\em American journal of physical anthropology}, 138(1):11--22, 2009.
+
 \bibitem{Ingelstedt1961}
 Sven Ingelstedt and Nils~Gunnar Toremalm.
 \newblock Air flow patterns and heat transfer within the respiratory tract: A
@@ -216,18 +322,6 @@ ML~Nuckols, JL~Zumrick, and CE~Johnson.
   hyperbaric conditions.
 \newblock {\em Journal of biomechanical engineering}, 105(1):24--30, 1983.
 
-\bibitem{Elad2008}
-David Elad, Michael Wolf, and Tilman Keck.
-\newblock Air-conditioning in the human nasal cavity.
-\newblock {\em Respiratory Physiology \& Neurobiology}, 163(1-3):121 -- 127,
-  2008.
-\newblock Respiratory Biomechanics.
-
-\bibitem{Keck2000}
-T.~Keck, R.~Leiacker, A.~Heinrich, S.~Kuhneman, and G.~Rettinger.
-\newblock Humidity and temperature profiles in the nasal cavity.
-\newblock {\em Rhinology}, 38(167-171), 2000.
-
 \bibitem{Lindemann2004}
 J.~Lindemann, T.~Keck, K.~Wiesmiller, B.~Sander, H.J. Brambs, G.~Rettinger, and
   P.~Pless.
@@ -239,12 +333,6 @@ J.~Lindemann, T.~Keck, K.~Wiesmiller, B.~Sander, H.J. Brambs, G.~Rettinger, and
 S.~Naftali, R.C. Schroter, J.~Shiner, and D.~Elad.
 \newblock Transport phenomena in the human nasal cavity: A computational model.
 \newblock {\em Annals of Biomedical Engineering}, 26:831--839, 1998.
-
-\bibitem{Elad2006}
-David Elad, Sara Naftali, Moshe Rosenfeld, and Michael Wolf.
-\newblock Physical stresses at the air-wall interface of the human nasal cavity
-  during breathing.
-\newblock {\em Journal of Applied Physiology}, 100(3):1003--1010, 2006.
 
 \bibitem{Naftali2005}
 S.~Naftali, M.~Rosenfeld, M.~Wolf, and D.~Elad.

@@ -192,3 +192,24 @@ The three stages of mesh refinement can be seen in Figure \ref{fig:cavme} (\subr
   \end{subfigure}
   \caption{mesh of NC06 (68yo)} \label{fig:cavme}
 \end{figure}
+
+
+  \begin{table} 
+    \centering
+  \pgfplotstableset{
+  every head row/.style={before row=\toprule,after row=\midrule},
+  every last row/.style={after row=\bottomrule}}
+
+  \pgfplotstabletypeset[
+      fixed zerofill,
+      precision=2,
+      display columns/0/.style={string type},
+      display columns/1/.style={string type},
+      display columns/1/.style={column name={Mesh size ($\times 1e06$)}},
+      display columns/2/.style={string type},
+      display columns/3/.style={string type},
+      display columns/4/.style={string type},
+      col sep=comma]{tables/Mesh.txt}
+  \caption{parameters of the meshes for the nasal cavity models presented in this thesis}
+  \label{tab:pvv}
+\end{table}
