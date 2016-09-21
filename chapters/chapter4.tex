@@ -1,16 +1,16 @@
 \section{Fluid Dynamics}
-The aim of Computational fluid dynamics is to approximate numerically the physical conservation laws of newtonian physics:
+The aim of CFD is to numerically solve the physical conservation laws of newtonian physics:
 
 \begin{itemize}
-  \item conservation of mass
+  \item Conservation of mass
 
   \item The conservation of momentum (Newton’s second law, the rate of change of momentum equals the sum of forces acting on the fluid);
 
   \item The conservation of energy (first law of thermodynamics, the rate of change of energy equals the sum of rate of heat addition to and the rate of work done on the fluid).
-
+ 
 \end{itemize}
 
-    \subsection{Mass Conservation}
+    \subsection{Mass conservation}
 
     The principle of conservation of mass is that, in a closed system, the mass remains constant. This means that fluid will move through a set region in such a way the mass is conserved. For an incompressible flow, this means that the outflows and the inflows will be equal. This can be written as
     \begin{equation} \label{eq:1}
@@ -23,7 +23,7 @@ The aim of Computational fluid dynamics is to approximate numerically the physic
 
     \begin{equation} \label{eq:2}
       \dot{m}_{in} = \rho u \Delta y
-    \end{equation}
+     \end{equation}
 
     Extending this to equation \ref{eq:1}, in the x direction, for an incompressible flow we get
 
@@ -32,17 +32,44 @@ The aim of Computational fluid dynamics is to approximate numerically the physic
     \end{equation}
 
     This can easily be extrapolated to three dimensions.
+
+
+Extending this further, in the x direction for the same two dimensional element we can say that
+
+\begin{equation} \label{eq:22}
+\dot{m}_{out} = [\rho u + \frac{\partial(\rho u)}{\partial x}\Delta x]\Delta y
+\end{equation}
+
+Applying this in the y direction and subsituting back into Equation \ref{eq:1}, for an incompressible flow we get
+ 
+\begin{dmath} \label{eq:23}
+0 = [\rho u + \frac{\partial(\rho u)}{\partial x}\Delta x]\Delta y - \rho u \Delta y 
++ [\rho v + \frac{\partial(\rho v)}{\partial y}\Delta y]\Delta x - \rho v \Delta x  
+\end{dmath}
+
+which then simplifies to
+
+\begin{equation} \label{eq:24}
+  0 = \frac{\partial(\rho u)}{\partial x} + \frac{\partial(\rho v)}{\partial y}
+\end{equation}
+
+which is the continuity equation, and can easily be extended into three dimensions as
+
+\begin{equation} \label{eq:25}
+  0 = \frac{\partial(\rho u)}{\partial x} + \frac{\partial(\rho v)}{\partial y} + \frac{\partial(\rho w)}{\partial z}
+\end{equation}
+
+
+    In the case of the nasal cavity, this can be conceptualised in relation to the nasal cavity geometry, where the air flow rate going in to the nostrils must be equal to that leaving through the extension from the nasopharynx, as seen in figure \ref{fig:CompDom}.
+
 \begin{figure}   
   \centering
   \includegraphics[width=0.5\textwidth]{CompDom}
   \caption{Fluid moving through the computational domain, the inflow of ambient air must be equal to the air entering the lungs}
   \label{fig:CompDom}
 \end{figure}
-    In the case of the nasal cavity, this can be conceptualised in relation to the nasal cavity geometry, where the air flow rate going in to the nostrils must be equal to that leaving through the extension from the nasopharynx, as seen in figure \ref{fig:CompDom}.
 
-
-
-    \subsection{Momentum Conservation}
+    \subsection{Momentum conservation}
 
     Momentum conservation is based on the Newton's second law:
 
@@ -63,9 +90,9 @@ The aim of Computational fluid dynamics is to approximate numerically the physic
     
 
     \begin{dmath} \label{eq:5}
-      \sum F_{surface, x} = [\sigma_{xx} \Delta y \Delta z - (\frac{\delta \sigma_{xx}}{\delta x} \Delta x) \Delta y \Delta z] 
-      + [(\tau_{xy} + \frac{\delta \tau_{yx}}{\delta y} \Delta y) \Delta x \Delta z - \tau_{yx} \Delta x \Delta z]  
-      = - \frac{\delta \sigma_{xx}}{\delta x} \Delta x \Delta y \Delta z + \frac{\delta \tau_{yx}}{\delta y} \Delta x \Delta y \Delta z
+      \sum F_{surface, x} = [\sigma_{xx} \Delta y \Delta z - (\frac{\partial \sigma_{xx}}{\partial x} \Delta x) \Delta y \Delta z] 
+      + [(\tau_{xy} + \frac{\partial \tau_{yx}}{\partial y} \Delta y) \Delta x \Delta z - \tau_{yx} \Delta x \Delta z]  
+      = - \frac{\partial \sigma_{xx}}{\partial x} \Delta x \Delta y \Delta z + \frac{\partial \tau_{yx}}{\partial y} \Delta x \Delta y \Delta z
     \end{dmath}
 
 
@@ -76,25 +103,25 @@ The aim of Computational fluid dynamics is to approximate numerically the physic
     For a Newtonian fluid, stress-strain relations can be described as 
 
     \begin{equation} \label{eq:6}
-      \tau_{xx} = 2 \mu \frac{\delta u}{\delta x} \quad \tau_{yx} = \mu \frac{\delta u}{\delta y}
+      \tau_{xx} = 2 \mu \frac{\partial u}{\partial x} \quad \tau_{yx} = \mu \frac{\partial u}{\partial y}
     \end{equation}
 
     Where $\mu$ is the viscocity of the fluid. Combining equations \ref{eq:4} , \ref{eq:5} and \ref{eq:6} in the x direction, and cancelling out the volume term:
 
     \begin{equation} \label{eq:7}
-      \rho \frac{Du}{Dt} = - \frac{\delta p}{\delta x} + \mu (\frac{\delta^2 u}{\delta x^2} + \frac{\delta^2 u}{\delta y^2}) + \rho \sum F_{b}
+      \rho \frac{Du}{Dt} = - \frac{\partial p}{\partial x} + \mu (\frac{\partial^2 u}{\partial x^2} + \frac{\partial^2 u}{\partial y^2}) + \rho \sum F_{b}
     \end{equation}
     
     Here the acceleration term is the total derivative of u, defined as the combined local and advection inertial forces, which in two dimensions can be written as
 
     \begin{equation} \label{eq:8}
-      \frac{Du}{Dt} = \frac{\delta u}{\delta t} + v \frac{\delta u}{\delta y} + u \frac{\delta u}{\delta x}
+      \frac{Du}{Dt} = \frac{\partial u}{\partial t} + v \frac{\partial u}{\partial y} + u \frac{\partial u}{\partial x}
     \end{equation}
 
     combining equations \ref{eq:7} and \ref{eq:8} and dividing through by $\rho$:
 
     \begin{equation} \label{eq:9}
-      \underbrace{\frac{\delta u}{\delta t}}_{local\ acceleration} + v \underbrace{\frac{\delta u}{\delta y} + u \frac{\delta u}{\delta x}}_{convection} = - \underbrace{\frac{1}{\rho} \frac{\delta p}{\delta x}}_{pressure gradient} + \underbrace{\nu (\frac{\delta^2 u}{\delta x^2} + \frac{\delta^2 u}{\delta y^2})}_{diffusion} + \underbrace{\sum F_{b}}_{body force}
+      \underbrace{\frac{\partial u}{\partial t}}_{local\ acceleration} + v \underbrace{\frac{\partial u}{\partial y} + u \frac{\partial u}{\partial x}}_{convection} = - \underbrace{\frac{1}{\rho} \frac{\partial p}{\partial x}}_{pressure gradient} + \underbrace{\nu (\frac{\partial^2 u}{\partial x^2} + \frac{\partial^2 u}{\partial y^2})}_{diffusion} + \underbrace{\sum F_{b}}_{body force}
     \end{equation}
 
     Where $\nu$ is kinematic viscocity, defined as $\frac{\mu}{\rho}$. 
@@ -114,19 +141,19 @@ The aim of Computational fluid dynamics is to approximate numerically the physic
     $\frac{DE}{Dt}$ can be expressed similarly to Equation \ref{eq:8}:
 
     \begin{equation} \label{eq:11}
-      \frac{DE}{Dt} = \frac{\delta E}{\delta t} + v \frac{\delta E}{\delta y} + u \frac{\delta E}{\delta x} = C_{p} (\frac{\delta T}{\delta t} + v \frac{\delta T}{\delta y} + u \frac{\delta T}{\delta x})
+      \frac{DE}{Dt} = \frac{\partial E}{\partial t} + v \frac{\partial E}{\partial y} + u \frac{\partial E}{\partial x} = C_{p} (\frac{\partial T}{\partial t} + v \frac{\partial T}{\partial y} + u \frac{\partial T}{\partial x})
     \end{equation}
 
     For a 2D element, the total energy can therefore be calculated from
 
     \begin{equation} \label{eq:12}
-      \rho \frac{DE}{Dt} \Delta x \Delta y = \rho   C_{p} (\frac{\delta T}{\delta t} + v \frac{\delta T}{\delta y} + u \frac{\delta T}{\delta x}) \Delta x \Delta y
+      \rho \frac{DE}{Dt} \Delta x \Delta y = \rho   C_{p} (\frac{\partial T}{\partial t} + v \frac{\partial T}{\partial y} + u \frac{\partial T}{\partial x}) \Delta x \Delta y
     \end{equation}
 
     From Fourier's law of heat conduction, for a 2D system we can write
 
     \begin{equation} \label{eq:13}
-      \dot{Q}_{x} = k A_{x} \frac{\delta T}{\delta x} = \dot{q}_{x} A_{x} = \dot{q}_{x} \Delta y
+      \dot{Q}_{x} = k A_{x} \frac{\partial T}{\partial x} = \dot{q}_{x} A_{x} = \dot{q}_{x} \Delta y
     \end{equation}
 
     where $\dot{q}$ is heat flux = $\dot{Q}/A$
@@ -134,13 +161,13 @@ The aim of Computational fluid dynamics is to approximate numerically the physic
     The heat transferred into the element can thus be expressed as
 
     \begin{equation} \label{eq:14}
-      [q_{x} + \frac{\delta q_{x}}{\delta x}] \Delta y - q_{x} \Delta y = \frac{\delta q_{x}}{\delta x} = k \frac{\delta^2 T}{\delta x^2} \Delta x \Delta y
+      [q_{x} + \frac{\partial q_{x}}{\partial x}] \Delta y - q_{x} \Delta y = \frac{\partial q_{x}}{\partial x} = k \frac{\partial^2 T}{\partial x^2} \Delta x \Delta y
     \end{equation}
 
     reconstructing equation \ref{eq:10} with the inclusion of \ref{eq:14}, considered also in the y direction, we can cancel out the volume term:
 
     \begin{equation} \label{eq:15}
-      \underbrace{\frac{\delta T}{\delta t}}_{local\ acceleration} + \underbrace{u \frac{\delta T}{\delta x} + v \frac{\delta T}{\delta y}}_{convection} = \underbrace{\frac{k}{\rho C_{p}} ( \frac{\delta^2 T}{\delta x^2} + \frac{\delta^2 T}{\delta y^2} )}_{diffusion}
+      \underbrace{\frac{\partial T}{\partial t}}_{local\ acceleration} + \underbrace{u \frac{\partial T}{\partial x} + v \frac{\partial T}{\partial y}}_{convection} = \underbrace{\frac{k}{\rho C_{p}} ( \frac{\partial^2 T}{\partial x^2} + \frac{\partial^2 T}{\partial y^2} )}_{diffusion}
     \end{equation}
 
 \section{Humidity}
@@ -150,12 +177,19 @@ One of the primary functions of the nasal cavity is the humidification of the in
 Analogously to equations \ref{eq:15} and \ref{eq:9}, for a 2D element we can write
 
 \begin{equation} \label{eq:16}
-  \underbrace{\frac{\delta C_{H_{2} O}}{\delta t}}_{local acceleration} + \underbrace{u \frac{\delta C_{H_{2} O}}{\delta x} + v \frac{\delta C_{H_{2} O}}{\delta y}}_{convection} = \underbrace{D_{H_{2} O} ( \frac{\delta^2 C_{H_{2} O}}{\delta x^2} + \frac{\delta^2 C_{H_{2} O}}{\delta y^2} )}_{diffusion}
+  \underbrace{\frac{\partial \Phi}{\partial t}}_{local acceleration} + \underbrace{u \frac{\partial \Phi}{\partial x} + v \frac{\partial \Phi}{\partial y}}_{convection} = \underbrace{D_{H_{2} O} ( \frac{\partial^2 \Phi}{\partial x^2} + \frac{\partial^2 \Phi}{\partial y^2} )}_{diffusion}
 \end{equation} \nocite{Naftali1998}
 
-Where $C_{H_{2} O}$ is the concentration of water vapour and $D_{H_{2} O}$ is the diffusivity of water in air.
+Where $\Phi$ is the concentration of water vapour and $D_{H_{2} O}$ is the diffusivity of water in air.
 
-\section{Solving the Governing Equations}
+In the commercial software package used for the solution of the models presented in this thesis (FLUENT), this is solved in the following form:
+
+\begin{equation} \label{eq:17}
+ J_i = -\rho D_{i,m} \nabla Y_i - D_{T, i} \frac{\nabla T}{T}
+\end{equation}
+
+Where $J_i$ is the diffusion flux of species i (in this case $H_2 O$), $D_{i,m}$ is the mass diffusion coefficient and $D_{T,i}$ is the thermal diffusion coefficient.
+\section{Solving the governing equations}
 
 The conservation equations outlined earlier in this chapter are nonlinear partial differential equations which, for complex domains such as the nasal cavity geometry, have no analytical solution; they must therefore be approximated algebraically and solved numerically.
 
@@ -177,10 +211,10 @@ Finite volume methods can tend to cause artificial, or numerical, diffusion if t
 
 Once the system has been discretised, a system of linear equations can be developed to describe the system. These equations can be solved with one of several methods. These methods can generally be divided into two categories: either direct or iterative. In general, for large complex domains such as the nasal cavity models presented in this paper, iterative methods are the only way to derive a solution.
 
-\section{Setup and Solution of Nasal Cavity Models Used in This Thesis}
+\section{Setup and solution of nasal cavity models used in this thesis}
 Here an overview will be given of the way that the solution of the nasal cavity systems presented in this thesis will be given. Firstly the models are prepared and meshed as discussed in the chapter \ref{MRM}. Once this is done the boundary conditions for the system must be defined. 
 
-The face and internal wall of the nasal cavity and pipe extension are set to no slip condition. This means that velocity is assumed to be zero on the surface of these zones. The exit of the pipe extension is given a constant velocity value calculated for each model as to give an inspiritory flow rate of 10 lpm, which has been suggested by the literature to be a realistic value for a resting flow rate. For these simulations this flow rate is treated as cunstant and the flow treated as steady, an assumption which greatly simplifies the solution process and one which is commonly used when comparing fluid flow characteristicsbetween nasal cavity models (transient, or time dependant solutions are computationally much more costly). 
+The face and internal wall of the nasal cavity and pipe extension are set to no slip condition. This means that velocity is assumed to be zero on the surface of these zones. The exit of the pipe extension is given a constant velocity value calculated for each model as to give an inspiritory flow rate of 10 lpm, which has been suggested by the literature to be a realistic approximation for an inspiratory rate of an adult human at rest. For these simulations this flow rate is treated as constant and the flow treated as steady, an assumption which greatly simplifies the solution process and one which is commonly used when comparing fluid flow characteristicsbetween nasal cavity models (transient, or time dependant solutions are computationally much more costly). The 3d incompressible navier stokes equations were solved iteratively via the SIMPLE method for pressure-velocity coupling and a second order upwind scheme for convection.
 
 The border of the hemispheric region around the face is set to atmospheric pressure. For resting inspiratory flow rates flows have been shown to be modeled most accurately as laminar; as such no turbulence model is used.
 
