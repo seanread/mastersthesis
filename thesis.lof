@@ -1,32 +1,32 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces pressure drop across the nasal cavity as a function of flow rate\relax }}{16}{figure.caption.8}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces streamlines coloured by velocity from \cite {Tan2012}\relax }}{17}{figure.caption.9}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces velocity contours at the nasal valve from \cite {Wen2008}\relax }}{17}{figure.caption.10}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Pressure drop across the nasal cavity as a function of flow rate\relax }}{23}{figure.caption.7}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Streamlines coloured by velocity from Tan et al. \cite {Tan2012}\relax }}{24}{figure.caption.8}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Velocity contours at the nasal valve from Wen et al. \cite {Wen2008}\relax }}{24}{figure.caption.9}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces example of how greyscale values are assigned to pixels in a CT image\relax }}{21}{figure.caption.11}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Flow chart showing the process by which an anatomical geometry is prepared - with the help of medical imaging software - for solution via CFD codes\relax }}{23}{figure.caption.12}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces geometries of the five cavities used for analysis in this thesis\relax }}{23}{figure.caption.13}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces example of nasal cavity geometry generation: \ref {fig:slicer} shows an example of the extraction of a 3D model from CT scan data, using, in this case, an open source software package, slicer. Figure \ref {fig:geomag} shows the refined geometry extracted from the CT slices seen in figure \ref {fig:cavzamp} (\subref {fig:slicer})\relax }}{24}{figure.caption.14}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces examples of the mesh types described in section \ref {mtypes}\relax }}{25}{figure.caption.15}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Example of mesh cell with spacing $\Delta x$ , $\Delta y$ and angle $ \theta $ between the grid lines along with high $AR$ triangular and quadrilateral elements \relax }}{26}{figure.caption.16}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces mesh independence test carried out for the largest and smallest of the new models presented in this thesis\relax }}{26}{figure.caption.17}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces mesh of NC06 (68yo)\relax }}{27}{figure.caption.18}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces example of how greyscale values are assigned to pixels in a CT image\relax }}{30}{figure.caption.10}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Flow chart showing the process by which an anatomical geometry is prepared - with the help of medical imaging software - for solution via CFD codes\relax }}{33}{figure.caption.11}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces geometries of the five cavities used for analysis in this thesis\relax }}{34}{figure.caption.12}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces example of nasal cavity geometry generation: \ref {fig:slicer} shows an example of the extraction of a 3D model from CT scan data, using, in this case, an open source software package, slicer. Figure \ref {fig:geomag} shows the refined geometry extracted from the CT slices seen in figure \ref {fig:cavzamp} (\subref {fig:slicer})\relax }}{34}{figure.caption.13}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces examples of the mesh types described in section \ref {mtypes}\relax }}{36}{figure.caption.14}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Example of mesh cell with spacing $\Delta x$ , $\Delta y$ and angle $ \theta $ between the grid lines along with high $AR$ triangular and quadrilateral elements \relax }}{37}{figure.caption.15}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces mesh independence test carried out for the largest and smallest of the new models presented in this thesis\relax }}{38}{figure.caption.16}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces mesh of NC06 (68yo)\relax }}{39}{figure.caption.17}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Fluid moving through the computational domain, the inflow of ambient air must be equal to the air entering the lungs\relax }}{30}{figure.caption.20}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces representation of mesh discretised with finite volume method\relax }}{33}{figure.caption.21}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Fluid moving through the computational domain, the inflow of ambient air must be equal to the air entering the lungs\relax }}{43}{figure.caption.19}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces representation of mesh discretised with finite volume method\relax }}{47}{figure.caption.20}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces representation of the slicing method used for sampling data across the sagittal axis throughout this thesis\relax }}{35}{figure.caption.22}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces cross sectional silhouettes taken at evenly spaced intervals across the sagittal axis of the cavities between the vestibule and nasopharynx\relax }}{36}{figure.caption.23}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces area versus distance across the four nasal cavities with a series of examples from the literature\relax }}{37}{figure.caption.24}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces colour coded display of the regional divisions used in tables \ref {tab:secvol}, \ref {tab:secsa}, \ref {tab:deff}\relax }}{39}{figure.caption.26}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces area to perimeter ratio variation with normalised length of the nasal cavity from the nostril inlet to the nasopharynx. This length for each model is: 48yo – 8.97cm; 60yo – 9.26cm; 64yo – 9.60cm; 68yo – 9.31cm; 78yo – 8.45cm\relax }}{40}{figure.caption.27}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces area versus distance across the four nasal cavities with a series of examples from the literature\relax }}{42}{figure.caption.29}
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Direct comparison of WSS surface contours between all models\relax }}{43}{figure.caption.30}
-\contentsline {figure}{\numberline {5.8}{\ignorespaces coronal area weighted average of wall shear stress plotted as a function of distance from the entrance to the cavity across the saggital axis\relax }}{43}{figure.caption.31}
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Velocity contours and wall shear stress values along the perimeter outlines of two cross-sections. The x-axis is the perimeter distance starting from the top apex of each cross-section slice, and moves along the perimeter laterally. One full tracing around the perimeter is defined as 1.0. The dashed line represents the floor of the cross-section opposing its apex, and for the nasal valve, the halfway point \(0.5\), while for the turbinate cross-section it is 0.7. The y-axis represents normalized wall shear stress \(0 - 1\).\relax }}{45}{figure.caption.33}
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Flow streamlines (coloured in blue) passing through the left and right chambers of the nasal cavity. Each chamber’s wall shear stress is shown (coloured in red).\relax }}{47}{figure.caption.35}
-\contentsline {figure}{\numberline {5.11}{\ignorespaces average mass fraction of h2o as a function of normalised saggital position\relax }}{48}{figure.caption.36}
-\contentsline {figure}{\numberline {5.12}{\ignorespaces average ambient temperature as a function of normalised saggital position\relax }}{49}{figure.caption.37}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Representation of the slicing method used for sampling data across the sagittal axis throughout this thesis\relax }}{51}{figure.caption.21}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Cross sectional silhouettes taken at evenly spaced intervals across the sagittal axis of the cavities between the vestibule and nasopharynx\relax }}{52}{figure.caption.22}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Area versus distance across the four nasal cavities with a series of examples from the literature\relax }}{53}{figure.caption.23}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Colour coded display of the regional divisions used in tables \ref {tab:secvol}, \ref {tab:secsa}, \ref {tab:deff}\relax }}{55}{figure.caption.28}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Area to perimeter ratio variation with normalised length of the nasal cavity from the nostril inlet to the nasopharynx. This length for each model is: 48yo – 8.97cm; 60yo – 9.26cm; 64yo – 9.60cm; 68yo – 9.31cm; 78yo – 8.45cm\relax }}{56}{figure.caption.29}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Area versus distance across the four nasal cavities with a series of examples from the literature\relax }}{59}{figure.caption.31}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Direct comparison of WSS surface contours between all models\relax }}{61}{figure.caption.32}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Coronal area weighted average of wall shear stress plotted as a function of distance from the entrance to the cavity across the saggital axis\relax }}{62}{figure.caption.33}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Velocity contours and wall shear stress values along the perimeter outlines of two cross-sections. The x-axis is the perimeter distance starting from the top apex of each cross-section slice, and moves along the perimeter laterally. One full tracing around the perimeter is defined as 1.0. The dashed line represents the floor of the cross-section opposing its apex, and for the nasal valve, the halfway point \(0.5\), while for the turbinate cross-section it is 0.7. The y-axis represents normalized wall shear stress \(0 - 1\).\relax }}{64}{figure.caption.35}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Flow streamlines (coloured in blue) passing through the left and right chambers of the nasal cavity. Each chamber’s wall shear stress is shown (coloured in red).\relax }}{66}{figure.caption.37}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Average mass fraction of h2o as a function of normalised saggital position\relax }}{67}{figure.caption.38}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Average ambient temperature as a function of normalised saggital position\relax }}{67}{figure.caption.39}
 \addvspace {10\p@ }
 \addvspace {10\p@ }

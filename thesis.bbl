@@ -226,6 +226,22 @@ Jong-Hoon Lee, Yang Na, Sung-Kyun Kim, and Seung-Kyu Chung.
 \newblock Unsteady flow characteristics through a human nasal airway.
 \newblock {\em Respiratory Physiology \& Neurobiology}, 172(3):136--146, 2010.
 
+\bibitem{Weiner1954}
+J.S. Weiner.
+\newblock Nose shape and climate.
+\newblock {\em Am J Phys Anthropol}, 12:1--4, 1954.
+
+\bibitem{Churchill2004}
+S.~Churchill, L.L. Shackelford, N.~Georgi, and M.~Black.
+\newblock Morphological variation and airflow dynamics in the human nose.
+\newblock {\em Am J Human Biol}, 16:625--638, 2004.
+
+\bibitem{Noback2011}
+Marlijn~L. Noback, Katerina Harvati, and Fred Spoor.
+\newblock Climate-related variation of the human nasal cavity.
+\newblock {\em American Journal of Physical Anthropology}, 145(4):599--614,
+  2011.
+
 \bibitem{Ottaviano2016}
 Giancarlo Ottaviano and WJ~Fokkens.
 \newblock Measurements of nasal airflow and patency: a critical review with
@@ -299,16 +315,15 @@ T.~Keck, R.~Leiacker, A.~Heinrich, S.~Kuhneman, and G.~Rettinger.
 \newblock Humidity and temperature profiles in the nasal cavity.
 \newblock {\em Rhinology}, 38(167-171), 2000.
 
-\bibitem{Noback2011}
-Marlijn~L. Noback, Katerina Harvati, and Fred Spoor.
-\newblock Climate-related variation of the human nasal cavity.
-\newblock {\em American Journal of Physical Anthropology}, 145(4):599--614,
-  2011.
-
 \bibitem{Yokley2009}
 Todd~R Yokley.
 \newblock Ecogeographic variation in human nasal passages.
 \newblock {\em American journal of physical anthropology}, 138(1):11--22, 2009.
+
+\bibitem{Lindemann2002}
+J.~Lindemann, R.~Leiacker, G.~Rettinger, and T.~Keck.
+\newblock Nasal mucosal temperature during respiration.
+\newblock {\em Clin. Otolaryngol}, 27:135--139, 2002.
 
 \bibitem{Ingelstedt1961}
 Sven Ingelstedt and Nils~Gunnar Toremalm.

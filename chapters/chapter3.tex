@@ -1,7 +1,7 @@
 \section{Geometry}
 \subsection{Introduction}
 
-The reconstruction of nasal cavity model computer images - including discretisation - can be divided into 5 stages: image aquisition, data conversion, segmentation, refinement and meshing. Firstly medical imaging technologies are used to extract a series of pixelated slices, in which the various materials which make up the human body can be identified by variation in greyscale measurements. These slices are then interpolated to create a 3D structure of voxels (the 3D equivalent of a pixel).
+The reconstruction of nasal cavity model computer models- including discretisation - can be divided into 5 stages: image aquisition, data conversion, segmentation, refinement and meshing. Firstly medical imaging technologies are used to extract a series of pixelated slices, in which the various materials which make up the human body can be identified by variation in greyscale measurements. These slices are then interpolated to create a 3D structure of voxels (the 3D equivalent of a pixel).
 
 The reconstruction of the nasal cavity geometries can be very time consuming and prone to human error. The improvement on and automation of the reconstruction process are areas of active research. This chapter presents an overview of the methods in current use for the various phases (mentioned above) by which a nasal cavity geometry is prepared for computational solution.
 
@@ -21,9 +21,7 @@ CT scans use a series of x-rays taken at regular intervals within the region of 
 
 Once the CT scan has been outputted as a series of voxels, the anatomical geometries relevant to the project at hand need to be extracted. To achieve this goal, the voxels that make up the relevant section of the data need to be identified somehow. This can be done manually - by going through the many slices that make up the CT scan and identifying the relevant areas - however this process is extremely time consuming.
 
-\subsection{Segmentation methods}
-
-Numerous algorithms have been developed for the purpose of automating the process; all of which have certain advantages and disadvantages. For the most part these algorithms can be subsumed in to three categories, presented below (in order of increasing complexity):
+Numerous algorithms have been developed for the purpose of automating the process of image segmentation; all of which have certain advantages and disadvantages. For the most part these algorithms can be subsumed in to three categories, presented below (in order of increasing complexity):
 
 \begin{description}
 

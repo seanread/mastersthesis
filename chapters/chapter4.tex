@@ -12,7 +12,7 @@ The aim of CFD is to numerically solve the physical conservation laws of newtoni
 
     \subsection{Mass conservation}
 
-    The principle of conservation of mass is that, in a closed system, the mass remains constant. This means that fluid will move through a set region in such a way the mass is conserved. For an incompressible flow, this means that the outflows and the inflows will be equal. This can be written as
+    The principle of conservation of mass is that, in a closed system, the mass remains constant. This means that fluid will move through a set region in such a way that the mass is conserved. For an incompressible flow, this means that the outflows and the inflows will be equal. This can be written as
     \begin{equation} \label{eq:1}
       0 = \sum_{in} \dot{m} - \sum_{out} \dot{m}
     \end{equation} 
@@ -60,7 +60,7 @@ which is the continuity equation, and can easily be extended into three dimensio
 \end{equation}
 
 
-    In the case of the nasal cavity, this can be conceptualised in relation to the nasal cavity geometry, where the air flow rate going in to the nostrils must be equal to that leaving through the extension from the nasopharynx, as seen in figure \ref{fig:CompDom}.
+    In the case of the nasal cavity, this can be conceptualised in relation to the nasal cavity geometry, where the air flow rate going into the nostrils must be equal to that leaving through the extension from the nasopharynx, as seen in figure \ref{fig:CompDom}.
 
 \begin{figure}   
   \centering
@@ -75,7 +75,7 @@ which is the continuity equation, and can easily be extended into three dimensio
 
     \centerline{$\sum F = ma$}
 
-    Here $m$ is the mass of the system, $a$ is its rate of acceleration, and  $\sum F$ is the sum of forces acting on the system. F can generally be divided in to body and surface forces. Rewriting the mass as the product of volume and the density, and acceleration as the first derivative of velocity:
+    Here $m$ is the mass of the system, $a$ is its rate of acceleration, and  $\sum F$ is the sum of forces acting on the system. F can generally be divided into body and surface forces. Rewriting the mass as the product of volume and the density, and acceleration as the first derivative of velocity
 
 
     \begin{equation} \label{eq:4}
@@ -86,7 +86,7 @@ which is the continuity equation, and can easily be extended into three dimensio
 
     Surface forces are those that act directly on the surface of a fluid element. These fluid forces include normal stress, in the x direction $\sigma_{xx}$, which is made up of pressure forces $p$ exerted on the body and normal viscous stress components $tau_{xx}$; and tangential stresses, $\tau_{xy}$ and $\tau_{xz}$.
 
-    Summing these forces in the x direction, for a 2D fluid element we get:
+    Summing these forces in the x direction, for a 2D fluid element we get
     
 
     \begin{dmath} \label{eq:5}
@@ -106,7 +106,7 @@ which is the continuity equation, and can easily be extended into three dimensio
       \tau_{xx} = 2 \mu \frac{\partial u}{\partial x} \quad \tau_{yx} = \mu \frac{\partial u}{\partial y}
     \end{equation}
 
-    Where $\mu$ is the viscocity of the fluid. Combining equations \ref{eq:4} , \ref{eq:5} and \ref{eq:6} in the x direction, and cancelling out the volume term:
+    Where $\mu$ is the viscocity of the fluid. Combining equations \ref{eq:4} , \ref{eq:5} and \ref{eq:6} in the x direction, and cancelling out the volume term
 
     \begin{equation} \label{eq:7}
       \rho \frac{Du}{Dt} = - \frac{\partial p}{\partial x} + \mu (\frac{\partial^2 u}{\partial x^2} + \frac{\partial^2 u}{\partial y^2}) + \rho \sum F_{b}
@@ -118,7 +118,7 @@ which is the continuity equation, and can easily be extended into three dimensio
       \frac{Du}{Dt} = \frac{\partial u}{\partial t} + v \frac{\partial u}{\partial y} + u \frac{\partial u}{\partial x}
     \end{equation}
 
-    combining equations \ref{eq:7} and \ref{eq:8} and dividing through by $\rho$:
+    combining equations \ref{eq:7} and \ref{eq:8} and dividing through by $\rho$
 
     \begin{equation} \label{eq:9}
       \underbrace{\frac{\partial u}{\partial t}}_{local\ acceleration} + v \underbrace{\frac{\partial u}{\partial y} + u \frac{\partial u}{\partial x}}_{convection} = - \underbrace{\frac{1}{\rho} \frac{\partial p}{\partial x}}_{pressure gradient} + \underbrace{\nu (\frac{\partial^2 u}{\partial x^2} + \frac{\partial^2 u}{\partial y^2})}_{diffusion} + \underbrace{\sum F_{b}}_{body force}
@@ -138,7 +138,7 @@ which is the continuity equation, and can easily be extended into three dimensio
 
     \centerline{$E = C_{p} T$}
 
-    $\frac{DE}{Dt}$ can be expressed similarly to Equation \ref{eq:8}:
+    $\frac{DE}{Dt}$ can be expressed similarly to Equation \ref{eq:8}
 
     \begin{equation} \label{eq:11}
       \frac{DE}{Dt} = \frac{\partial E}{\partial t} + v \frac{\partial E}{\partial y} + u \frac{\partial E}{\partial x} = C_{p} (\frac{\partial T}{\partial t} + v \frac{\partial T}{\partial y} + u \frac{\partial T}{\partial x})
@@ -164,7 +164,7 @@ which is the continuity equation, and can easily be extended into three dimensio
       [q_{x} + \frac{\partial q_{x}}{\partial x}] \Delta y - q_{x} \Delta y = \frac{\partial q_{x}}{\partial x} = k \frac{\partial^2 T}{\partial x^2} \Delta x \Delta y
     \end{equation}
 
-    reconstructing equation \ref{eq:10} with the inclusion of \ref{eq:14}, considered also in the y direction, we can cancel out the volume term:
+    reconstructing equation \ref{eq:10} with the inclusion of \ref{eq:14}, considered also in the y direction, we can cancel out the volume term
 
     \begin{equation} \label{eq:15}
       \underbrace{\frac{\partial T}{\partial t}}_{local\ acceleration} + \underbrace{u \frac{\partial T}{\partial x} + v \frac{\partial T}{\partial y}}_{convection} = \underbrace{\frac{k}{\rho C_{p}} ( \frac{\partial^2 T}{\partial x^2} + \frac{\partial^2 T}{\partial y^2} )}_{diffusion}
@@ -212,10 +212,12 @@ Finite volume methods can tend to cause artificial, or numerical, diffusion if t
 Once the system has been discretised, a system of linear equations can be developed to describe the system. These equations can be solved with one of several methods. These methods can generally be divided into two categories: either direct or iterative. In general, for large complex domains such as the nasal cavity models presented in this paper, iterative methods are the only way to derive a solution.
 
 \section{Setup and solution of nasal cavity models used in this thesis}
-Here an overview will be given of the way that the solution of the nasal cavity systems presented in this thesis will be given. Firstly the models are prepared and meshed as discussed in the chapter \ref{MRM}. Once this is done the boundary conditions for the system must be defined. 
+Here an overview will be given of the way that the solution of the nasal cavity systems presented in this thesis will be given. Firstly the models are prepared and meshed as discussed in the Chapter \ref{MRM}. Once this is done the boundary conditions for the system must be defined. 
 
-The face and internal wall of the nasal cavity and pipe extension are set to no slip condition. This means that velocity is assumed to be zero on the surface of these zones. The exit of the pipe extension is given a constant velocity value calculated for each model as to give an inspiritory flow rate of 10 lpm, which has been suggested by the literature to be a realistic approximation for an inspiratory rate of an adult human at rest. For these simulations this flow rate is treated as constant and the flow treated as steady, an assumption which greatly simplifies the solution process and one which is commonly used when comparing fluid flow characteristicsbetween nasal cavity models (transient, or time dependant solutions are computationally much more costly). The 3d incompressible navier stokes equations were solved iteratively via the SIMPLE method for pressure-velocity coupling and a second order upwind scheme for convection.
+The face and internal wall of the nasal cavity and pipe extension are set to no slip condition. This means that velocity is assumed to be zero on the surface of these zones. The exit of the pipe extension is given a constant velocity value calculated for each model as to give an inspiritory flow rate of 10 lpm, which has been suggested by the literature to be a realistic approximation for an inspiratory rate of an adult human at rest. For these simulations this flow rate is treated as constant and the flow treated as steady, an assumption which greatly simplifies the solution process and one which is commonly used when comparing fluid flow characteristics between nasal cavity models (transient, or time dependant solutions are computationally much more costly). The 3D incompressible navier stokes equations were solved iteratively via the SIMPLE method for pressure-velocity coupling and a second order upwind scheme for convection.
 
-The border of the hemispheric region around the face is set to atmospheric pressure. For resting inspiratory flow rates flows have been shown to be modeled most accurately as laminar; as such no turbulence model is used.
+The border of the hemispheric region around the face is set to atmospheric pressure. For resting inspiratory flow rates flow within the nasal cavity has been shown to be modelled most accurately as laminar; as such no turbulence model is used.
 
-The numerical solution of the systems - described by the aforementioned boundary conitions and meshes - is approximated, for the models of this thesis, by the use of a commercial CFD code, in this case ANSYS FLUENT. The following chapter details the analysis of the solutions obtained for the five cavities.
+The temperature of the air coming from the outside is set to 20$^{\circ} C$ and the wall temperature inside the nasal cavity is set to 32.6$^{\circ} C$.  The species mass fraction of $\mathrm{H_2 O}$ to give 100\% relative humidity at the cavity wall is calculated for 32.6$^{\circ} C$, with the exception of the nasal vestibule, where diffusive flux is set to zero. The species mass fraction of $\mathrm{H_2 O}$ for the air coming into the model is calculated to give a relative humidity of 45\% for 101.3 kpa and 20$^{\circ} C$.
+
+The numerical solution of the systems - described by the aforementioned boundary conditions and meshes - is approximated, for the models of this thesis, by the use of a commercial CFD code, in this case ANSYS FLUENT. The following chapter details the analysis of the solutions obtained for the five cavities.
