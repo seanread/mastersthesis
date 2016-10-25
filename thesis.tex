@@ -9,6 +9,7 @@
 \usepackage{booktabs}
 \usepackage{graphicx}
 \usepackage{url}
+\usepackage{fancyhdr}
 \usepackage{siunitx}
 \usepackage{hyperref}
 \usepackage{natbib}
@@ -19,42 +20,79 @@
     linkcolor=black,
     urlcolor=black
 }
+\setlength{\parskip}{1em}
 \graphicspath{ {images/} }
+\setlength\headheight{20pt} 
+\fancypagestyle{style1}{
+  \fancyhf{}
+  \cfoot{\thepage}
+}
+\fancypagestyle{title}{
+\renewcommand{\headrulewidth}{0pt}
+\chead{\includegraphics[width=4cm]{rmit}}
+}
 \begin{document}
+\pagenumbering{Roman}
+\pagestyle{title}
 \title{
 	{Detailed Analysis of the Relationship between Geometry and Airflow in Older Chinese Adult Male Nasal Cavities}\\
 	{\large SAMME}\\
 	{\includegraphics{rmit.jpg}}
 }
 \author{Sean Read}
-\date{Day Month Year}
-\begin{titlepage}
+
     \begin{center}
+        
+
+      \vspace*{1cm}
+        
+	Detailed Analysis of the Relationship between Geometry and Airflow in older Chinese Adult Male Nasal Cavities
+        
         \vspace*{1cm}
+        A thesis submitted in fulfilment of the requirements for the degree of Master’s by research
+	\vspace{1.5cm}
         
-        \Huge
-	\textbf{Detailed Analysis of the Relationship between Geometry and Airflow in older Chinese Adult Male Nasal Cavities}
+        Sean Dermott Read
         
-        \vspace{1.5cm}
+        \vspace{2.8cm}
         
-        \textbf{Sean Read}
+
         
-        \vfill
-        
-        \vspace{0.8cm}
-        
-        \includegraphics[width=0.4\textwidth]{rmit}
-        
-        \Large
-        SAMME\\
-        RMIT\\
-        Australia\\
-        Date
+	School of Aerospace Mechanical and Manufacturing Engineering\\
+	\vspace{0.3cm}
+        College of Science Engineering and Health\\
+	\vspace{0.3cm}
+	RMIT University\\
+	\vspace{1cm}
+	October 2016
         
     \end{center}
-\end{titlepage}
 \onehalfspacing
+
+ 
+\chapter*{Declaration}
+\pagestyle{style1}
+I certify that except where due acknowledgement has been made, the work is that of the author alone; the work has not been submitted previously, in whole or in part, to qualify for any other academic award; the content of the thesis is the result of work which has been carried out since the official commencement date of the approved research program; any editorial work, paid or unpaid, carried out by a third party is acknowledged; and, ethics procedures and guidelines have been followed\\
+
+
+\vspace{0.3cm}
+\noindent
+Sean Dermott Read\\
+
+\noindent
+28th October 2016
+\chapter*{Acknowledgements}
+I want to thank my supervisors, Dr Kiao Inthavong and Professor Jiyuan Tu, my colleagues in the CFD group, my family and my partner Tao Yao 
+
+\tableofcontents
+
+\newpage
+\listoffigures
+\listoftables
+
 \chapter*{Abstract}
+\pagenumbering{arabic}
+\addcontentsline{toc}{chapter}{Abstract}
 Older nasal cavities tend to exhibit a range of symptoms and pathologies more frequently than those of younger patients. These symptoms include variations in airconditioning functionality, as well as olfaction and mucosal clearance functionality. 
 Several factors have been identified as potentially responsible for these symptoms. 
 One issue that has been identified as a potential cause for a number of the identified symptoms is aberrations in airflow structures caused by age-related variations in nasal cavity anatomy. 
@@ -67,18 +105,6 @@ The third section details the discretisation and setup of the CFD simulations ca
 The fourth section analyses variations in geometry and airflow structures between the simulation results for the five models.
 
 This study provides preliminary understanding connecting nasal anatomy, age and airflow dynamics. Although the study size was limited, it provides insight into potential relationships between inhaled airflow characteristics and geometry.
-\chapter*{Declaration}
-I declare that..
-
-\chapter*{Acknowledgements}
-I want to thank my supervisors, Dr Kiao Inthavong and Professor Jiyuan Tu and my cat
-
-\tableofcontents
-
-\newpage
-\listoffigures
-\listoftables
-
 \chapter{Introduction}
 
 \input{chapters/introduction}
