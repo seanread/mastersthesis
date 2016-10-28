@@ -1,8 +1,19 @@
+\section{Introduction}
+
+In this chapter The relevant literature regarding older nasal cavities will be reviewed. Significant gaps in the current body of knowledge will be identified and serve as the foundation for this thesis.
+
 \section{Nasal cavity anatomy}
 
-The nasal cavity is the primary conduit for air coming into the respiratory system. \cite{Elad2008}. The nasal cavity consists of two 5 by 10 cm chambers running between the nostrils and the pharynx \cite{Mygind1998}. The cavities are each made up of three turbinates, whose slit-like structure facilitates airconditioning (humidification and temperature regulation). \cite{Mygind1998}. Under each of the turbinates is a meatus. The meatus are connected to the nasolacrimal duct and paranasal sinuses \cite{Mygind1998}. The two major functions of the nasal cavities are conditioning of the air for interaction with the internal airways by warming and humidification, and olfaction \cite{Doorly2008, Elad2008, Mygind1998, Berglund1982}.
+The nasal cavity is the primary conduit for air coming into the respiratory system. \cite{Elad2008}. The nasal cavity consists of two 5 by 10 cm chambers running between the nostrils and the pharynx \cite{Mygind1998}. The cavities are each made up of three turbinates, whose slit-like structure facilitates airconditioning (humidification and temperature regulation). \cite{Mygind1998}. 
+
+Under each of the turbinates is a meatus. The meatus are connected to the nasolacrimal duct and paranasal sinuses, which are the largest of the many sinuses that surround the nasal cavity \cite{Mygind1998}. 
+
+The nasal cavity is lined by respiratory epithelium. This epithelium controls the movement of mucous within the nasal cavity and is thus essential to its (the nasal cavity) airconditioning functionality \cite{Mygind1998}.
+
+The two major functions of the nasal cavities are conditioning of the air for interaction with the internal airways by warming and humidification, and olfaction \cite{Doorly2008, Elad2008, Mygind1998, Berglund1982}.
 
 \section{Geriatric rhinology}
+Rhinology is the branch of medicine that deals with the nose and its pathologies. 
 Common rhinological complaints of the elderly include dryness, runny noses, crusting and epistaxis \cite{Varga-Huettner2013}. Epidemiological studies have been carried out to examine the consistency of the manifestation of various symptoms throughout elderly patients with mixed results. 
 
 The literature at present seems to be unanimous on the tendency of the nasal cavity's cross sectional area to increase with age. Several researchers have investigated this phenomena using acoustic rhinometry and shown good concordance in study outcomes \cite{Kalmovich2005, Edelstein1996,WhanKim2007,Lindemann2008}. Loftus et al. \cite{Loftus2016} compared the volumes of 22 nasal cavity models taken from CT scan data, and also found a clear tendency towards increased nasal cavity volume with ageing. Nasal air heating and humidification examined in vivo have been shown to be impaired in older patients \cite{Lindemann2008}. 
@@ -17,30 +28,42 @@ To investigate air flow mechanisms in older nasal cavities, an experimental tech
 
 The anatomy of the nasal cavity was first classified in detail by Emil Zuckerlandl in the 19th century \cite{Stammberger1989}. Anatomically, his records were more or less up to the standard of what can be assessed from modern scanning techniques \cite{Stammberger1989}, however the investigation of airflow characteristics was still severely limited by technological capacity \cite{Eccles2000}. It was not until the turn of the 19th century that experimentation in to nasal airflow began in proper \cite{Eccles2000}. 
 
-Some of the more common in vivo techniques used include rhinomanometry, which allows measurement of the pressure drop across the nasal cavity \cite{Hilberg1989}; and acoustic rhinometry, which allows measurement of the cross sectional area of the nasal cavity as a function of depth \cite{Hilberg1989}. 
+Some of the more common in vivo techniques used include rhinomanometry, which measures of the pressure drop across the nasal cavity \cite{Hilberg1989}; and acoustic rhinometry, which allows measurement of the cross sectional area of the nasal cavity as a function of depth \cite{Hilberg1989}. 
 
-Ultimately, however, direct detailed measurements of flow mechanics within the human nasal cavity taken in vivo are not practically viable with current technology as a result of the complexity and small scale of the nasal geometry \cite{Doorly2008c}. Thus the preferred media for the testing in modern times has tended to be either physical or computational models reconstructed from CT scan data \cite{Doorly2008c}. The physical models that have been constructed from CT scan data are able to provide detailed geometric reproductions. These allow for much more detailed flow analysis when compared with older techniques such as rhinomanometry \cite{Ma2009}. Such experimental set ups are, however, costly to run in terms of time and resources, in particular when compared with the high level of detail that can be achieved from a well done CFD simulation \cite{Ma2009}.
+Ultimately, however, direct detailed measurements of flow mechanics within the human nasal cavity taken in vivo are not practically viable with current technology as a result of the complexity and small scale of the nasal geometry \cite{Doorly2008c}. Thus the preferred media for the testing in modern times has tended to be either physical or computational models reconstructed from CT scan data \cite{Doorly2008c}. The physical models that have been constructed from CT scan data are able to provide detailed geometric reproductions.
+These geometries can then be used to create accurate 3D models which can then be used with techniques like particle image velocimetry to conduct in detailed flow analysis throughout the nasal cavity \cite{Chung2008, Kelly2000}.
+These techniques allow for data about instantaneous velocities at many points throughout a working fluid to be obtained through photographic methods. From this data the flow regime can be computed with high accuracy, allowing for in depth quantitave and qualitative analysis.
+Such experimental set ups are, however, costly to run in terms of time and resources, in particular when compared with the high level of detail that can be achieved from a well done CFD simulation \cite{Ma2009}.
 
 
 \section{Computational studies}  
+\subsection*{Background}
 Computational fluid dynamics(CFD) is a discipline which is concerned with the computational approximation of solutions to the navier stokes equations for closed fluid systems\cite{Tu2008}. In many fields - inlcuding rhinology - CFD has facilitated economical and detailed investigations into cases in which experimental investigation would otherwise be costly or impossible\cite{Keyhani1995}.
 
 CFDs were the primary driving force behind the development of larger and faster computers until the 80's\cite{Wendt2009}. In more recent times, the continuing advancement of computational technologies has facilitated considerable growth in the scope and accuracy of CFDs for predicting the behaviour of increasingly complex systems\cite{Tu2008}. 
 
-One of the areas of investigation that has been facilitated by these advances is that of nasal airflow. Initially, simplified nasal cavity geometry models were used to create computational meshes and solve numerically for the fluid flow characteristics under steady state state conditions \cite{Keyhani1995, Hahn1993}. Later 3D models extracted from CT scans were used to achieve more accurate results \cite{Martonen2002}. In addition to this, various inlet and outlet conditions have been considered, including the difference between unsteady state  (flowrate as a function of time throughout the nasal cycle) \cite{Shi2006} and steady state (constant velocity, time independent) assumption based models \cite{Wen2008}. This discrepancy has been a point of much contention, and it seems that the current position is that the correct choice depends on the application at hand \cite{Doorly2008c}. Certainly to date it seems that the vast bulk of the case studies comparing different geometries have used the steady state state assumption \cite{Xi2012, Zhu2011, Garcia2007}
 
-Another issue which has been of some debate in the literature is the relevance of the inclusion of sinuses in the modelled flow domain. It has been reasonably commonplace to include the sinuses in studies that are examining the effects of sinus surgery \cite{Xiong2008a, Lindemann2005}. Also it has been shown that, while the impact on airflow is relatively minimal, the sinuses can be subject to significant levels of particle deposition for particles in the range of 1 nanometre in diameter, and particularly for low flow rates \cite{Ge2012}. The added requirements in time and computational complexity necessitated by the inclusion of the sinuses, however, seems to warrant their exclusion from models in situations where they are not specifically relevant \cite{Doorly2008c}.
+\subsection*{Nasal airflow}
+One of the areas of investigation that has been facilitated by these advances is that of nasal airflow. Initially, simplified nasal cavity geometry models were used to create computational meshes and solve numerically for the fluid flow characteristics under steady state state conditions \cite{Keyhani1995, Hahn1993}. Later 3D models extracted from CT scans were used to achieve more accurate results \cite{Martonen2002}. 
 
-The majority of in vitro and numerical studies on nasal airflow characteristics have assumed steady flow conditions \cite{Doorly2008c, Keyhani1995, Subramaniam1998, Wen2008}. This assumption has been qualified on the basis of the low strouhal number for respiratory airflow \cite{Keyhani1995}, and more recently verified for certain parameters such as wall shear stress \cite{Doorly2008c}.
+\subsection*{Boundary conditions}
+Various inlet and outlet conditions have been considered, including the difference between unsteady state  (flowrate as a function of time throughout the nasal cycle) \cite{Shi2006} and steady state (constant velocity, time independent) assumption based models \cite{Wen2008}. This discrepancy has been a point of much contention, and it seems that the current position is that the correct choice depends on the application at hand \cite{Doorly2008c}. Certainly to date it seems that the vast bulk of the case studies comparing different geometries have used the steady state state assumption \cite{Xi2012, Zhu2011, Garcia2007, Doorly2008c, Keyhani1995, Subramaniam1998, Wen2008}. This assumption has been qualified on the basis of the low strouhal number for respiratory airflow \cite{Keyhani1995}, and more recently verified for certain parameters such as wall shear stress \cite{Doorly2008c}.
+
 
 The flow rate for many of these steady state experiments and simulations has been determined on the basis of resting minute ventilation for healthy adults \cite{Subramaniam1998, Wen2008}. This figure tends to be recorded around 7.5 litres per minute \cite{Chaya2006, Tobin1983}. This gives an average steady flow inspiratory rate of 15 litres per minute (as the minute volume is both inhaled and exhaled during one round of respiration) \cite{Subramaniam1998}. For such flow rates the flow can be accurately treated as laminar \cite{Doorly2008c, Hahn1993}.
 
+
+Another issue which has been of some debate in the literature is the relevance of the inclusion of sinuses in the modelled flow domain. It has been reasonably commonplace to include the sinuses in studies that are examining the effects of sinus surgery \cite{Xiong2008a, Lindemann2005}. Also it has been shown that, while the impact on airflow is relatively minimal, the sinuses can be subject to significant levels of particle deposition for particles in the range of 1 nanometre in diameter, and particularly for low flow rates \cite{Ge2012}. The added requirements in time and computational complexity necessitated by the inclusion of the sinuses, however, seems to warrant their exclusion from models in situations where they are not specifically relevant \cite{Doorly2008c}.
+
+
 Earlier numerical models restricted their domain to the nasal cavity itself \cite{Keyhani1995, Subramaniam1998, Wen2008}. Later it was suggested that the area around the nasal vestibule is liable to influence the developement of the inlet flow distribution \cite{Doorly2008}. The facial features have also been shown to influence flow field developement \cite{Anthony2005}. More recently, facial features have been included in computational models to allow for inlet profile developement \cite{Li2012, Lee2010}.
 
+
+\subsection*{Older nasal cavities}
 Computational studies have yet to be undertaken for older nasal cavities. It is expected that the technologies available to us now for studying variations in nasal functionality could afford an unprecedented insight into their structure and function.
 
 \section{Geometric variations}
-The basis of any in depth investigation into the relationship between geometric variations and airflow structures is a clear analysis of the geometric variations. Various demographic factors have been suggested to influence nasal morphology, such as ethnicity (as a result of climatic adaptations on the nose) \cite{Davies1932, Thomson1923, Weiner1954, Churchill2004, Noback2011}. The nasal shape and form was naturally optimised for maintaining sufficient respiratory heat and moisture exchange in the nasal mucosa.
+The basis of any in depth investigation into the relationship between geometric variations and airflow structures is a clear analysis of the geometric variations. Various demographic factors have been suggested to influence nasal morphology, such as ethnicity; as humans evolved, nasal cavities adapted to variations in climate as to preserve optimal heat and moisture exchange in the nasal mucosa \cite{Davies1932, Thomson1923, Weiner1954, Churchill2004, Noback2011}.
 
 Cross sectional areas have been graphed as a function of radial position to compare the geometries of different models in many studies \cite{Xi2012, Zhu2011, Lindemann2008, Garcia2007}. Surface area has also been suggested to be significant metric in predicting flow behaviour (as surface area to volume ratios are expected to impact on the flow behaviour) \cite{Xi2012, Garcia2007}. The minimum coronal cross-sectional area is a figure that has been suggested to be of particular sinificance to flow development \cite{Lindemann2008}. The ratio of area to volume (or perimeter length to cross sectional area) has been used by several researchers to predict flow characteristics \cite{Xi2012, Garcia2007}.
 
@@ -63,7 +86,7 @@ Pressure drop across the nasal cavity is of particular interest in older cavitie
 
 \begin{figure}
   \centering
-  \includegraphics[width=0.5\textwidth]{pressureDrop.png}
+  \includegraphics[width=0.8\textwidth]{pressureDrop.png}
   \caption{Pressure drop across the nasal cavity as a function of flow rate} \label{fig:pvf}
 \centering
 \end{figure}
@@ -80,14 +103,14 @@ These measurements (Wall shear and velocity) have been shown to be significant f
 
 \begin{figure}
   \centering
-  \includegraphics[width=0.5\textwidth]{chinstreams.png}
+  \includegraphics[width=0.6\textwidth]{chinstreams.png}
   \caption{Streamlines coloured by velocity from Tan et al. \cite{Tan2012}} \label{fig:chinstreams}
 \centering
 \end{figure}
 
 \begin{figure}
   \centering
-  \includegraphics[width=0.3\textwidth]{wencont.png}
+  \includegraphics[width=0.4\textwidth]{wencont.png}
   \caption{Velocity contours at the nasal valve from Wen et al. \cite{Wen2008}} \label{fig:wencont}
 \centering
 \end{figure}
@@ -134,4 +157,4 @@ On the basis of the literature review presented above, the following gaps in the
 
   \item the effect of geometric discrepencies between older nasal cavities on heat and vapour transfer has yet to be assessed in detail
 
-\end{itemize}
+)\end{itemize}

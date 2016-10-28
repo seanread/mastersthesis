@@ -3,48 +3,46 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: thesis.aux
 The style file: unsrt.bst
 Database file #1: chapters/database.bib
-Warning--I didn't find a database entry for "Davies1932"
-Warning--I didn't find a database entry for "Thomson1923"
 Warning--can't use both author and editor fields in Berglund1982
-You've used 75 entries,
+You've used 79 entries,
             1791 wiz_defined-function locations,
-            995 strings with 19183 characters,
-and the built_in function-call counts, 19360 in all, are:
-= -- 1644
-> -- 1039
+            1019 strings with 19708 characters,
+and the built_in function-call counts, 20262 in all, are:
+= -- 1733
+> -- 1066
 < -- 6
-+ -- 373
-- -- 298
-* -- 1606
-:= -- 3159
-add.period$ -- 232
-call.type$ -- 75
-change.case$ -- 72
++ -- 384
+- -- 305
+* -- 1669
+:= -- 3303
+add.period$ -- 245
+call.type$ -- 79
+change.case$ -- 76
 chr.to.int$ -- 0
-cite$ -- 76
-duplicate$ -- 722
-empty$ -- 1777
-format.name$ -- 298
-if$ -- 4228
+cite$ -- 80
+duplicate$ -- 758
+empty$ -- 1869
+format.name$ -- 305
+if$ -- 4427
 int.to.chr$ -- 0
-int.to.str$ -- 75
-missing$ -- 78
-newline$ -- 384
-num.names$ -- 75
-pop$ -- 104
+int.to.str$ -- 79
+missing$ -- 82
+newline$ -- 405
+num.names$ -- 79
+pop$ -- 107
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 288
+skip$ -- 301
 stack$ -- 0
-substring$ -- 1542
-swap$ -- 119
+substring$ -- 1631
+swap$ -- 123
 text.length$ -- 6
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 1
-while$ -- 168
-width$ -- 77
-write$ -- 837
-(There were 3 warnings)
+while$ -- 178
+width$ -- 81
+write$ -- 883
+(There was 1 warning)

@@ -1,3 +1,8 @@
+\section{Introduction}
+Once a 3D model has been developed and meshed, a variety of numerical paramaters and methods must be determined and utilised in order to accurately model the fluid system.
+ This chapter present an overview of the techniques used for modelling the fluid systems defined by the nasal cavity models reconstructed for this thesis. 
+
+
 \section{Fluid Dynamics}
 The aim of CFD is to numerically solve the physical conservation laws of newtonian physics:
 
@@ -172,7 +177,12 @@ which is the continuity equation, and can easily be extended into three dimensio
 
 \section{Humidity}
 
-One of the primary functions of the nasal cavity is the humidification of the incoming air in preparation for its interaction with the lungs. It therefore stands that any investigation into the fluid mechanisms of the nasal cavity would be incomplete without adressing the efficacy of this function. One simple but effective method for approximating humidification data in a computational domain is the use of the convection-diffusion equation.
+One of the primary functions of the nasal cavity is the humidification of the incoming air in preparation for its interaction with the lungs. 
+any investigation into the fluid mechanisms of the nasal cavity would be incomplete without adressing the efficacy of this function. 
+
+All air has some water content. The amount of water content that air is capable of holding varies as a function of temperature and pressure. The ratio of the amount of water vapour present in a body of air to the maximum quantity that it (the body of air) is capable of holding is referred to as relative humidity. This is a commonly used metric for describing the vapour content of air.
+
+One simple but effective method for approximating humidification data in a computational domain is the use of the convection-diffusion equation.
 
 Analogously to equations \ref{eq:15} and \ref{eq:9}, for a 2D element we can write
 
@@ -182,7 +192,7 @@ Analogously to equations \ref{eq:15} and \ref{eq:9}, for a 2D element we can wri
 
 Where $\Phi$ is the concentration of water vapour and $D_{H_{2} O}$ is the diffusivity of water in air.
 
-In the commercial software package used for the solution of the models presented in this thesis (FLUENT), this is solved in the following form:
+In the commercial software package used for the solution of the models presented in this thesis (FLUENT), this is solved in the following form for laminar flows:
 
 \begin{equation} \label{eq:17}
  J_i = -\rho D_{i,m} \nabla Y_i - D_{T, i} \frac{\nabla T}{T}

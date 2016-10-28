@@ -131,6 +131,18 @@ D.~J. Doorly, D.~J. Taylor, and R.~C. Schroter.
 \newblock Mechanics of airflow in the human nasal airways.
 \newblock {\em Respiratory Physiology \& Neurobiology}, 163(13):100--110, 2008.
 
+\bibitem{Chung2008}
+S.K. Chung and S.K. Kim.
+\newblock Digital particle image velocimetry studies of nasal airflow.
+\newblock {\em Respiratory Physiology \& Neurobiology}, 163(1-3):111--120,
+  2008.
+\newblock doi: DOI: 10.1016/j.resp.2008.07.023.
+
+\bibitem{Kelly2000}
+J.T. Kelly, A.K. Prasad, and A.S. Wexler.
+\newblock Detailed flow patterns in the nasal cavity.
+\newblock {\em J Appl. Physiol.}, 89:323--337, 2000.
+
 \bibitem{Ma2009}
 Baoshun Ma, Vincent Ruwet, Patricia Corieri, Raf Theunissen, Michel
   Riethmuller, and Chantal Darquenne.
@@ -171,6 +183,24 @@ H.~Shi, C.~Kleinstreuer, and Z.~Zhang.
   cavity model.
 \newblock {\em Journal Biomech. Eng.}, 128(5):697--706, 2006.
 
+\bibitem{Subramaniam1998}
+R.P. Subramaniam, R.B. Richardson, K.T. Morgan, J.~S. Kimbell, and R.A.
+  Guilmette.
+\newblock Computational fluid dynamics simulations of inspiratory airflow in
+  the human nose and nasopharynx.
+\newblock {\em Inhalation Toxicology}, 10(91-120), 1998.
+
+\bibitem{Chaya2006}
+MS~Chaya, AV~Kurpad, HR~Nagendra, and R~Nagarathna.
+\newblock The effect of long term combined yoga practice on the basal metabolic
+  rate of healthy adults.
+\newblock {\em BMC complementary and alternative medicine}, 6(1):1, 2006.
+
+\bibitem{Tobin1983}
+M~J Tobin, T~S Chadha, G~Jenouri, S~J Birch, H~B Gazeroglu, and M~A Sackner.
+\newblock Breathing patterns. 1. normal subjects.
+\newblock {\em Chest}, 84(2):202--205, 1983.
+
 \bibitem{Xiong2008a}
 G.~Xiong, J.~Zhan, K.~Zuo, J.~Li, L.~Rong, and G.~Xu.
 \newblock Numerical flow simulation in the post-endoscopic sinus surgery nasal
@@ -192,24 +222,6 @@ Qin~Jiang Ge, Kiao Inthavong, and Ji~Yuan Tu.
   nasal-sinus cavity cfd model.
 \newblock {\em Inhalation Toxicology}, 24(8):492--505, 2012.
 
-\bibitem{Subramaniam1998}
-R.P. Subramaniam, R.B. Richardson, K.T. Morgan, J.~S. Kimbell, and R.A.
-  Guilmette.
-\newblock Computational fluid dynamics simulations of inspiratory airflow in
-  the human nose and nasopharynx.
-\newblock {\em Inhalation Toxicology}, 10(91-120), 1998.
-
-\bibitem{Chaya2006}
-MS~Chaya, AV~Kurpad, HR~Nagendra, and R~Nagarathna.
-\newblock The effect of long term combined yoga practice on the basal metabolic
-  rate of healthy adults.
-\newblock {\em BMC complementary and alternative medicine}, 6(1):1, 2006.
-
-\bibitem{Tobin1983}
-M~J Tobin, T~S Chadha, G~Jenouri, S~J Birch, H~B Gazeroglu, and M~A Sackner.
-\newblock Breathing patterns. 1. normal subjects.
-\newblock {\em Chest}, 84(2):202--205, 1983.
-
 \bibitem{Anthony2005}
 T.R. Anthony, M.R. Flynn, and A.~Eisner.
 \newblock Evaluation of facial features on particle inhalation.
@@ -225,6 +237,18 @@ Xiangdong Li, Kiao Inthavong, and Jiyuan Tu.
 Jong-Hoon Lee, Yang Na, Sung-Kyun Kim, and Seung-Kyu Chung.
 \newblock Unsteady flow characteristics through a human nasal airway.
 \newblock {\em Respiratory Physiology \& Neurobiology}, 172(3):136--146, 2010.
+
+\bibitem{Davies1932}
+Arthur Davies.
+\newblock A re-survey of the morphology of the nose in relation to climate.
+\newblock {\em The Journal of the Royal Anthropological Institute of Great
+  Britain and Ireland}, 62:337--359, 1932.
+
+\bibitem{Thomson1923}
+Arthur Thomson.
+\newblock Man's nasal index in relation to certain climatic conditions.
+\newblock {\em The Journal of the Royal Anthropological Institute of Great
+  Britain and Ireland}, 53:92--122, 1923.
 
 \bibitem{Weiner1954}
 J.S. Weiner.
