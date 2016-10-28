@@ -6,7 +6,7 @@ Database file #1: chapters/database.bib
 Warning--can't use both author and editor fields in Berglund1982
 You've used 79 entries,
             1791 wiz_defined-function locations,
-            1019 strings with 19708 characters,
+            1018 strings with 19679 characters,
 and the built_in function-call counts, 20262 in all, are:
 = -- 1733
 > -- 1066

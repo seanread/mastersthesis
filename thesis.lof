@@ -6,15 +6,15 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces example of how greyscale values are assigned to pixels in a CT image\relax }}{24}{figure.caption.14}
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Flow chart showing the process by which an anatomical geometry is prepared - with the help of medical imaging software - for solution via CFD codes\relax }}{26}{figure.caption.15}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces geometries of the five cavities used for analysis in this thesis\relax }}{28}{figure.caption.16}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces example of nasal cavity geometry generation: \ref {fig:slicer} shows an example of the extraction of a 3D model from CT scan data, using, in this case, an open source software package, slicer. Figure \ref {fig:geomag} shows the refined geometry extracted from the CT slices seen in figure \ref {fig:cavzamp} (\subref {fig:slicer})\relax }}{29}{figure.caption.17}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces examples of the mesh types described in section \ref {mtypes}\relax }}{30}{figure.caption.18}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Geometries of the five cavities used for analysis in this thesis\relax }}{28}{figure.caption.16}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Example of nasal cavity geometry generation: \ref {fig:slicer} shows an example of the extraction of a 3D model from CT scan data, using, in this case, an open source software package, slicer. Figure \ref {fig:geomag} shows the refined geometry extracted from the CT slices seen in figure \ref {fig:cavzamp} (\subref {fig:slicer})\relax }}{29}{figure.caption.17}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Examples of the mesh types described in section \ref {mtypes}\relax }}{30}{figure.caption.18}
 \contentsline {figure}{\numberline {3.6}{\ignorespaces Example of mesh cell with spacing $\Delta x$ , $\Delta y$ and angle $ \theta $ between the grid lines along with high $AR$ triangular and quadrilateral elements \relax }}{32}{figure.caption.19}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces mesh independence test carried out for the largest and smallest of the new models presented in this thesis\relax }}{33}{figure.caption.20}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces mesh of NC06 (68yo)\relax }}{34}{figure.caption.21}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Mesh independence test carried out for the largest and smallest of the new models presented in this thesis\relax }}{33}{figure.caption.20}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Mesh of NC06 (68yo)\relax }}{34}{figure.caption.21}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Fluid moving through the computational domain, the inflow of ambient air must be equal to the air entering the lungs\relax }}{39}{figure.caption.23}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces representation of mesh discretised with finite volume method\relax }}{44}{figure.caption.24}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Representation of mesh discretised with finite volume method\relax }}{44}{figure.caption.24}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Colour coded display of the regional divisions used in tables \ref {tab:secvol}, \ref {tab:secsa}, \ref {tab:deff}\relax }}{48}{figure.caption.25}
 \contentsline {figure}{\numberline {5.2}{\ignorespaces Representation of the slicing method used for sampling data across the sagittal axis throughout this thesis\relax }}{48}{figure.caption.26}

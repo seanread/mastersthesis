@@ -3858,6 +3858,17 @@
   Type                     = {Journal Article}
 }
 
+@Article{Davies1932,
+  Title                    = {A re-survey of the morphology of the nose in relation to climate},
+  Author                   = {Davies, Arthur},
+  Journal                  = {The Journal of the Royal Anthropological Institute of Great Britain and Ireland},
+  Year                     = {1932},
+  Pages                    = {337--359},
+  Volume                   = {62},
+
+  Publisher                = {JSTOR}
+}
+
 @Book{Davies1966,
   Title                    = {Aerosol Science},
   Author                   = {Davies, C. N. },
@@ -18965,6 +18976,17 @@
   Volume                   = {67},
 
   Type                     = {Journal Article}
+}
+
+@Article{Thomson1923,
+  Title                    = {Man's Nasal Index in Relation to Certain Climatic Conditions.},
+  Author                   = {Thomson, Arthur},
+  Journal                  = {The Journal of the Royal Anthropological Institute of Great Britain and Ireland},
+  Year                     = {1923},
+  Pages                    = {92--122},
+  Volume                   = {53},
+
+  Publisher                = {JSTOR}
 }
 
 @Article{Thomson1987,
