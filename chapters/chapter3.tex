@@ -17,7 +17,7 @@ CT scans use a series of x-rays taken at regular intervals within the region of 
 
 \begin{figure} 
   \includegraphics[width=1\textwidth]{grayscale.png}
-\caption{example of how greyscale values are assigned to pixels in a CT image} \label{fig:greyscale}
+\caption{Example of how greyscale values are assigned to pixels in a CT image} \label{fig:greyscale}
 \centering
 \end{figure}
  
@@ -83,7 +83,7 @@ Figure \ref{fig:geo} shows the models reconstructed for and used in this thesis.
 \section{Meshing} \label{Meshing}
 \subsection{Introduction}
 
-The navier stokes equations, upon which CFD is based (see chapter \ref{cfd}), is unsolvable (in most instances), except by approximation. In order to approximate a solution to a given system, its geometry must be approximated, or discretised, as a series of points. The process by which these points are defined and related to one another is known as meshing; this in itself is a complex discipline under active research. In this chapter current methods are reviewed, and guidelines are given for developing quality meshes.
+The Navier Stokes equations, upon which CFD is based (see chapter \ref{cfd}), is unsolvable (in most instances), except by approximation. In order to approximate a solution to a given system, its geometry must be approximated, or discretised, as a series of points. The process by which these points are defined and related to one another is known as meshing; this in itself is a complex discipline under active research. In this chapter current methods are reviewed, and guidelines are given for developing quality meshes.
 \subsection{Mesh types} \label{mtypes}
 
 There are many types of mesh that can be employed; all of them have their own advantages and disadvantages. 
@@ -141,7 +141,7 @@ Many grid generation packages contain specific algorithms and/or functions for i
  
 \subsection{Mesh independence}
 
-A significant source of error in the solution of CFD problems is derived from the discretisation process; when a system is separated into a number of finite elements, for the purpose of Numerical solution, the solution that is obtained from its solution is an approximation. It is necessary, then, to ascertain the required resolution, or mesh size, required to calculate a result that approximates the exact solution to a satisfactory degree of accuracy. This is done by means of a mesh independence test. This entails the monitoring of one - or several - fluid flow parameters of interest to the study over a series of mesh resolutions for the relevant system. Independence is said to have been achieved when the effect of mesh size on the selected flow variable(s) has become sufficiently insignificant. Figure \ref{fig:mind} shows the results from the mesh independence test conducted for smallest and the largest of the five models presented in this thesis.
+A significant source of error in the solution of CFD problems is derived from the discretisation process; when a system is separated into a number of finite elements, for the purpose of numerical solution, the solution that is obtained from its solution is an approximation. It is necessary, then, to ascertain the required resolution, or mesh size, required to calculate a result that approximates the exact solution to a satisfactory degree of accuracy. This is done by means of a mesh independence test. This entails the monitoring of one - or several - fluid flow parameters of interest to the study over a series of mesh resolutions for the relevant system. Independence is said to have been achieved when the effect of mesh size on the selected flow variable(s) has become sufficiently insignificant. Figure \ref{fig:mind} shows the results from the mesh independence test conducted for smallest and the largest of the five models presented in this thesis.
 
 \begin{figure}
 

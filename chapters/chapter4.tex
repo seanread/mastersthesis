@@ -4,12 +4,12 @@ Once a 3D model has been developed and meshed, a variety of numerical paramaters
 
 
 \section{Fluid Dynamics}
-The aim of CFD is to numerically solve the physical conservation laws of newtonian physics:
+The aim of CFD is to numerically solve the physical conservation laws of NEwtonian physics:
 
 \begin{itemize}
   \item Conservation of mass
 
-  \item The conservation of momentum (Newton’s second law, the rate of change of momentum equals the sum of forces acting on the fluid);
+  \item The conservation of momentum (Newton's second law, the rate of change of momentum equals the sum of forces acting on the fluid);
 
   \item The conservation of energy (first law of thermodynamics, the rate of change of energy equals the sum of rate of heat addition to and the rate of work done on the fluid).
  
@@ -45,7 +45,7 @@ Extending this further, in the x direction for the same two dimensional element 
 \dot{m}_{out} = [\rho u + \frac{\partial(\rho u)}{\partial x}\Delta x]\Delta y
 \end{equation}
 
-Applying this in the y direction and subsituting back into Equation \ref{eq:1}, for an incompressible flow we get
+Applying this in the y direction and substituting back into Equation \ref{eq:1}, for an incompressible flow we get
  
 \begin{dmath} \label{eq:23}
 0 = [\rho u + \frac{\partial(\rho u)}{\partial x}\Delta x]\Delta y - \rho u \Delta y 
@@ -89,7 +89,7 @@ which is the continuity equation, and can easily be extended into three dimensio
 
     Body forces generally include gravity, centrifugal, Coriolis and electromagnetic forces; these all act on the volume from a distance.
 
-    Surface forces are those that act directly on the surface of a fluid element. These fluid forces include normal stress, in the x direction $\sigma_{xx}$, which is made up of pressure forces $p$ exerted on the body and normal viscous stress components $tau_{xx}$; and tangential stresses, $\tau_{xy}$ and $\tau_{xz}$.
+    Surface forces are those that act directly on the surface of a fluid element. These fluid forces include normal stress, in the x direction $\sigma_{xx}$, which is made up of pressure forces $p$ exerted on the body and normal viscous stress components $\tau_{xx}$; and tangential stresses, $\tau_{xy}$ and $\tau_{xz}$.
 
     Summing these forces in the x direction, for a 2D fluid element we get
     
@@ -224,7 +224,7 @@ Once the system has been discretised, a system of linear equations can be develo
 \section{Setup and solution of nasal cavity models used in this thesis}
 Here an overview will be given of the way that the solution of the nasal cavity systems presented in this thesis will be given. Firstly the models are prepared and meshed as discussed in the Chapter \ref{MRM}. Once this is done the boundary conditions for the system must be defined. 
 
-The face and internal wall of the nasal cavity and pipe extension are set to no slip condition. This means that velocity is assumed to be zero on the surface of these zones. The exit of the pipe extension is given a constant velocity value calculated for each model as to give an inspiritory flow rate of 10 lpm, which has been suggested by the literature to be a realistic approximation for an inspiratory rate of an adult human at rest. For these simulations this flow rate is treated as constant and the flow treated as steady, an assumption which greatly simplifies the solution process and one which is commonly used when comparing fluid flow characteristics between nasal cavity models (transient, or time dependant solutions are computationally much more costly). The 3D incompressible navier stokes equations were solved iteratively via the SIMPLE method for pressure-velocity coupling and a second order upwind scheme for convection.
+The face and internal wall of the nasal cavity and pipe extension are set to no slip condition. This means that velocity is assumed to be zero on the surface of these zones. The exit of the pipe extension is given a constant velocity value calculated for each model as to give an inspiritory flow rate of 10 lpm, which has been suggested by the literature to be a realistic approximation for an inspiratory rate of an adult human at rest \cite{Wen2008, Subraniam1998}. For these simulations this flow rate is treated as constant and the flow treated as steady, an assumption which greatly simplifies the solution process and one which is commonly used when comparing fluid flow characteristics between nasal cavity models (transient, or time dependant solutions are computationally much more costly). The 3D incompressible navier stokes equations were solved iteratively via the SIMPLE method for pressure-velocity coupling and a second order upwind scheme for convection.
 
 The border of the hemispheric region around the face is set to atmospheric pressure. For resting inspiratory flow rates flow within the nasal cavity has been shown to be modelled most accurately as laminar; as such no turbulence model is used.
 
