@@ -4,7 +4,7 @@ Once a 3D model has been developed and meshed, a variety of numerical paramaters
 
 
 \section{Fluid Dynamics}
-The aim of CFD is to numerically solve the physical conservation laws of NEwtonian physics:
+The aim of CFD is to numerically solve the physical conservation laws of Newtonian physics:
 
 \begin{itemize}
   \item Conservation of mass
@@ -17,7 +17,7 @@ The aim of CFD is to numerically solve the physical conservation laws of NEwtoni
 
     \subsection{Mass conservation}
 
-    The principle of conservation of mass is that, in a closed system, the mass remains constant. This means that fluid will move through a set region in such a way that the mass is conserved. For an incompressible flow, this means that the outflows and the inflows will be equal. This can be written as
+    The principle of conservation of mass is that, in a closed system, the mass remains constant. This means that fluid will move through a set region in such a way that the mass is conserved. For an incompressible flow, this means that the outflows and the inflows will be equal. For a steady state system this can be written as
     \begin{equation} \label{eq:1}
       0 = \sum_{in} \dot{m} - \sum_{out} \dot{m}
     \end{equation} 
@@ -224,9 +224,9 @@ Once the system has been discretised, a system of linear equations can be develo
 \section{Setup and solution of nasal cavity models used in this thesis}
 Here an overview will be given of the way that the solution of the nasal cavity systems presented in this thesis will be given. Firstly the models are prepared and meshed as discussed in the Chapter \ref{MRM}. Once this is done the boundary conditions for the system must be defined. 
 
-The face and internal wall of the nasal cavity and pipe extension are set to no slip condition. This means that velocity is assumed to be zero on the surface of these zones. The exit of the pipe extension is given a constant velocity value calculated for each model as to give an inspiritory flow rate of 10 lpm, which has been suggested by the literature to be a realistic approximation for an inspiratory rate of an adult human at rest \cite{Wen2008, Subraniam1998}. For these simulations this flow rate is treated as constant and the flow treated as steady, an assumption which greatly simplifies the solution process and one which is commonly used when comparing fluid flow characteristics between nasal cavity models (transient, or time dependant solutions are computationally much more costly). The 3D incompressible navier stokes equations were solved iteratively via the SIMPLE method for pressure-velocity coupling and a second order upwind scheme for convection.
+The face and internal wall of the nasal cavity and pipe extension are set to no slip condition. This means that velocity is assumed to be zero on the surface of these zones. In order to maximise comparability between the models a constant inspiratory flow rate is chosen for all the models. To this effect the exit of the pipe extension is given a constant velocity value calculated for each model as to give an inspiritory flow rate of 10 lpm, which has been suggested by the literature to be a realistic approximation for an inspiratory rate of an adult human at rest \cite{Wen2008, Subraniam1998}. For these simulations this flow rate is treated as constant and the flow treated as steady, an assumption which greatly simplifies the solution process and one which is commonly used when comparing fluid flow characteristics between nasal cavity models (transient, or time dependant solutions are computationally much more costly). The 3D incompressible navier stokes equations were solved iteratively via the SIMPLE method for pressure-velocity coupling and a second order upwind scheme for convection.
 
-The border of the hemispheric region around the face is set to atmospheric pressure. For resting inspiratory flow rates flow within the nasal cavity has been shown to be modelled most accurately as laminar; as such no turbulence model is used.
+The border of the hemispheric region around the face is set to atmospheric pressure. For resting inspiratory flow rates flow within the nasal cavity has been shown to be modelled most accurately as laminar \cite{Doorly2008, Hahn1993}; as such no turbulence model is used.
 
 The temperature of the air coming from the outside is set to 20$^{\circ} C$ and the wall temperature inside the nasal cavity is set to 32.6$^{\circ} C$.  The species mass fraction of $\mathrm{H_2 O}$ to give 100\% relative humidity at the cavity wall is calculated for 32.6$^{\circ} C$, with the exception of the nasal vestibule, where diffusive flux is set to zero. The species mass fraction of $\mathrm{H_2 O}$ for the air coming into the model is calculated to give a relative humidity of 45\% for 101.3 kpa and 20$^{\circ} C$.
 

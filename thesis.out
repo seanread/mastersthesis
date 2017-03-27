@@ -15,7 +15,7 @@
 \BOOKMARK [1][-]{section.1.6}{Research overview}{chapter.1}% 15
 \BOOKMARK [1][-]{section.1.7}{Thesis outline}{chapter.1}% 16
 \BOOKMARK [0][-]{chapter.2}{Model reconstruction and meshing}{}% 17
-\BOOKMARK [1][-]{section.2.1}{Introduction}{chapter.2}% 18
+\BOOKMARK [1][-]{section.2.1}{Introducton}{chapter.2}% 18
 \BOOKMARK [1][-]{section.2.2}{Geometry}{chapter.2}% 19
 \BOOKMARK [2][-]{subsection.2.2.1}{Introduction}{section.2.2}% 20
 \BOOKMARK [2][-]{subsection.2.2.2}{Non-invasive medical imaging}{section.2.2}% 21
@@ -42,10 +42,10 @@
 \BOOKMARK [1][-]{section.3.5}{Setup and solution of nasal cavity models used in this thesis}{chapter.3}% 42
 \BOOKMARK [0][-]{chapter.4}{Results}{}% 43
 \BOOKMARK [1][-]{section.4.1}{Introduction}{chapter.4}% 44
-\BOOKMARK [1][-]{section.4.2}{Geometry Variations}{chapter.4}% 45
-\BOOKMARK [1][-]{section.4.3}{Pressure drop}{chapter.4}% 46
-\BOOKMARK [1][-]{section.4.4}{Wall shear stress and velocity}{chapter.4}% 47
+\BOOKMARK [1][-]{section.4.2}{Wall shear stress and velocity}{chapter.4}% 45
+\BOOKMARK [1][-]{section.4.3}{Geometry Variations}{chapter.4}% 46
+\BOOKMARK [1][-]{section.4.4}{Pressure drop}{chapter.4}% 47
 \BOOKMARK [1][-]{section.4.5}{Heat and vapour transfer}{chapter.4}% 48
 \BOOKMARK [0][-]{chapter.5}{Discussion}{}% 49
-\BOOKMARK [0][-]{chapter.6}{Conclusions and future work}{}% 50
-\BOOKMARK [1][-]{section.6.1}{Future works}{chapter.6}% 51
+\BOOKMARK [1][-]{section.5.1}{Conclusions}{chapter.5}% 50
+\BOOKMARK [1][-]{section.5.2}{Future works}{chapter.5}% 51

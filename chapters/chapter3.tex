@@ -1,4 +1,4 @@
-\section{Introduction}
+\section{Introducton}
 
 The first step towards the computational analysis of older nasal cavities is the obtainment of computer models to describe their geometry. In this section the reconstruction process by which such computer models were obtained for the purpose of this thesis is explained.
 
@@ -31,7 +31,8 @@ Numerous algorithms have been developed for the purpose of automating the proces
 
   \item[\textbf{Thresholding}] regions are identified and separated according their  greyscale value. This is the simplest algorithm for defining regions.
  
-  \item[\textbf{Edge detection}] either local maxima of the first derivite of intensity or zero values of the second derivative are used to identify region edges. Edge detection tends to reduce the noise when compared with thresholding
+  \item[\textbf{Edge detection}] either local maxima of the first derivative of intensity or zero values of the second derivative are used to identify region edges. Edge detection tends to reduce the noise when compared with thresholding
+
  
   \item[\textbf{Region based}] regions are grown from the inside out. This produces more coherent regions, but is unable to detect regions that are segregated.
 
@@ -41,7 +42,7 @@ These methods and many more exist and are in active development; many of them ar
  
 \subsection{Preparation of model for meshing}
 
-Once the region in question has been extracted from the medical imaging output, it can be saved as some CAD format. There are certain criteria that need to be fulfilled by a CAD model before it can be read by 3D meshing software and used to create a mesh. It is often the case when the data is exported from the medical imaging software that it is 'dirty'; that there are contradictory or arbitrary elements in the geometry. These elements need to be removed through the use of CAD software before the geometry is suitable for the creation of a useable 'clean' 3D mesh. Note that the geometry needs to contain also topological information in order to create a watertight mesh. The details of the process by which the geometry is prepared for meshing are described in Figure \ref{fig:segchart}.
+Once the region in question has been extracted from the medical imaging output, it can be saved as some CAD format. There are certain criteria that need to be fulfilled by a CAD model before it can be read by 3D meshing software and used to create a mesh. It is often the case when the data is exported from the medical imaging software that it is 'dirty'; that there are contradictory or arbitrary elements in the geometry. These elements need to be removed through the use of CAD software before the geometry is suitable for the creation of a useable 'clean' 3D mesh. The details of the process by which the geometry is prepared for meshing are described in Figure \ref{fig:segchart}.
 
 
 \begin{figure}
@@ -58,7 +59,7 @@ Figure \ref{fig:geo} shows the models reconstructed for and used in this thesis.
 
 \begin{figure} 
   \includegraphics[width=0.8\textwidth]{geometries}
-  \caption{Geometries of the five cavities used for analysis in this thesis}
+  \caption{Geometries of the five cavities used for analysis in this thesis. The variation in smoothness is attributed partially to anatomical variations and partially to variations in reconstruction methodology.}
   \label{fig:geo}
 
 \end{figure}
@@ -83,20 +84,20 @@ Figure \ref{fig:geo} shows the models reconstructed for and used in this thesis.
 \section{Meshing} \label{Meshing}
 \subsection{Introduction}
 
-The Navier Stokes equations, upon which CFD is based (see chapter \ref{cfd}), is unsolvable (in most instances), except by approximation. In order to approximate a solution to a given system, its geometry must be approximated, or discretised, as a series of points. The process by which these points are defined and related to one another is known as meshing; this in itself is a complex discipline under active research. In this chapter current methods are reviewed, and guidelines are given for developing quality meshes.
+The Navier Stokes equations, upon which CFD is based (see chapter \ref{cfd}), are in many instances unable to be solved analytically. In order to approximate a solution to a given system, its geometry must be approximated, or discretised, as a series of points. The process by which these points are defined and related to one another is known as meshing; this in itself is a complex discipline under active research. In this chapter current methods are reviewed, and guidelines are given for developing quality meshes.
 \subsection{Mesh types} \label{mtypes}
 
 There are many types of mesh that can be employed; all of them have their own advantages and disadvantages. 
 
 \begin{description}
   \item[\textbf{Structured meshes}]
-    are divided into segments of uniform size and shape. They are characterised by cells posessing either four nodal corner points in two dimensions, or eight in three dimensions. The points are mutually orthogonal and cartesionally defined. Being defined in this relatively simple way facilitates a higher level of computational efficiency. They are, however, limited in the level of structural complexity that they can accomodate.
+    are divided into segments of uniform size and shape. They are characterised by cells posessing either four nodal corner points in two dimensions, or eight in three dimensions. The points are mutually orthogonal. Being defined in this relatively simple way facilitates a higher level of computational efficiency. They are, however, limited in the level of structural complexity that they can accomodate.
 
   \item[\textbf{Unstructured meshes}] 
     The geometries encountered in the respiratory system are generally too complex to be effectively discretised in a structured manner; in cases such as these unstructured meshes can be used to acommodate the complexities of the given geometry. Unstructured meshes - usually constructed from triangles or tetrahedra - do not fit a regular pattern, and they do not have coordinate lines corresponding to curvilinear directions. Because of this, the solving of computations over unstructured domains is generally more computationally intensive; however with modern advances in computers this has become less significant an issue in many cases.
 
   \item[\textbf{Hybrid meshes}] 
-    One disadvantage to the use of unstructured meshes is that they tent to show less accuracy near the wall. One commonly applied solution is the use of hexahedral elements near the wall, with the rest of the volume filled with unstructured - usually tetrahedral - elements. This method tends to improve the accuracy of near wall computations. One draw back of this method is that the prism layers can break down in the vicinity of excessively contoured walls. In this study this is the mesh type that is employed.
+    One disadvantage to the use of unstructured meshes is that they tend to show less accuracy near the wall. One commonly applied solution is the use of hexahedral elements near the wall, with the rest of the volume filled with unstructured - usually tetrahedral - elements. This method tends to improve the accuracy of near wall computations. One draw back of this method is that the prism layers can break down in the vicinity of excessively contoured walls. This problem needs to be monitored in the meshing process to avoid it impacting on mesh quality. In this study this is the mesh type that is employed as it provides the most accurate results for complex geometries such as the nasal cavity.
 
 \end{description}
 
@@ -141,7 +142,9 @@ Many grid generation packages contain specific algorithms and/or functions for i
  
 \subsection{Mesh independence}
 
-A significant source of error in the solution of CFD problems is derived from the discretisation process; when a system is separated into a number of finite elements, for the purpose of numerical solution, the solution that is obtained from its solution is an approximation. It is necessary, then, to ascertain the required resolution, or mesh size, required to calculate a result that approximates the exact solution to a satisfactory degree of accuracy. This is done by means of a mesh independence test. This entails the monitoring of one - or several - fluid flow parameters of interest to the study over a series of mesh resolutions for the relevant system. Independence is said to have been achieved when the effect of mesh size on the selected flow variable(s) has become sufficiently insignificant. Figure \ref{fig:mind} shows the results from the mesh independence test conducted for smallest and the largest of the five models presented in this thesis.
+A significant source of error in the solution of CFD problems is derived from the discretisation process; when a system is separated into a number of finite elements, for the purpose of numerical solution, the solution that is obtained from its solution is an approximation. It is necessary, then, to ascertain the required resolution, or mesh size, required to calculate a result that approximates the exact solution to a satisfactory degree of accuracy. This is done by means of a mesh independence test. This entails the monitoring of one - or several - fluid flow parameters of interest to the study over a series of mesh resolutions for the relevant system. Independence is said to have been achieved when the effect of mesh size on the selected flow variable(s) has become sufficiently insignificant. 
+
+Figure \ref{fig:mind} shows the results from the mesh independence test conducted for smallest and the largest of the five models presented in this thesis. Here average velocity and wall shear stress - two paramaters of interest in this study - were averaged across the cavity for constant flow rates. The results were compared for a series of mesh sizes until the variation in results with mesh size was seen to taper off. From these results an optimal mesh size was determined for the models presented in this thesis. 
 
 \begin{figure}
 
@@ -158,6 +161,12 @@ A significant source of error in the solution of CFD problems is derived from th
   \end{subfigure}
   \caption{Mesh independence test carried out for the largest and smallest of the new models presented in this thesis} \label{fig:mind}
 
+\end{figure}  
+
+
+\begin{figure}
+  \includegraphics[width=\textwidth]{independancecontour}
+  \caption{Velocity contours at the nasal valve for three mesh resolutions shown in \ref{fig:mind}} \label{fig:mindcont}
 \end{figure} 
 
 \subsection{Meshing of the nasal cavity} 
@@ -166,7 +175,7 @@ Here we provide an overview of the meshing process applied to one of the nasal c
 
 The system is divided in to three parts. The first of these surrounds the facial geometry directly adjacent to the nostrils; this is to allow for the developement of a more realistic inlet profile. The second is the nasal cavity itself. The third section is an pipe-like extension from the exit of the nasopharynx; this allows for the developement of a more realistic outlet profile, in a similar manner to the section around the inlet. This system can be seen in Figure \ref{fig:cavme} (\subref{fig:mesh1}).
 
-The three stages of mesh refinement can be seen in Figure \ref{fig:cavme} (\subref{fig:mesh2}); The mesh resolution is much coarser in the external domain, refined closer to the inlet and then is most fine in the cavity itself, the area of interest. Note the use of hybrid mesh, with internal tetrahedral elements and close to wall prism layers, shown clearly in Figure \ref{fig:cavme} (\subref{fig:mesh4}).
+The three stages of mesh refinement can be seen in Figure \ref{fig:cavme} (\subref{fig:mesh2}); The mesh resolution is much coarser in the external domain, refined closer to the inlet and then is most fine in the cavity itself, the area of interest. Note the use of hybrid mesh, with internal tetrahedral elements and close to wall prism layers, shown clearly in Figure \ref{fig:cavme} (\subref{fig:mesh4}). Prism meshes in the meshes in this model had thicknesses starting from around 0.1 mm.
 
 \begin{figure}
   \begin{subfigure}[t]{0.5\textwidth}
