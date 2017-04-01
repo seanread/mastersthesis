@@ -209,6 +209,8 @@ Approximating, or discretising a system to make it numerically solvable can be d
 
 The Finite Volume Method discretises the system into a series of volumes. The fluxes of relevant variables through the different faces of each element are then treated as a discrete system, which is able to be solved numerically.
 
+Discretisation methods can be characterised according to the order of approximation. Higher order approximations will provide more accurate results but can be in some cases more difficult to solve.
+
 \begin{figure}
   \includegraphics[width=\textwidth]{unstrfv}
   \caption{Representation of mesh discretised with finite volume method}
@@ -220,6 +222,10 @@ Finite volume methods can tend to cause artificial, or numerical, diffusion if t
 \subsection{Numerical Solution}
 
 Once the system has been discretised, a system of linear equations can be developed to describe the system. These equations can be solved with one of several methods. These methods can generally be divided into two categories: either direct or iterative. In general, for large complex domains such as the nasal cavity models presented in this paper, iterative methods are the only way to derive a solution.
+
+In order to solve the equations satisfactorily for incompressible flows an extra term must be added in order to obtain values for pressure. This is called pressure-velocity coupling. The method used for pressure velocity coupling in this thesis is the SIMPLE method, one of the most common methods available, the details of which can easily be found in any modern textbook on CFD.
+
+Iterative solutions approximate a solution to the system of equations step by step. As the solution converges towards the desired state, the discrepancy between results for successive steps reduces. It is by monitoring these discrepancies, or residuals, that one determines when a solution has reached a satisfactory level of accuracy. 
 
 \section{Setup and solution of nasal cavity models used in this thesis}
 Here an overview will be given of the way that the solution of the nasal cavity systems presented in this thesis will be given. Firstly the models are prepared and meshed as discussed in the Chapter \ref{MRM}. Once this is done the boundary conditions for the system must be defined. 

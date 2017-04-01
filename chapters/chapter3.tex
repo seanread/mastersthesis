@@ -13,7 +13,9 @@ The reconstruction of the nasal cavity geometries can be very time consuming and
 
 There are various forms of medical imaging that can be used for the identification of the nasal cavity geometry. Here we briefly overview Computed Tomography (CT), the form of medical imaging used for the nasal cavity geometries presented in this thesis.
 
-CT scans use a series of x-rays taken at regular intervals within the region of interest. x-ray scans use photons sent in beams through the region of interest; these photons interact differently with the material that they encounter depending on its density. Electronic detectors feed the photon pattern emitted from the body in question to a computer, which uses this information to create images. These images are made up of pixels which are each assigned a grey scale value based on their x-ray attenuation coefficient. In medical imaging the Hounsfield scale is used, whereas in image processing the greyscale is numbered from black to white between 0 to 255. Figure \ref{fig:greyscale} shows an  example of how greyscale values are assigned to pixels in a CT image.
+CT scans use a series of x-rays taken at regular intervals within the region of interest. x-ray scans use photons sent in beams through the region of interest; these photons interact differently with the material that they encounter depending on its density. Electronic detectors feed the photon pattern emitted from the body in question to a computer, which uses this information to create images. These images are made up of pixels which are each assigned a grey scale value based on their x-ray attenuation coefficient. In medical imaging the Hounsfield scale is used, whereas in image processing the greyscale is numbered from black to white between 0 to 255. Figure \ref{fig:greyscale} shows an  example of how greyscale values are assigned to pixels in a CT slice.
+Since the distance between the slices is known, each 2D can be given a depth element, transforming it into a 3D element known as a voxel. The voxels from all the slices put together create a 3D representation of the scanned area.
+
 
 \begin{figure} 
   \includegraphics[width=1\textwidth]{grayscale.png}
@@ -39,10 +41,11 @@ Numerous algorithms have been developed for the purpose of automating the proces
 \end{description}
 
 These methods and many more exist and are in active development; many of them are available for free online. The implementation of such algorithms from first principles, however is quite a complex procedure. Fortunately many of these algorithms have already been implemented in software packages - of which commercial and open source variations are available - which are specifically compiled for working with medical imaging outputs. 
- 
+In the case of the current thesis, the processes undertaken using the techniques described above is described in Figure \ref{fig:segchart}
+
 \subsection{Preparation of model for meshing}
 
-Once the region in question has been extracted from the medical imaging output, it can be saved as some CAD format. There are certain criteria that need to be fulfilled by a CAD model before it can be read by 3D meshing software and used to create a mesh. It is often the case when the data is exported from the medical imaging software that it is 'dirty'; that there are contradictory or arbitrary elements in the geometry. These elements need to be removed through the use of CAD software before the geometry is suitable for the creation of a useable 'clean' 3D mesh. The details of the process by which the geometry is prepared for meshing are described in Figure \ref{fig:segchart}.
+Once the region in question has been extracted from the medical imaging output, it can be saved as some CAD format. There are certain criteria that need to be fulfilled by a CAD model before it can be read by 3D meshing software and used to create a mesh. It is often the case when the data is exported from the medical imaging software that it is 'dirty'; that there are contradictory or arbitrary elements in the geometry. These elements need to be removed through the use of CAD software before the geometry is suitable for the creation of a useable 'clean' 3D mesh. The details of the process by which the geometry is prepared for meshing in the case of this thesis are described in Figure \ref{fig:segchart}.
 
 
 \begin{figure}
@@ -50,7 +53,7 @@ Once the region in question has been extracted from the medical imaging output, 
 \caption{Flow chart showing the process by which an anatomical geometry is prepared - with the help of medical imaging software - for solution via CFD codes} \label{fig:segchart}
 \centering
 \end{figure}
- 
+  
 \subsection{Summary} 
 
 Anatomical geometry reconstruction - including that of the nasal cavity - begins with medical imaging of the area in question. The geometry is then extracted from the medical imaging data using one (or several) of the available extraction algorithms outlined above. After extraction, cleaning of the geometry with CAD software is generally necessary to ensure that the geometry is water-tight and 'clean' before it can be meshed. This chapter has given an overview of some of the more pertinent methods in current use for the reconstruction of anatomical geometries from medical imaging data. Figure \ref{fig:cavzamp} shows an example of the construction process. 
@@ -91,7 +94,7 @@ There are many types of mesh that can be employed; all of them have their own ad
 
 \begin{description}
   \item[\textbf{Structured meshes}]
-    are divided into segments of uniform size and shape. They are characterised by cells posessing either four nodal corner points in two dimensions, or eight in three dimensions. The points are mutually orthogonal. Being defined in this relatively simple way facilitates a higher level of computational efficiency. They are, however, limited in the level of structural complexity that they can accomodate.
+    are divided into segments of uniform size and shape. They are usually characterised by cells posessing either four nodal corner points in two dimensions, or eight in three dimensions. The points are mutually orthogonal. Being defined in this relatively simple way facilitates a higher level of computational efficiency. They are, however, limited in the level of structural complexity that they can accomodate.
 
   \item[\textbf{Unstructured meshes}] 
     The geometries encountered in the respiratory system are generally too complex to be effectively discretised in a structured manner; in cases such as these unstructured meshes can be used to acommodate the complexities of the given geometry. Unstructured meshes - usually constructed from triangles or tetrahedra - do not fit a regular pattern, and they do not have coordinate lines corresponding to curvilinear directions. Because of this, the solving of computations over unstructured domains is generally more computationally intensive; however with modern advances in computers this has become less significant an issue in many cases.

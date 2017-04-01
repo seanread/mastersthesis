@@ -13,39 +13,38 @@
 \BOOKMARK [1][-]{section.1.4}{Literature gap}{chapter.1}% 13
 \BOOKMARK [1][-]{section.1.5}{Research questions and objectives}{chapter.1}% 14
 \BOOKMARK [1][-]{section.1.6}{Research overview}{chapter.1}% 15
-\BOOKMARK [1][-]{section.1.7}{Thesis outline}{chapter.1}% 16
-\BOOKMARK [0][-]{chapter.2}{Model reconstruction and meshing}{}% 17
-\BOOKMARK [1][-]{section.2.1}{Introducton}{chapter.2}% 18
-\BOOKMARK [1][-]{section.2.2}{Geometry}{chapter.2}% 19
-\BOOKMARK [2][-]{subsection.2.2.1}{Introduction}{section.2.2}% 20
-\BOOKMARK [2][-]{subsection.2.2.2}{Non-invasive medical imaging}{section.2.2}% 21
-\BOOKMARK [2][-]{subsection.2.2.3}{Image segmentation}{section.2.2}% 22
-\BOOKMARK [2][-]{subsection.2.2.4}{Preparation of model for meshing}{section.2.2}% 23
-\BOOKMARK [2][-]{subsection.2.2.5}{Summary}{section.2.2}% 24
-\BOOKMARK [1][-]{section.2.3}{Meshing}{chapter.2}% 25
-\BOOKMARK [2][-]{subsection.2.3.1}{Introduction}{section.2.3}% 26
-\BOOKMARK [2][-]{subsection.2.3.2}{Mesh types}{section.2.3}% 27
-\BOOKMARK [2][-]{subsection.2.3.3}{Meshing algorithms}{section.2.3}% 28
-\BOOKMARK [2][-]{subsection.2.3.4}{Quality}{section.2.3}% 29
-\BOOKMARK [2][-]{subsection.2.3.5}{Mesh independence}{section.2.3}% 30
-\BOOKMARK [2][-]{subsection.2.3.6}{Meshing of the nasal cavity}{section.2.3}% 31
-\BOOKMARK [0][-]{chapter.3}{CFD fundamentals}{}% 32
-\BOOKMARK [1][-]{section.3.1}{Introduction}{chapter.3}% 33
-\BOOKMARK [1][-]{section.3.2}{Fluid Dynamics}{chapter.3}% 34
-\BOOKMARK [2][-]{subsection.3.2.1}{Mass conservation}{section.3.2}% 35
-\BOOKMARK [2][-]{subsection.3.2.2}{Momentum conservation}{section.3.2}% 36
-\BOOKMARK [2][-]{subsection.3.2.3}{Energy Conservation}{section.3.2}% 37
-\BOOKMARK [1][-]{section.3.3}{Humidity}{chapter.3}% 38
-\BOOKMARK [1][-]{section.3.4}{Solving the governing equations}{chapter.3}% 39
-\BOOKMARK [2][-]{subsection.3.4.1}{Discretisation}{section.3.4}% 40
-\BOOKMARK [2][-]{subsection.3.4.2}{Numerical Solution}{section.3.4}% 41
-\BOOKMARK [1][-]{section.3.5}{Setup and solution of nasal cavity models used in this thesis}{chapter.3}% 42
-\BOOKMARK [0][-]{chapter.4}{Results}{}% 43
-\BOOKMARK [1][-]{section.4.1}{Introduction}{chapter.4}% 44
-\BOOKMARK [1][-]{section.4.2}{Wall shear stress and velocity}{chapter.4}% 45
-\BOOKMARK [1][-]{section.4.3}{Geometry Variations}{chapter.4}% 46
-\BOOKMARK [1][-]{section.4.4}{Pressure drop}{chapter.4}% 47
-\BOOKMARK [1][-]{section.4.5}{Heat and vapour transfer}{chapter.4}% 48
-\BOOKMARK [0][-]{chapter.5}{Discussion}{}% 49
-\BOOKMARK [1][-]{section.5.1}{Conclusions}{chapter.5}% 50
-\BOOKMARK [1][-]{section.5.2}{Future works}{chapter.5}% 51
+\BOOKMARK [0][-]{chapter.2}{Model reconstruction and meshing}{}% 16
+\BOOKMARK [1][-]{section.2.1}{Introducton}{chapter.2}% 17
+\BOOKMARK [1][-]{section.2.2}{Geometry}{chapter.2}% 18
+\BOOKMARK [2][-]{subsection.2.2.1}{Introduction}{section.2.2}% 19
+\BOOKMARK [2][-]{subsection.2.2.2}{Non-invasive medical imaging}{section.2.2}% 20
+\BOOKMARK [2][-]{subsection.2.2.3}{Image segmentation}{section.2.2}% 21
+\BOOKMARK [2][-]{subsection.2.2.4}{Preparation of model for meshing}{section.2.2}% 22
+\BOOKMARK [2][-]{subsection.2.2.5}{Summary}{section.2.2}% 23
+\BOOKMARK [1][-]{section.2.3}{Meshing}{chapter.2}% 24
+\BOOKMARK [2][-]{subsection.2.3.1}{Introduction}{section.2.3}% 25
+\BOOKMARK [2][-]{subsection.2.3.2}{Mesh types}{section.2.3}% 26
+\BOOKMARK [2][-]{subsection.2.3.3}{Meshing algorithms}{section.2.3}% 27
+\BOOKMARK [2][-]{subsection.2.3.4}{Quality}{section.2.3}% 28
+\BOOKMARK [2][-]{subsection.2.3.5}{Mesh independence}{section.2.3}% 29
+\BOOKMARK [2][-]{subsection.2.3.6}{Meshing of the nasal cavity}{section.2.3}% 30
+\BOOKMARK [0][-]{chapter.3}{CFD fundamentals}{}% 31
+\BOOKMARK [1][-]{section.3.1}{Introduction}{chapter.3}% 32
+\BOOKMARK [1][-]{section.3.2}{Fluid Dynamics}{chapter.3}% 33
+\BOOKMARK [2][-]{subsection.3.2.1}{Mass conservation}{section.3.2}% 34
+\BOOKMARK [2][-]{subsection.3.2.2}{Momentum conservation}{section.3.2}% 35
+\BOOKMARK [2][-]{subsection.3.2.3}{Energy Conservation}{section.3.2}% 36
+\BOOKMARK [1][-]{section.3.3}{Humidity}{chapter.3}% 37
+\BOOKMARK [1][-]{section.3.4}{Solving the governing equations}{chapter.3}% 38
+\BOOKMARK [2][-]{subsection.3.4.1}{Discretisation}{section.3.4}% 39
+\BOOKMARK [2][-]{subsection.3.4.2}{Numerical Solution}{section.3.4}% 40
+\BOOKMARK [1][-]{section.3.5}{Setup and solution of nasal cavity models used in this thesis}{chapter.3}% 41
+\BOOKMARK [0][-]{chapter.4}{Results}{}% 42
+\BOOKMARK [1][-]{section.4.1}{Introduction}{chapter.4}% 43
+\BOOKMARK [1][-]{section.4.2}{Wall shear stress and velocity}{chapter.4}% 44
+\BOOKMARK [1][-]{section.4.3}{Geometry Variations}{chapter.4}% 45
+\BOOKMARK [1][-]{section.4.4}{Pressure drop}{chapter.4}% 46
+\BOOKMARK [1][-]{section.4.5}{Heat and vapour transfer}{chapter.4}% 47
+\BOOKMARK [0][-]{chapter.5}{Discussion}{}% 48
+\BOOKMARK [1][-]{section.5.1}{Conclusions}{chapter.5}% 49
+\BOOKMARK [1][-]{section.5.2}{Future works}{chapter.5}% 50

@@ -5,45 +5,45 @@ The style file: unsrt.bst
 Database file #1: chapters/database.bib
 Warning--I didn't find a database entry for "Subraniam1998"
 Warning--can't use both author and editor fields in Berglund1982
-You've used 79 entries,
+You've used 82 entries,
             1791 wiz_defined-function locations,
-            1020 strings with 19705 characters,
-and the built_in function-call counts, 20262 in all, are:
-= -- 1733
-> -- 1066
+            1039 strings with 20258 characters,
+and the built_in function-call counts, 20983 in all, are:
+= -- 1799
+> -- 1096
 < -- 6
-+ -- 384
-- -- 305
-* -- 1669
-:= -- 3303
-add.period$ -- 245
-call.type$ -- 79
-change.case$ -- 76
++ -- 395
+- -- 313
+* -- 1727
+:= -- 3418
+add.period$ -- 254
+call.type$ -- 82
+change.case$ -- 79
 chr.to.int$ -- 0
-cite$ -- 80
-duplicate$ -- 758
-empty$ -- 1869
-format.name$ -- 305
-if$ -- 4427
+cite$ -- 83
+duplicate$ -- 785
+empty$ -- 1940
+format.name$ -- 313
+if$ -- 4586
 int.to.chr$ -- 0
-int.to.str$ -- 79
-missing$ -- 82
-newline$ -- 405
-num.names$ -- 79
-pop$ -- 107
+int.to.str$ -- 82
+missing$ -- 85
+newline$ -- 420
+num.names$ -- 82
+pop$ -- 110
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 301
+skip$ -- 311
 stack$ -- 0
-substring$ -- 1631
-swap$ -- 123
+substring$ -- 1698
+swap$ -- 126
 text.length$ -- 6
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 1
-while$ -- 178
-width$ -- 81
-write$ -- 883
+while$ -- 185
+width$ -- 84
+write$ -- 916
 (There were 2 warnings)

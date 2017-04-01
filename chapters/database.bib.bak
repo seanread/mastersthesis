@@ -7840,7 +7840,7 @@
 @Article{Hilberg1989,
   Title                    = {Acoustic rhinometry: evaluation of nasal cavity geometry by acoustic reflection},
   Author                   = {Hilberg, O. and Jackson, A. C. and Swift, D. L. and Pedersen, O. F.},
-  Journal                  = {JOURNAL OF APPLIED PHYSIOLOGY},
+  Journal                  = {Journal of Applied Physiology},
   Year                     = {1989},
   Pages                    = {295-303},
   Volume                   = {66},
@@ -8777,16 +8777,13 @@
   Author                   = {Inthavong, Kiao and Shang, Yidan and Tu, Jiyuan},
   Journal                  = {Respiratory Physiology \& Neurobiology},
   Year                     = {2014},
-  Note                     = {C:\Users\sean\AppData\Roaming\Zotero\Zotero\Profiles\16a4oype.default\zotero\storage\8N39PVS7\Inthavong et al. - 2014 - Surface mapping for visualization of wall stresses.pdf},
   Pages                    = {54-61},
   Volume                   = {190},
 
-  Abstract                 = {Airflow analysis can assist in better understanding the physiology however the human nasal cavity is an extremely complicated geometry that is difficult to visualize in 3D space, let alone in 2D space. In this paper, an anatomically accurate 3D surface of the nasal passages derived from CT data was unwrapped and transformed into a 2D space, into a UV-domain (where u and v are the coordinates) to allow a complete view of the entire wrapped surface. This visualization technique allows surface flow parameters to be analyzed with greater precision. A UV-unwrapping tool is developed and a strategy is presented to allow deeper analysis to be performed. This includes (i) the ability to present instant comparisons of geometry and flow variables between any number of different nasal cavity models through normalization of the 2D unwrapped surface; (ii) visualization of an entire surface in one view and; (iii) a planar surface that allows direct 1D and 2D analytical solutions of diffusion of inhaled vapors and particles through the nasal walls. This work lays a foundation for future investigations that correlates adverse and therapeutic health responses to local inhalation of gases and particles.},
   Doi                      = {10.1016/j.resp.2013.09.004},
   ISSN                     = {1569-9048},
   Keywords                 = {CFD inhalation Nasal cavity Surface map Wall shear stress},
-  Type                     = {Journal Article},
-  Url                      = {http://ac.els-cdn.com/S1569904813003108/1-s2.0-S1569904813003108-main.pdf?_tid=293ea2bc-4220-11e4-8bc9-00000aab0f6b&acdnat=1411366842_2625421060112678c5da87139aaae0af}
+  Type                     = {Journal Article}
 }
 
 @InProceedings{Inthavong,
@@ -16345,6 +16342,21 @@
   ISSN                     = {1097-0363},
   Type                     = {Journal Article},
   Url                      = {http://dx.doi.org/10.1002/fld.1411}
+}
+
+@Article{Ramprasad2016,
+  Title                    = {A computational analysis of nasal vestibule morphologic variabilities on nasal function },
+  Author                   = {Vaibhav H. Ramprasad and Dennis O. Frank-Ito},
+  Journal                  = {Journal of Biomechanics },
+  Year                     = {2016},
+  Number                   = {3},
+  Pages                    = {450 - 457},
+  Volume                   = {49},
+
+  Doi                      = {http://dx.doi.org/10.1016/j.jbiomech.2016.01.009},
+  ISSN                     = {0021-9290},
+  Keywords                 = {Computational fluid dynamics},
+  Url                      = {http://www.sciencedirect.com/science/article/pii/S002192901600018X}
 }
 
 @Article{Rasani2011,
