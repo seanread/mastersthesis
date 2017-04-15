@@ -18110,6 +18110,18 @@
   Type                     = {Conference Paper}
 }
 
+@Article{Spence2012,
+  Title                    = {Unsteady flow in the nasal cavity with high flow therapy measured by stereoscopic PIV},
+  Author                   = {Spence, C. J. T.
+and Buchmann, N. A.
+and Jermy, M. C.},
+  Journal                  = {Experiments in Fluids},
+  Year                     = {2012},
+  Number                   = {3},
+  Pages                    = {569--579},
+  Volume                   = {52}
+}
+
 @Article{Spencer2001,
   Title                    = {Computer simulations of lung airway structures using data-driven surface modeling techniques},
   Author                   = {Spencer, Richard M. and Schroeter, Jeffry D. and Martonen, Ted B.},

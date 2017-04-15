@@ -3,11 +3,10 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: thesis.aux
 The style file: unsrt.bst
 Database file #1: chapters/database.bib
-Warning--I didn't find a database entry for "Subraniam1998"
 Warning--can't use both author and editor fields in Berglund1982
 You've used 82 entries,
             1791 wiz_defined-function locations,
-            1039 strings with 20258 characters,
+            1037 strings with 20232 characters,
 and the built_in function-call counts, 20983 in all, are:
 = -- 1799
 > -- 1096
@@ -46,4 +45,4 @@ warning$ -- 1
 while$ -- 185
 width$ -- 84
 write$ -- 916
-(There were 2 warnings)
+(There was 1 warning)
