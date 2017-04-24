@@ -8,9 +8,9 @@
 \contentsline {subsection}{\numberline {1.2.4}Computational studies}{8}{subsection.1.2.4}
 \contentsline {subsection}{\numberline {1.2.5}Geometric variations}{11}{subsection.1.2.5}
 \contentsline {subsection}{\numberline {1.2.6}Fluid dynamics}{12}{subsection.1.2.6}
-\contentsline {subsubsection}{\numberline {1.2.6.1}Pressure drop}{12}{subsubsection.1.2.6.1}
-\contentsline {subsubsection}{\numberline {1.2.6.2}Wall shear stress and velocity}{12}{subsubsection.1.2.6.2}
-\contentsline {subsubsection}{\numberline {1.2.6.3}Heat and vapour transfer}{15}{subsubsection.1.2.6.3}
+\contentsline {subsubsection}{Pressure drop}{12}{section*.12}
+\contentsline {subsubsection}{Wall shear stress and velocity}{12}{section*.14}
+\contentsline {subsubsection}{Heat and vapour transfer}{15}{section*.17}
 \contentsline {subsection}{\numberline {1.2.7}Demographic studies}{17}{subsection.1.2.7}
 \contentsline {section}{\numberline {1.3}Summary}{17}{section.1.3}
 \contentsline {section}{\numberline {1.4}Literature gap}{18}{section.1.4}
@@ -30,24 +30,24 @@
 \contentsline {subsection}{\numberline {2.3.3}Meshing algorithms}{30}{subsection.2.3.3}
 \contentsline {subsection}{\numberline {2.3.4}Quality}{30}{subsection.2.3.4}
 \contentsline {subsection}{\numberline {2.3.5}Mesh independence}{31}{subsection.2.3.5}
-\contentsline {subsection}{\numberline {2.3.6}Meshing of the nasal cavity}{34}{subsection.2.3.6}
-\contentsline {chapter}{\numberline {3}CFD fundamentals}{36}{chapter.3}
-\contentsline {section}{\numberline {3.1}Introduction}{36}{section.3.1}
-\contentsline {section}{\numberline {3.2}Fluid Dynamics}{36}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Mass conservation}{37}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Momentum conservation}{39}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Energy Conservation}{41}{subsection.3.2.3}
-\contentsline {section}{\numberline {3.3}Humidity}{42}{section.3.3}
-\contentsline {section}{\numberline {3.4}Solving the governing equations}{44}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Discretisation}{44}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}Numerical Solution}{45}{subsection.3.4.2}
-\contentsline {section}{\numberline {3.5}Setup and solution of nasal cavity models used in this thesis}{46}{section.3.5}
-\contentsline {chapter}{\numberline {4}Results}{48}{chapter.4}
-\contentsline {section}{\numberline {4.1}Introduction}{48}{section.4.1}
-\contentsline {section}{\numberline {4.2}Wall shear stress and velocity}{48}{section.4.2}
-\contentsline {section}{\numberline {4.3}Geometry Variations}{57}{section.4.3}
-\contentsline {section}{\numberline {4.4}Pressure drop}{65}{section.4.4}
-\contentsline {section}{\numberline {4.5}Heat and vapour transfer}{68}{section.4.5}
-\contentsline {chapter}{\numberline {5}Discussion}{70}{chapter.5}
-\contentsline {section}{\numberline {5.1}Conclusions}{76}{section.5.1}
-\contentsline {section}{\numberline {5.2}Future works}{77}{section.5.2}
+\contentsline {subsection}{\numberline {2.3.6}Meshing of the nasal cavity}{33}{subsection.2.3.6}
+\contentsline {chapter}{\numberline {3}CFD fundamentals}{37}{chapter.3}
+\contentsline {section}{\numberline {3.1}Introduction}{37}{section.3.1}
+\contentsline {section}{\numberline {3.2}Fluid Dynamics}{37}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Mass conservation}{38}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Momentum conservation}{40}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Energy Conservation}{42}{subsection.3.2.3}
+\contentsline {section}{\numberline {3.3}Humidity}{43}{section.3.3}
+\contentsline {section}{\numberline {3.4}Solving the governing equations}{45}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Discretisation}{45}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Numerical Solution}{46}{subsection.3.4.2}
+\contentsline {section}{\numberline {3.5}Setup and solution of nasal cavity models used in this thesis}{47}{section.3.5}
+\contentsline {chapter}{\numberline {4}Results}{49}{chapter.4}
+\contentsline {section}{\numberline {4.1}Introduction}{49}{section.4.1}
+\contentsline {section}{\numberline {4.2}Wall shear stress and velocity}{49}{section.4.2}
+\contentsline {section}{\numberline {4.3}Geometry Variations}{58}{section.4.3}
+\contentsline {section}{\numberline {4.4}Pressure drop}{66}{section.4.4}
+\contentsline {section}{\numberline {4.5}Heat and vapour transfer}{69}{section.4.5}
+\contentsline {chapter}{\numberline {5}Discussion}{71}{chapter.5}
+\contentsline {section}{\numberline {5.1}Conclusions}{77}{section.5.1}
+\contentsline {section}{\numberline {5.2}Future works}{78}{section.5.2}
